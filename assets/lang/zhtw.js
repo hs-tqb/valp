@@ -13,7 +13,7 @@ export default {
   ],
   slogan:'分布式價值承諾協議',
   whitePaper:{
-    link:'/whitepaper/ValPromise_WhitePaper_cn_v1.3.7.pdf',
+    link:'/whitepaper/ValPromise_WhitePaper_cn.pdf',
     btn:'白皮書'
   },
   community: {
