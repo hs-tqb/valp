@@ -30,7 +30,7 @@
     .card { padding:18px 0; }
   }
   #partners { 
-    height:670px; background:url(~/assets/img/partners/bg.jpg) no-repeat center/cover;
+    height:670px; background:url(http://otydyl8j5.bkt.clouddn.com/valp/partners/bg.jpg?imageslim) no-repeat center/cover;
     h3 { margin:40px 0; }
     img+h3 { margin-top:60px; }
   }
@@ -66,20 +66,20 @@
         a:before { opacity:1; }
         a:hover:before { opacity:0; }
         a:hover:after { opacity:1; }
-        a.wc:before { background-image:url(~assets/img/icons/wc.png); }
-        a.qq:before { background-image:url(~assets/img/icons/qq.png); }
-        a.em:before { background-image:url(~assets/img/icons/em.png); }
-        a.sn:before { background-image:url(~assets/img/icons/sn.png); }
-        a.fb:before { background-image:url(~assets/img/icons/fb.png); }
-        a.wc:after  { background-image:url(~assets/img/icons/wc-focus.png); }
-        a.qq:after  { background-image:url(~assets/img/icons/qq-focus.png); }
-        a.em:after  { background-image:url(~assets/img/icons/em-focus.png); }
-        a.sn:after  { background-image:url(~assets/img/icons/sn-focus.png); }
-        a.fb:after  { background-image:url(~assets/img/icons/fb-focus.png); }
+        a.wc:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/wc.png?imageslim); }
+        a.qq:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/qq.png?imageslim); }
+        a.em:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/em.png?imageslim); }
+        a.sn:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/sn.png?imageslim); }
+        a.fb:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/fb.png?imageslim); }
+        a.wc:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-focus.png?imageslim); }
+        a.qq:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/qq-focus.png?imageslim); }
+        a.em:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/em-focus.png?imageslim); }
+        a.sn:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/sn-focus.png?imageslim); }
+        a.fb:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/fb-focus.png?imageslim); }
         a.wc i { 
           position:absolute; left:-80px; bottom:90px; padding:25px; width:250px; height:250px; 
           background:#eaeaea;
-          /* background:#eaeaea url(~assets/img/icons/wc-qrcode.png) no-repeat center /200px auto;  */
+          /* background:#eaeaea url(http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim) no-repeat center /200px auto;  */
           border:1px solid #ccc; border-radius:10px;
           // pointer-events:none; 
           visibility:hidden;
@@ -160,7 +160,7 @@
       <div id="banner" class="anchor">
       </div>
       <div id="white-paper">
-        <img src="~/assets/img/logo/logo-v-w.png" />
+        <img src="http://otydyl8j5.bkt.clouddn.com/valp/logo/logo-v-w.png?imageslim" />
         <h1>{{slogan}}</h1>
         <div class="btn-group">
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.btn}}</a>
@@ -198,7 +198,7 @@
           <br>
           <br>
         </p>
-        <img src="~/assets/img/chain.jpg" style="display:block; margin:0 auto;">
+        <img src="http://otydyl8j5.bkt.clouddn.com/valp/chain.jpg?imageslim" style="display:block; margin:0 auto;">
       </div>
     </div>
     <!-- 技术与平台 -->
@@ -326,7 +326,7 @@
             <h3>{{contact.social.title}}</h3>
             <div>
               <a href="https://t.me/ValPromise" target="_blank" class="icon fb"></a>
-              <a href="javascript:void(0)" class="icon wc"><i><img src="~/assets/img/icons/wc-qrcode.png" alt=""></i></a>
+              <a href="javascript:void(0)" class="icon wc"><i><img src="http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim?imageslim" alt=""></i></a>
               <a href="mailto:hi@valp.io" class="icon em"></a>
             </div>
           </div>
@@ -429,13 +429,13 @@
         <i class="btn-close"></i>
         <div class="inner-wrapper success">
           <div class="success">
-            <img src="~/assets/img/icons/success.png" >
+            <img src="http://otydyl8j5.bkt.clouddn.com/valp/icons/success.png?imageslim" >
             <h3>{{presale.result.success.title}}</h3>
             <p>{{presale.result.success.desc}}</p>
             <input class="raising-done btn-close" type="button" value="OK" />
           </div>
           <div class="failure">
-            <img src="~/assets/img/icons/failure.png" >
+            <img src="http://otydyl8j5.bkt.clouddn.com/valp/icons/failure.png?imageslim" >
             <h3>{{presale.result.failure.title}}</h3>
             <p>{{presale.result.failure.desc}}</p>
             <input class="raising-done btn-close" type="button" value="Close" />
