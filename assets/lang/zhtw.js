@@ -15,9 +15,9 @@ export default {
   joinGroup:'加入电报群',
   whitePaper:'白皮書',
   news: [
-    { link:'/news/n2', img:require('~/assets/img/news/2/0-cn.png') },
-    { link:'/news/n1', img:require('~/assets/img/news/1/0-cn.png') },
-    { link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:require('~/assets/img/news/3/0-cn.png'), external:true }
+    { link:'/news/n2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-cn.png' },
+    { link:'/news/n1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-cn.png' },
+    { link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/3/0-cn.png', external:true }
   ],
   about: {
     title:'ValPromise',
@@ -27,32 +27,32 @@ export default {
     title:'亮點',
     items:[
       { 
-        img:require('~/assets/img/highlights/i1.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i1.png', 
         title:'分布式智能合約', 
         desc:'將傳統衍生品市場線下一對一紙質或者傳統中心化電子合約簽署模式升級為鏈上智能合約簽訂模式，利用智能合約可編程性與自動執行等特點，解決交易對手不履約等信用風險問題。' 
       },
       { 
-        img:require('~/assets/img/highlights/i2.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i2.png', 
         title:'統一交易媒介', 
         desc:'VPP 承諾幣是平臺唯一支持的交易媒介，法幣與數字貨幣兌換為 VPP 後參與平臺的承諾對沖交易，由此打破貨幣種類與物理地域的限制，提供強大的全球流動性。' 
       },
       { 
-        img:require('~/assets/img/highlights/i3.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i3.png', 
         title:'去中心化承諾創建機制', 
         desc:'利用“眾智”，任何人和組織，都可以創建承諾模板，滿足自己和他人的風險對沖需求，從而構建個性化，高效率的承諾生態。' 
       },
       { 
-        img:require('~/assets/img/highlights/i4.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i4.png', 
         title:'數據鏈上自證', 
         desc:'價值承諾合約中錨定的客觀數據指標（例如天氣數據），獲取即寫入區塊中，無法篡改，數據自證清白。' 
       },
       { 
-        img:require('~/assets/img/highlights/i5.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i5.png', 
         title:'分層設計', 
         desc:'在底層區塊鏈層上，ValPromise通過分層設計，將合約定義，交易功能和不同垂直場景的應用分開，既保證服務質量，也為ValPromise後續擴展留出可能。' 
       },
       { 
-        img:require('~/assets/img/highlights/i6.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i6.png', 
         title:'移動平臺', 
         desc:'ValPromise 通過適合 Mobile 和 IOT 的前端應用，降低區塊鏈的應用成本，讓更多力量加入到 ValPromise 區塊鏈中。' 
       }
@@ -60,7 +60,7 @@ export default {
   },
   realization: {
     title:'技術架構',
-    img:require('~/assets/img/scene/scene.png'),
+    img:'http://otydyl8j5.bkt.clouddn.com/valp/scene/scene.png',
   },
   production: {
     title:'天氣保險：ValPromise生態的首個應用',
@@ -95,8 +95,8 @@ export default {
   roadmap: {
     title:'路線圖',
     img  : {
-      pc     : { clsn:'i1', src:require('~/assets/img/roadmap/zh-tw-pc.png') },
-      mobile : { clsn:'i2', src:require('~/assets/img/roadmap/zh-tw-mb.png') },
+      pc     : { clsn:'i1', src:'http://otydyl8j5.bkt.clouddn.com/valp/roadmap/zh-tw-pc.png' },
+      mobile : { clsn:'i2', src:'http://otydyl8j5.bkt.clouddn.com/valp/roadmap/zh-tw-mb.png' },
     }
   },
   team: {
@@ -104,44 +104,44 @@ export default {
     items:[
       {
         name  :'向濤',
-        avatar:require('~/assets/img/team/m1.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m1.png',
         title:'向濤 數據科學家 ', 
         desc:'2011年香港中文大學信息工程碩士，先後創辦兩家大數據公司，禾訊科技（全球衛星大數據監測服務）及天氣寶（全自動化天氣風險合約定價&發行服務），帶領團隊在國內率先開拓兩個細分專業數據服務領域（商業遙感的農業應用市場，天氣風險管理市場），他在海量數據的獲取、管理及分析的技術架構設計實施，以及數據商業化領域有著多年的積累，因其業務在幫助中國打破西方戰略數據壟斷，創造經濟增長新動能方面的優秀表現，於2014年先後受到《焦點訪談》、以及《福布斯》專訪。'
       },
       {
         name:'焦臻',
-        avatar:require('~/assets/img/team/m4.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m4.png',
         title:'焦臻 區塊鏈專家 ', 
         desc:'中國科學院計算機科學博士，主要研究方向為物聯網區塊鏈高效架構，區塊鏈吞吐量優化等底層技術，同時在物聯網及去中心化網絡領域具有多年研發經歷。擔任國家自然科學基金評審專家，主持及參與國家自然科學基金，國家科技重大專項，世界500強企業聯合研發課題等十余項，負責制定物聯網國家標準兩項，在國際頂級刊物及會議發表學術論文二十余篇。'
       },
       {
         name:'張毅鵬',
-        avatar:require('~/assets/img/team/m3.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m3.png',
         title:'張毅鵬 中國最早一批移動互聯網海外產品經理 ',
         desc:'復旦大學電子與通信工程碩士，早年作為中國最早的移動互聯網出海企業—網秦集團（NYSE: NQ）核心產品經理，從諾基亞塞班時代開始就積累了大量的海外產品設計和運營經驗。之後他在奇虎360海外事業部，幫助360海外業務取得了突破性進展。作為中國新銳出海團隊APUS Group創始成員之壹，締造了3個月內新產品海外用戶超過1億的記錄，其產品榮登Google Play 30+國家排行榜第一。加入ValPromise之前，他在中國最大的激勵互聯網廣告公司擔任產品負責人，指導歐美，東南亞和印度地區產品的運營和推廣工作，在國外KOL流量，Apple Store、Google和Facebook生態運營方面經驗豐富。'
       },
       {
         name:'邵俊',
-        avatar:require('~/assets/img/team/m2.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m2.png',
         title:'邵俊 概率學博士(金融極限方向)', 
         desc:'畢業於誕生出人歐洲數學排名第一的巴黎綜合理工大學，師從當代金融數學之母 Nicole El Karoui 教授。歸國之前供職於AXA 安盛保險巴黎衍生品定價團隊，長期從事期權、期貨、固定收益衍生品等衍生品的量化分析建模、金融工具設計、風險評估等工作，在交易、做市、對沖、風控、高頻以及衍生品等領域積累了豐富的經驗，他還是壹名資深R語言和Python開發者，擁有非常豐富的工程實踐經歷。'
       },
       {
         name:'艾迪',
-        avatar:require('~/assets/img/team/m5.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m5.png',
         title:'艾迪 全棧開發工程師',
         desc:'畢業於大連理工大學。先後供職於阿裏巴巴、淘寶網、創新工場豌豆莢。阿裏巴巴期間，主要負責算法和網絡開發。淘寶期間主要方向為大數據、高性能服務、數據壹致性、網絡 QoS等。加入ValPromise之前，艾迪在創新工場豌豆莢擔任研發leader，領導豌豆莢數據和算法小組進行技術研究和開發實現。2015 年開始接觸區塊鏈，積累了比特幣、以太坊等主流數字貨幣及相關區塊鏈技術經驗。'
       },
       {
         name:'汪慧',
-        avatar:require('~/assets/img/team/m6.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m6.png',
         title:'汪慧 全棧開發工程師',
         desc:'畢業於北京郵電大學,先後供職於微軟中國、MooterMedia等知名公司。微軟期間，主要負責bing必應搜索引擎技術和廣告算法研發，MooterMedia期間主要負責實時競價廣告系統和數據系統。加入ValPromise團隊之前，汪慧作為中國某領先的數字營銷公司CTO和架構師，負責千萬級日活商業化產品的設計和實現，在算法，大數據和AI方向積累豐富而深刻。2015年開始進入區塊鏈行業，擁有豐富的區塊鏈技術開發經驗，對區塊鏈技術有著深刻理解。'
       },
     ],
     background: {
       title:'團隊背景',
-      institutions:require('~/assets/img/team/background.png')
+      institutions:'http://otydyl8j5.bkt.clouddn.com/valp/team/background.png'
     }
   },
   advisor: {
@@ -149,49 +149,49 @@ export default {
     items:[
       {
         name:'王剛',
-        avatar:require('~/assets/img/advisor/a1.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a1.png',
         desc:'著名天使投資人、滴滴投資人'
       },
       {
         name:'吳宵光',
-        avatar:require('~/assets/img/advisor/a2.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a2.png',
         desc:'騰訊聯合創始人'
       },
       {
         name:'王利傑',
-        avatar:require('~/assets/img/advisor/a3.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a3.png',
         desc:'著名區塊鏈投資人'
       },
       {
         name:'楊鐳',
-        avatar:require('~/assets/img/advisor/a4.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a4.png',
         desc:'顧問 / PruSmartHR 保險咨詢服務公司CEO'
       },
       {
         name:'勞維信',
-        avatar:require('~/assets/img/advisor/a5.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a5.png',
         desc:'顧問 / 前海國際區塊鏈生態聯盟主席'
       },
       {
         name:'Melody He',
-        avatar:require('~/assets/img/advisor/a6.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a6.png',
         desc:'顧問 / TenX 早期投資者，曾供職于高盛'
       },
     ],
   },
   investors: {
     title:'投資機構',
-    institutions:require('~/assets/img/investors/institutions.png')
+    institutions:'http://otydyl8j5.bkt.clouddn.com/valp/investors/institutions.png'
   },
   partners: {
     title:'合作夥伴',
     institutions: {
       title :'戰略合作夥伴',
-      trademark:require('~/assets/img/partners/institutions.png')
+      trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/institutions.png'
     },
     enterprise: {
       title :'合作夥伴',
-      trademark:require('~/assets/img/partners/enterprise.png')
+      trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/enterprise.png'
     }
   },
   contact: {
@@ -267,13 +267,13 @@ export default {
         { type:'p', content:'会上，ValPromise 创始人向涛详细阐述了这一革命性项目的愿景，并通过邀请台下观众游戏的方式生动的展示了ValPromise的业务原理，富有感染力的演讲和扎实的业务进展，收获了台下观众的掌声。' },
         { type:'p', content:'会后向涛和感兴趣的投资者，进行了更为深入的讨论。其中不乏在实体行业中颇有实力的经济大佬，他们希望ValPromise开足马力，快速上线，一起开创区块链的未来。' },
         { type:'p', content:'我们一定不辱使命，快马加鞭，让大家更早地享受到区块链的红利。' },
-        { type:'img', src:require('~/assets/img/news/01.jpeg') },
-        { type:'img', src:require('~/assets/img/news/02.jpeg') },
-        { type:'img', src:require('~/assets/img/news/03.jpeg') },
-        { type:'img', src:require('~/assets/img/news/04.jpeg') },
-        { type:'img', src:require('~/assets/img/news/05.jpeg') },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/01.jpeg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/02.jpeg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/03.jpeg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/04.jpeg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/05.jpeg' },
         { type:'p', content:'更多项目信息，请大家关注我们的微信公众号：' },
-        { type:'img', src:require('~/assets/img/icons/wc-qrcode.png') },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png' },
       ]
     },
     a2: {
@@ -282,17 +282,17 @@ export default {
         { type:'p', content:'2月8日，ValPromise的创始人向涛在“数字货币世界-香港站”峰会上发表了他对于区块链和数字货币看法的公开演讲。'},
         { type:'p', content:'因他独到而深刻的观点，被与会者称为“Smart Boy”。向涛介绍了风险管理领域的巨大市场和此行业所面临的困难。同时，他阐述了利用区块链技术解决存在问题的优越性和前瞻性。简言之，ValPromise，作为分布式交易合约发布和交易系统，能解决全世界的跨区域和跨区域风险管理（保险、期货、期权合同问题和交易、预测服务等）问题。' },
         { type:'p', content:'这是ValPromise面向海外市场的首秀，同时也是ValPromise开启面向海外运营的开始。很多国外投资者对ValPromise产生了浓厚的兴趣。在Q&A环节，他们提出了许多好问题，向涛一一作了解答。' },
-        { type:'img', src:require('~/assets/img/news/2/08.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/01.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/02.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/03.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/04.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/05.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/06.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/07.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/09.jpg') },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/08.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/01.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/02.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/03.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/04.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/05.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/06.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/07.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/09.jpg' },
         { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
-        { type:'img', src:require('~/assets/img/icons/wc-qrcode.png') },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png' },
       ]
     }
   }

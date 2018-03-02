@@ -61,7 +61,7 @@ p { font-size:14px; line-height:28px; text-align:justify; opacity:1; }
 }
 #topbar .menuSwitch { display:none;  }
 #topbar.dark { background:rgba(0,0,0,0.7) }
-#logo { width:215px; height:100%; background:url(~assets/img/logo/logo-h-b.png) no-repeat 20px center/152.6px auto; }
+#logo { width:215px; height:100%; background:url(http://otydyl8j5.bkt.clouddn.com/valp/logo/logo-h-b.png) no-repeat 20px center/152.6px auto; }
 #nav { height:100%; font-size:15px; }
 #nav li a { display:block; padding:0 24px; transition:300ms; }
 #nav li a:hover,
@@ -74,7 +74,7 @@ p { font-size:14px; line-height:28px; text-align:justify; opacity:1; }
 #slideshow { display:flex; align-items:center; justify-content:space-around; position:relative; z-index:10; height:100vh; background-color:#000; }
 /* bannes */
 #banner   { position:absolute; top:0; left:0; width:100%; height:100%; 
-background:url(~assets/img/banner.jpg) no-repeat center/cover; 
+background:url(http://otydyl8j5.bkt.clouddn.com/valp/banner.jpg) no-repeat center/cover; 
 }
 #white-paper { position: relative; z-index:10; width:100%;  text-align:center; color:#fff; }
 #white-paper h1 { font-size:36px; }
@@ -95,12 +95,12 @@ background:url(~assets/img/banner.jpg) no-repeat center/cover;
 
 .mobile #news .card { width:100%; height:auto; margin:10px auto; }
 /* 愿景 */
-/* #production { height:241px; color:#fff; background:url(~assets/img/bg-insurance.jpg) no-repeat center/cover; }
+/* #production { height:241px; color:#fff; background:url(http://otydyl8j5.bkt.clouddn.com/valp/bg-insurance.jpg) no-repeat center/cover; }
 #production .inner-container { position:relative; z-index:20; width:100%; height:100%; }
 #production h2::after { background:#fff; }
 #production p { text-align:center; } */
 /* 关于 */
-/* #about { color:#fff; background:url(~assets/img/bg-insurance.jpg) no-repeat center/cover; } */
+/* #about { color:#fff; background:url(http://otydyl8j5.bkt.clouddn.com/valp/bg-insurance.jpg) no-repeat center/cover; } */
 /* 技术和平台 */
 #highlights h2 { margin-bottom:40px; }
 #highlights .card { margin-bottom:30px; padding:18px 24px; width:380px; }
@@ -112,7 +112,7 @@ background:url(~assets/img/banner.jpg) no-repeat center/cover;
 #partner img { display:block; }
 /* 筹集信息 */
 #raise .panel { text-align:center; }
-#raise .panel div { display:inline-block; padding-left:217px; background:url(~assets/img/icon-coins.png) no-repeat 0 center; }
+#raise .panel div { display:inline-block; padding-left:217px; background:url(http://otydyl8j5.bkt.clouddn.com/valp/icon-coins.png) no-repeat 0 center; }
 
 /* #contact p { opacity:1; }
 #contact .intro { margin-left:130px; width:835px; font-size:14px; line-height:26px; color:#909090; }
@@ -216,7 +216,7 @@ input:not([type="checkbox"]), textarea{-webkit-appearance: none;}
 .mobile .panel { min-width:auto; width:auto; padding:15px; }
 .mobile .flex-dir-row { flex-direction:column; flex-wrap:inherit; }
 .mobile #topbar { background:#0f1421; height:60px; overflow:visible; }
-.mobile #topbar .menuSwitch { display:block; position: absolute; right:0; top:0; width:60px; height:60px; background:url(~assets/img/switch.png) no-repeat center/30px; }
+.mobile #topbar .menuSwitch { display:block; position: absolute; right:0; top:0; width:60px; height:60px; background:url(http://otydyl8j5.bkt.clouddn.com/valp/switch.png) no-repeat center/30px; }
 .mobile #func { float:right; }
 .mobile #nav { position:absolute; top:60px; left:0; width:100%; height:calc(100vh - 60px); background:#0f1421; opacity:1; transition:300ms;  overflow:auto; -webkit-overflow-scrolling:touch; }
 /* .mobile #topbar.collapsed { background:#0f1421!important; } */
@@ -246,7 +246,7 @@ input:not([type="checkbox"]), textarea{-webkit-appearance: none;}
 #dialog-raising { position:fixed; top:0; left:0; z-index:1000; width:100%; height:100%; background:rgba(0,0,0,0.7); pointer-events:none; transition-duration:300ms; opacity:0; }
 #dialog-raising.show { pointer-events:all; opacity:1; }
 #dialog-raising .outer-wrapper { position:relative; margin:50px auto; padding:25px; width:800px; max-height:calc(100vh - 100px); background:#eaeaea; border-radius:10px; overflow:auto; -webkit-overflow-scrolling:touch; }
-#dialog-raising .outer-wrapper i.btn-close { position:absolute; right:0; top:0; width:40px; height:40px; background:url(~assets/img/icons/close.png) no-repeat center/20px 20px; cursor: pointer; }
+#dialog-raising .outer-wrapper i.btn-close { position:absolute; right:0; top:0; width:40px; height:40px; background:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/close.png) no-repeat center/20px 20px; cursor: pointer; }
 #dialog-raising .item-wrapper { position:relative; margin-bottom:35px; }
 #dialog-raising h2::after { display:none; }
 #dialog-raising h4 { margin-bottom:15px; font-size:16px; }
@@ -270,7 +270,7 @@ input:not([type="checkbox"]), textarea{-webkit-appearance: none;}
 /* file upload */
 #dialog-raising .file-outer-wrapper { display:flex; flex-direction:row; justify-content:space-between; margin-top:40px; }
 #dialog-raising .file-outer-wrapper .file-inner-wrapper { width:45%; }
-#dialog-raising .file-outer-wrapper .file-inner-wrapper div { position:relative; width:120px; height:120px; background:url(~assets/img/form/diagram.png) no-repeat; }
+#dialog-raising .file-outer-wrapper .file-inner-wrapper div { position:relative; width:120px; height:120px; background:url(http://otydyl8j5.bkt.clouddn.com/valp/form/diagram.png) no-repeat; }
 #dialog-raising .file-outer-wrapper input { position:absolute; top:0; left:0; width:120px; height:120px; opacity:0; cursor:pointer; }
 #dialog-raising .file-outer-wrapper .warning { top:125px; }
 /* amount */
@@ -334,13 +334,13 @@ input:not([type="checkbox"]), textarea{-webkit-appearance: none;}
 #page-news #backToTop { 
   position:fixed; right:15px; bottom:25px; z-index:50; 
   width:64px; height:64px;
-  background:url('~assets/img/icons/backToTop.jpg') no-repeat center/cover;
+  background:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/backToTop.jpg) no-repeat center/cover;
   box-shadow:2px 2px 7px #aaa;
 }
 #contact { position:relative; z-index:51; }
 
 .mobile #page-news { padding-top:60px; }
-.mobile #page-news #logo { display:block; background:url(~assets/img/icons/back.png) no-repeat 20px center/30px auto; }
+.mobile #page-news #logo { display:block; background:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/back.png) no-repeat 20px center/30px auto; }
 .mobile #page-news #backToTop { width:48px; height:48px; }
 .mobile #page-news #article { padding-bottom:40px; }
 .mobile #page-news #article h1 { font-size:24px; line-height:1.2; }

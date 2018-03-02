@@ -17,9 +17,9 @@ export default {
   joinGroup:'Join our community',
   whitePaper:'White Paper',
   news: [
-    { link:'/news/n2', img:require('~/assets/img/news/2/0-en.png') },
-    { link:'/news/n1', img:require('~/assets/img/news/1/0-en.png') },
-    { link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:require('~/assets/img/news/3/0-en.png'), external:true }
+    { link:'/news/n2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-en.png' },
+    { link:'/news/n1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-en.png' },
+    { link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/3/0-en.png', external:true }
   ],
   about: {
     title:'ValPromise',
@@ -29,32 +29,32 @@ export default {
     title:'Highlights',
     items:[
       { 
-        img:require('~/assets/img/highlights/i1.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i1.png', 
         title:'Distributed smart contract', 
         desc:'Distributed smart contract will upgrade one-to-one paper contracts offline or centralized electronic contract signing mode in traditional derivatives market to smart contract signing mode on blockchain. With these characteristics of programmability and execution automatically, the problem of credit risk from trades will be well solved.' 
       },
       { 
-        img:require('~/assets/img/highlights/i2.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i2.png', 
         title:'Unified trading medium', 
         desc:'VPP promise token is the only trading medium supported by the platform, all legal coins and digital currency need to be converted into VPP in the secondary market first. The unified trading medium will break limitations of the type of currency and different regions with better access to global markets.' 
       },
       { 
-        img:require('~/assets/img/highlights/i3.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i3.png', 
         title:'Decentralized mechanism in contract creation', 
         desc:'Enable anyone or organizations to establish a promise template for themselves and others to use. "Massive intelligence" will be adopted in the decentralized mechanism to meet needs of all parties. There are highly personalized and efficient promise contracts in ValPromise ecosystem.' 
       },
       { 
-        img:require('~/assets/img/highlights/i4.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i4.png', 
         title:'Self-certification on the data chain', 
         desc:'Objective data indicators (like weather data) anchored in ValPromise contracts are written to the block once acquired. No one can tamper the data due to self-certification mechanism on the data chain.' 
       },
       { 
-        img:require('~/assets/img/highlights/i5.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i5.png', 
         title:'Layered design', 
         desc:'On the underlying blockchain, the contract\'s definition, trading function and vertical scene are separated by hierarchical design. ' 
       },
       { 
-        img:require('~/assets/img/highlights/i6.png'), 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i6.png', 
         title:'Mobile platform', 
         desc:'The development of front-end applications suitable for Mobile ad IOT. The  lower costs via blockchain will attract more participants in ValPromise.' 
       }
@@ -62,7 +62,7 @@ export default {
   },
   realization: {
     title:'Technical Realization',
-    img:require('~/assets/img/scene/scene.png'),
+    img:'http://otydyl8j5.bkt.clouddn.com/valp/scene/scene.png',
   },
   production: {
     title:'Weather Insurance : the first application in ValPromise eco',
@@ -97,8 +97,8 @@ export default {
   roadmap: {
     title:'Roadmap',
     img  : {
-      pc     : { clsn:'i1', src:require('~/assets/img/roadmap/en-pc.png') },
-      mobile : { clsn:'i2', src:require('~/assets/img/roadmap/en-mb.png') },
+      pc     : { clsn:'i1', src:'http://otydyl8j5.bkt.clouddn.com/valp/roadmap/en-pc.png' },
+      mobile : { clsn:'i2', src:'http://otydyl8j5.bkt.clouddn.com/valp/roadmap/en-mb.png' },
     }
   },
   team: {
@@ -106,43 +106,43 @@ export default {
     items:[
       {
         name  :'Xiang Tao',
-        avatar:require('~/assets/img/team/m1.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m1.png',
         title:'Xiang Tao&nbsp;&nbsp;&nbsp;&nbsp;Data Scientist', 
         desc:'Graduated from Chinese University of Hong Kong as master of Information Engineering in 2011. He has founded two big data companies, HeXun Technology Company (to provide monitoring services of global satellite base on big data) and Weather Pal (to provide fully automated weather contract pricing and distributed services).  He has a wealth of experience in acquisition, management and analysis in massive data, design and implementation of technical architecture and commercializing data. He was interviewed by Focus Interview (the most authoritative program in China) and Forbes orderly because of his contributions in breaking the Western strategic data monopoly and creating new momentum for economic growth.'
       },
       {
         name:'Zhen Jiao',
-        avatar:require('~/assets/img/team/m4.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m4.png',
         title:'Zhen Jiao&nbsp;&nbsp;&nbsp;&nbsp;Ph.D. degree in Computer Science', 
         desc:'Obtained his Ph.D. degree in Computer Science from Chinese Academy of Sciences. His current research interests include IoT based blockchain architecture design and performance optimization of blockchain such as throughput-optimization. He has rich R&D experience on Internet of Things and Decentralized Networks. He is now a review expert of the National Natural Science Foundation of China. Furthermore, he has presided several research projects including National Natural Science Foundation of China, National key science and technology projects, he also Joint R&D projects with Fortune 500 Companies. He has lead formulation of two national IoT standards and published over 20 academic papers in top international journals and conferences.'
       },
       {
         name:'Ivan Zhang',
-        avatar:require('~/assets/img/team/m3.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m3.png',
         desc:'Obtained his Master degree from Fudan University. He has served sequentially in the largest mobile incentive advertising company in china, the largest network security company of China (Qihu 360) and APUS Group which is the best overseas expansion company. He has rich experience in commercial products, Internet advertisements, mobile tools and cooperation with Key Account. His team created over 100 million incomes annually and gained more than 1.5 billion users over the world. With a lot of experience on mobile Internet, Ivan takes charge of the platform design and implementation of ValPromise.'
       },
       {
         name:'Shao Jun',
-        avatar:require('~/assets/img/team/m2.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m2.png',
         title:'Shao Jun&nbsp;&nbsp;&nbsp;&nbsp;PhD in Probability', 
         desc:'Master of Probability and Finance from Ecole Polytechnique ParisTech, under the direction of Professor Nicole El Karoui, the mother of contemporary financial mathematics. He used to worked for the AXA Paris Hedge Services. He has profound theoretical basis and rich practical experience in Derivatives Pricing and risk management.'
       },
       {
         name:'Eddie',
-        avatar:require('~/assets/img/team/m5.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m5.png',
         title:'Eddie full stack development engineer',
         desc:'Graduated from Dalian University of Technology. He used to work for Alibaba, Taobao, Innovation Factory pea pods. During Alibaba, he was responsible for algorithms and web development. In Taobao, he was in charge of big data, high performance services, data consistency, network QoS and so on. Prior to joining ValPromise, Eddie served as a research and development leader at Innovations Farm Pea Pod, leading the Pea Pod Data and Algorithmic Group for technical research and development. In 2015, he started research the blockchain and accumulated the experience of mainstream digital currencies such as Bitcoin and Ethereum, as well as related blockchain technology.'
       },
       {
         name:'Wang Hui',
-        avatar:require('~/assets/img/team/m6.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m6.png',
         title:'Wang Hui full-stack development engineer',
         desc:'Graduated from Beijing University of Posts and Telecommunications. He used to work for Microsoft in China, MooterMedia and other well-known technology companies successively. In Microsoft, he was responsible for the development of search engine technology and advertising algorithms. In MooterMedia, he specialized in the real-time bidding on advertising and data systems were in charge of her. Prior to joining the ValPromise team, as CTO and architect at a leading digital marketing company in China, Wang Hui was responsible for the design and implementation of 10 million daily live commercial products, accumulating richness in algorithms, big data and AI. He has rich experience in the development of blockchain technology and deep understanding of it since 2015.'
       },
     ],
     background: {
       title:'Team Background',
-      institutions:require('~/assets/img/team/background.png')
+      institutions:'http://otydyl8j5.bkt.clouddn.com/valp/team/background.png'
     }
   },
   advisor: {
@@ -150,49 +150,49 @@ export default {
     items:[
       {
         name:'Wang Gang',
-        avatar:require('~/assets/img/advisor/a1.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a1.png',
         desc:'Investor, Didi Chuxing'
       },
       {
         name:'Wu Xiaoguang',
-        avatar:require('~/assets/img/advisor/a2.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a2.png',
         desc:'Co-founder, Tencent'
       },
       {
         name:'Wang Lijie',
-        avatar:require('~/assets/img/advisor/a3.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a3.png',
         desc:'Famous investor on blockchain'
       },
       {
         name:'Raymond Yang',
-        avatar:require('~/assets/img/advisor/a4.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a4.png',
         desc:'Advisor / CEO of PruSmartHR consulting services company'
       },
       {
         name:'Lao WeiXin',
-        avatar:require('~/assets/img/advisor/a5.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a5.png',
         desc:'Advisor / Chairman of Qianhai Blockchain Ecological Alliance'
       },
       {
         name:'Melody He',
-        avatar:require('~/assets/img/advisor/a6.png'),
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a6.png',
         desc:'Advisor / International BD'
       },
     ],
   },
   investors: {
     title :'Investment Agencies',
-    institutions:require('~/assets/img/investors/institutions.png')
+    institutions:'http://otydyl8j5.bkt.clouddn.com/valp/investors/institutions.png'
   },
   partners: {
     title:'Strategic Partners',
     institutions: {
       title :'Blockchain Partners',
-      trademark:require('~/assets/img/partners/institutions.png')
+      trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/institutions.png'
     },
     enterprise: {
       title :'Partners',
-      trademark:require('~/assets/img/partners/enterprise.png')
+      trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/enterprise.png'
     }
   },
   contact: {
@@ -265,11 +265,11 @@ export default {
       paras:[
         {type:'p', content:'ValPromise was honored to be invited for the blockchain application summit held in Shenzhen on February 5. "Looking to the future of blockchain applications" was the theme of the event. Entrepreneurship teams from top domestic and overseas blockchain sectors have shared at the conference. ValPromise, as an invited guest, brought the latest progress of the project to Shenzhen audience and involved in a part of the lovers to participate in the further development of the project.'},
         { type:'p', renderAsHTML:true, content:'For more information，please visit on <a href="https://www.facebook.com/hiValPromise/" target="_blank">https://www.facebook.com/hiValPromise/</a> and our telegram group is <a href="https://t.me/ValPromise" target="_blank">https://t.me/ValPromise</a>' },
-        { type:'img', src:require('~/assets/img/news/01.jpeg') },
-        { type:'img', src:require('~/assets/img/news/02.jpeg') },
-        { type:'img', src:require('~/assets/img/news/03.jpeg') },
-        { type:'img', src:require('~/assets/img/news/04.jpeg') },
-        { type:'img', src:require('~/assets/img/news/05.jpeg') },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/01.jpeg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/02.jpeg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/03.jpeg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/04.jpeg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/05.jpeg' },
       ]
     },
     a2:{
@@ -279,15 +279,15 @@ export default {
         {type:'p', content:'Xiang Tao presented his project for the first time in the oversea market. At the sharing meeting, Xiang Tao introduced the huge market in the field of risk management and the current pain points in the industry. Meanwhile, he showed the superiority of using blockchain technology to solve the existing problems. All in all, ValPromise - a trading contract is a blockchain-based, distributed promissory contract publishing-trading system that addresses cross-regional and cross-region risk management worldwide (insurance, futures, options contracts issues and trades, prediction service) problem.'},
         {type:'p', content:'The sharing session successfully attracted a group of professional investors, blockchain peers, and blockchain technical experts to discuss investment and cooperation issues. <br>Happy ending for the first show for foreign investors.', renderAsHTML:true},
         {type:'p', content:'For more information，please visit on <a href="https://www.facebook.com/hiValPromise/" target="_blank">https://www.facebook.com/hiValPromise/</a><br>Our telegram group is <a href="https://t.me/ValPromise" target="_blank">https://t.me/ValPromise</a>', renderAsHTML:true},
-        { type:'img', src:require('~/assets/img/news/2/08.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/01.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/02.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/03.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/04.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/05.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/06.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/07.jpg') },
-        { type:'img', src:require('~/assets/img/news/2/09.jpg') },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/08.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/01.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/02.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/03.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/04.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/05.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/06.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/07.jpg' },
+        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/09.jpg' },
       ]
     }
   }
