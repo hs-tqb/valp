@@ -40,7 +40,7 @@ module.exports = {
   // },
   router: {
     // 在每页渲染前运行 middleware/user-agent.js 中间件的逻辑
-    middleware: ['parseLang', 'parsePlatf']
+    middleware: ['parseLang', 'parsePlatf', 'redirectionForOldRouter']
   },
   build: {
     /*
