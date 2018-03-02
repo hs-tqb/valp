@@ -163,11 +163,11 @@
         <img src="~/assets/img/logo/logo-v-w.png" />
         <h1>{{slogan}}</h1>
         <div class="btn-group">
-          <a id="white-paper-download" href="/whitepaper/ValPromise_WhitePaper_en_v1.3.7.pdf" target="_blank">{{whitePaper}}</a>
+          <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.btn}}</a>
           <a :class="navs[0].clsn" :href="navs[0].link" target="_blank">{{navs[0].name}}</a>
         </div>
         <p>
-          <a id="join-btn" href="https://t.me/ValPromise" target="_blank">{{joinGroup}}</a>
+          <a id="join-btn" href="https://t.me/ValPromise" target="_blank">{{community.btn}}</a>
         </p>
       </div>
     </div>
@@ -477,11 +477,11 @@ export default {
       navs      :state=>state.lang.navs,
       slogan    :state=>state.lang.slogan,
       whitePaper:state=>state.lang.whitePaper,
-      joinGroup :state=>{
+      community :state=>{
         if (typeof window === 'object') {
-          window._joinGroupBtn = state.lang.joinGroup;
+          window._community = state.lang.community;
         }
-        return state.lang.joinGroup;
+        return state.lang.community;
       },
       news      :state=>state.lang.news,
       about     :state=>state.lang.about,

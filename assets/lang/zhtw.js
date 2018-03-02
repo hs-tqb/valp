@@ -12,8 +12,13 @@ export default {
     {anchor:'contact', name:'聯繫我們', inFooter:true}, 
   ],
   slogan:'分布式價值承諾協議',
-  joinGroup:'加入电报群',
-  whitePaper:'白皮書',
+  whitePaper:{
+    link:'/whitepaper/ValPromise_WhitePaper_cn_v1.3.7.pdf',
+    btn:'白皮書'
+  },
+  community: {
+    btn:'加入电报群'
+  },
   news: [
     { link:'/news/n2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-cn.png' },
     { link:'/news/n1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-cn.png' },

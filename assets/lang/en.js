@@ -14,8 +14,13 @@ export default {
     {anchor:'contact', name:'Contact',inFooter:true }, 
   ],
   slogan:'Distributed Value Promise Protocol',
-  joinGroup:'Join our community',
-  whitePaper:'White Paper',
+  whitePaper:{
+    link:'/whitepaper/ValPromise_WhitePaper_en_v1.3.7.pdf',
+    btn:'White Paper'
+  },
+  community: {
+    btn:'Join our community'
+  },
   news: [
     { link:'/news/n2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-en.png' },
     { link:'/news/n1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-en.png' },

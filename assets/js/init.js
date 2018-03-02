@@ -406,7 +406,7 @@ export default function($) {
         alertify.message(
           '<p id="alertify-fixed-para" >Make new friends! </p>'
           +'<a id="alertify-fixed-btn" href="https://t.me/ValPromise" target="_blank">'
-            + window._joinGroupBtn
+            + window._community.btn
           + '</a>'
         , 0)
       }
