@@ -20,7 +20,7 @@
 </style>
 
 <template>
-  <div id="topbar" class="collapsed" style="background:rgba(0,0,0,0)">
+  <div id="topbar" class="collapsed" style="">
     <a class="fl" href="javascript:void(0)" data-anchor="banner" id="logo"></a>
     <ul id="nav" class="fr flex-dir-row">
       <!-- 
@@ -31,7 +31,12 @@
       <li><a id="showRaising" href="javascript:void(0)">KYC</a></li>
        -->
        <li v-for="(n,i) in lang.navs" :key="`nav${i}`">
-          <a :href="n.link||'javascript:void(0)'" :data-anchor="n.anchor" :target="n.external?'_blank':''">{{n.name}}</a>
+          <a 
+            :href="n.link||'javascript:void(0)'" 
+            :target="n.external?'_blank':''"
+            :data-anchor="n.anchor" 
+            @click="jumpToAnchor(n)"
+            >{{n.name}}</a>
        </li>
 
       <!-- <li><a href="/zh">中文</a></li> -->
@@ -45,7 +50,7 @@
 </template>
 
 <script>
-
+import initializer from '~/assets/js/init'
 export default {
   computed: {
     lang() {
@@ -55,8 +60,18 @@ export default {
   methods: {
     setLang(t) {
       this.$store.commit('setLanguage', t);
-      this.$router.push('/?lang='+t);
+      // this.$router.replace(this.$router.path'?lang='+t);
+      this.$router.replace( this.$route.path + '?lang='+t );
+    },
+    jumpToAnchor(n) {
+      if ( this.$route.path==='/' ) return;
+      if ( !n.anchor ) return;
+      // this.$router.push('/?lang='+this.lang.lang+'#'+n.name)
+      location.href = '/?lang='+this.lang.lang+'#'+n.anchor;
     }
+  },
+  mounted() {
+    initializer($);
   }
 }
 </script>

@@ -455,7 +455,7 @@
 </template>
 
 <script>
-import initializer from '~/assets/js/init'
+// import initializer from '~/assets/js/init'
 import { mapState } from 'vuex'
 import contact from '~/components/layout/contact'
 import footer1 from '~/components/layout/footer'
@@ -548,7 +548,7 @@ export default {
     }
   },
   mounted() {
-    initializer($);
+    // initializer($);
     this.docMounted = true;
     // if ( typeof window ==='object' ) {
     //   alertify.dismissAll();
@@ -557,6 +557,20 @@ export default {
     //     <a id="alertify-fixed-btn" href="https://t.me/ValPromise" target="_blank">${this.joinGroup}</a>`
     //   , 0)
     // }
+
+    if ( location.hash ) {
+      let hash   = location.hash.replace('#','').trim();
+      let anchor = null;
+      $(`#nav a`).each((i,a)=>{
+        anchor = $(a);
+        // if ( anchor.text() === hash ) {
+        if ( anchor.data('anchor') === hash ) {
+          $('html, body').animate({scrollTop:$( '#'+anchor.data('anchor') ).position().top-80}, 500);
+          location.hash = ''
+        }
+      });
+    }
+
   },
   components: {
     contact, footer1

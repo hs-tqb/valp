@@ -1,5 +1,6 @@
 <style>
-  #page-news #topbar .panel { padding:0; height:100%; }
+  [data-page|=news] #topbar { background:#0f1421; }
+  #page-news #topbar .panel { padding:0; height:100%; background-color:; }
   #page-news #footer { background-color:#0f1421; }
   .mobile #footer { display:none; }
   .mobile #page-news { padding:0 24px; }
@@ -7,12 +8,6 @@
 
 <template>
   <div id="page-news">
-    <div id="topbar" class="collapsed">
-      <div class="panel">
-        <!-- <a class="fl" href="javascript:history.back();" data-anchor="banner" id="logo"></a> -->
-        <nuxt-link class="fl" id="logo" :to="`/?lang=${lang}`"/>
-      </div>
-    </div>
     <div id="article">
       <h1>{{title}}</h1>
       <template v-for="(e,i) in paras">
@@ -32,7 +27,6 @@
 import {mapState} from 'vuex'
 import footer1 from '~/components/layout/footer'
 export default {
-  layout:'empty',
   computed:mapState({
     title:(state)=>state.lang.article.a2.title,
     paras:(state)=>state.lang.article.a2.paras,

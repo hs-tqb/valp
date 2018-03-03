@@ -1,5 +1,4 @@
-export default function($) {
-  var isHomepage = location.pathname==='/';
+  var ___isHomepage = location.pathname==='/';
 
   $(function() {
 
@@ -40,7 +39,7 @@ export default function($) {
     var stopFocusNav = false;
     var isCollapsed = true;
     topbar.on('click', 'a', function(e) {
-      if ( !isHomepage ) return;
+      if ( !___isHomepage ) return;
       var a = $(this);
       if ( a.hasClass('menuSwitch') ) {
         if ( topbar.hasClass('collapsed') ) {
@@ -76,7 +75,7 @@ export default function($) {
       topbar.addClass('collapsed');
     });
     $('#footer').on('click', 'a', function(e) {
-      if ( !isHomepage ) return;
+      if ( !___isHomepage ) return;
       var a = $(this);
       if ( a.data('anchor') ) {
         var t = $('#'+a.data('anchor')).position().top - topbarHeight;
@@ -123,7 +122,7 @@ export default function($) {
       return a.elem;
     }
   
-    if ( isHomepage ) {
+    if ( ___isHomepage ) {
       // 事件绑定
       $(window)
         .on('scroll', dynamicAnchorMap)
@@ -195,7 +194,7 @@ export default function($) {
       members.addClass('focus');
     }
   
-    if ( isHomepage ) {
+    if ( ___isHomepage ) {
       console.log('初始化')
       toggleTopbarMask();
       dynamicAnchorMap();
@@ -415,7 +414,7 @@ export default function($) {
 
   // 动效
   $(function() {
-    if ( !isHomepage ) return;
+    if ( !___isHomepage ) return;
     getPanelPoses();
     $(window)
     .on('scroll', function(e) {
@@ -428,5 +427,3 @@ export default function($) {
       highlightPanels();
     })
   })
-
-}

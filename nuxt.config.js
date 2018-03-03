@@ -18,7 +18,7 @@ module.exports = {
       { src: '/js/googletagmanager.js' },
       { src: 'http://code.jquery.com/jquery-1.7.2.min.js' },
       { src: '/alertifyjs/alertify.min.js' },
-      // { src: '/alertifyjs/test.js' },
+      // { src: '/js/init.js' },
     ],
   },
   css: [

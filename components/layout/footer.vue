@@ -21,12 +21,12 @@
       <div class="flex-dir-row justify-space-between">
         <ul class="flex-dir-row">
           <li v-for="(n,i) in leftNavs" :key="`ln${i}`">
-            <a href="javascript:void(0);" :data-anchor="n.anchor" @click="backToHome">{{n.name}}</a>
+            <a href="javascript:void(0);" :data-anchor="n.anchor" @click="jumpToAnchor(n)">{{n.name}}</a>
           </li>
         </ul>
         <ul class="flex-dir-row">
           <li v-for="(n,i) in rightNavs" :key="`rn${i}`">
-            <a href="javascript:void(0);" :data-anchor="n.anchor" @click="backToHome">{{n.name}}</a>
+            <a href="javascript:void(0);" :data-anchor="n.anchor" @click="jumpToAnchor(n)">{{n.name}}</a>
           </li>
         </ul>
       </div>
@@ -46,11 +46,20 @@ export default {
     },
     rightNavs() {
       return this.navs.slice(Math.floor(this.navs.length/2),Math.floor(this.navs.length));
+    },
+    lang() {
+      return this.$store.state.lang;
     }
   },
   methods: {
     backToHome() {
       this.$router.push('/?lang='+this.$store.state.lang.lang);
+    },
+    jumpToAnchor(n) {
+      if ( this.$route.path==='/' ) return;
+      if ( !n.anchor ) return;
+      // this.$router.push('/?lang='+this.lang.lang+'#'+n.name);
+      location.href = '/?lang='+this.lang.lang+'#'+n.anchor;
     }
   }
 }
