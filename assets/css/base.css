@@ -249,10 +249,14 @@ input:not([type="checkbox"]), textarea{-webkit-appearance: none;}
 
 
 /* 新闻 */
-#page-news { padding-top:80px; }
+/* #page-news { padding-top:80px; } */
 #page-news #topbar { background:#0f1421; }
 #page-news #crumbs { padding:15px 10px 10px 10px; line-height:40px; border-bottom:1px solid #ddd; }  
-#page-news #article { margin:0 auto; width:800px; padding-bottom:60px; min-height:calc(100vh - 414px - 80px); }
+#page-news #article { margin:0 auto; max-width:800px; padding-bottom:60px; 
+  /* min-height:calc(100vh - 414px - 80px);  */
+  padding-top:80px;
+  min-height:100vh;
+}
 #page-news #article h1 { padding:28px 0; font-weight:bold; font-size:32px; line-height:40px; text-align:center; color:#333; }
 #page-news #article p { font-size:16px; line-height:40px; text-indent:2em; text-align:left; }
 #page-news #article a { text-decoration:underline; color:#00a0e9; }
