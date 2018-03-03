@@ -205,7 +205,9 @@ export default function($) {
   });
   
   
+  // 消息提醒
   $(function() {
+    return;
     var dialog = $('#dialog-msg'),
         inner  = dialog.find('.inner-wrapper'),
         timer  = -1,
@@ -228,9 +230,9 @@ export default function($) {
       show();
     }
   });
-  
   // 表单提交
   $(function() {
+    return;
     var dialog         = $('#dialog-raising');
     var form           = dialog.find('form');
     var items          = form.find('input, textarea');
@@ -364,7 +366,6 @@ export default function($) {
 
 
 
-
   var getScrollTop = window.scrollTop = function() {
     if ( document.documentElement.scrollTop || document.body.scrollTop ) {
       getScrollTop = (function() {
@@ -412,6 +413,7 @@ export default function($) {
       }
     });
   }
+
   // 动效
   $(function() {
     getPanelPoses();
@@ -426,8 +428,6 @@ export default function($) {
       getPanelPoses();
       highlightPanels();
     })
-
   })
 
-  
 }

@@ -242,80 +242,6 @@ input:not([type="checkbox"]), textarea{-webkit-appearance: none;}
 
 
 
-/* 表格 start */
-#dialog-raising { position:fixed; top:0; left:0; z-index:1000; width:100%; height:100%; background:rgba(0,0,0,0.7); pointer-events:none; transition-duration:300ms; opacity:0; }
-#dialog-raising.show { pointer-events:all; opacity:1; }
-#dialog-raising .outer-wrapper { position:relative; margin:50px auto; padding:25px; width:800px; max-height:calc(100vh - 100px); background:#eaeaea; border-radius:10px; overflow:auto; -webkit-overflow-scrolling:touch; }
-#dialog-raising .outer-wrapper i.btn-close { position:absolute; right:0; top:0; width:40px; height:40px; background:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/close.png?imageslim) no-repeat center/20px 20px; cursor: pointer; }
-#dialog-raising .item-wrapper { position:relative; margin-bottom:35px; }
-#dialog-raising h2::after { display:none; }
-#dialog-raising h4 { margin-bottom:15px; font-size:16px; }
-#dialog-raising h4 + p { margin-bottom:15px; font-size:12px; line-height:16px; }
-#dialog-raising b { color:red; }
-#dialog-raising .warning { display:none; position:absolute; bottom:-16px; left:0px; font-size:12px; opacity:0.8; }
-#dialog-raising .invalid .warning { display:block; }
-#dialog-raising input:not([type="checkbox"]),
-#dialog-raising input[type="number"] { border:1px solid #ddd; padding:0 10px; height:30px; }
-#dialog-raising .input-text-wrapper,
-#dialog-raising .input-number-wrapper { width:320px; }
-/* text&number */
-#dialog-raising .row { display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between; }
-#dialog-raising .row .input-text-wrapper { position:relative; margin-bottom:25px; }
-#dialog-raising .input-text-wrapper input + b:not(.warning) { position:absolute; right:-10px; top:10px; }
-#dialog-raising .input-text-wrapper input:not([type="checkbox"]),
-#dialog-raising .input-text-wrapper input[type="number"] { display:block; width:100%; }
-/* textarea */
-#dialog-raising .textarea-wrapper .warning { top:auto; bottom:-20px; }
-#dialog-raising .textarea-wrapper textarea { display:block; padding:10px; width:100%; border:0 none; resize:none; }
-/* file upload */
-#dialog-raising .file-outer-wrapper { display:flex; flex-direction:row; justify-content:space-between; margin-top:40px; }
-#dialog-raising .file-outer-wrapper .file-inner-wrapper { width:45%; }
-#dialog-raising .file-outer-wrapper .file-inner-wrapper div { position:relative; width:120px; height:120px; background:url(http://otydyl8j5.bkt.clouddn.com/valp/form/diagram.png?imageslim) no-repeat; }
-#dialog-raising .file-outer-wrapper input { position:absolute; top:0; left:0; width:120px; height:120px; opacity:0; cursor:pointer; }
-#dialog-raising .file-outer-wrapper .warning { top:125px; }
-/* amount */
-#dialog-raising .amount { width:100%; }
-#dialog-raising .amount input { width:320px!important; }
-#dialog-raising .amount .unit { position:absolute; top:40px; left:260px; right:auto; }
-#dialog-raising .amount .explain { position:absolute; bottom:0px; left:340px; font-size:12px; line-height:15px; }
-#dialog-raising .input-checkbox-wrapper { position:relative; margin-top:30px; }
-/* checkbox */
-#dialog-raising .input-checkbox-wrapper input { vertical-align:-2px; }
-#dialog-raising .input-checkbox-wrapper label { cursor:pointer; }
-/* submit */
-#dialog-raising #raising-submit { display:block; margin:50px auto 30px auto; width:200px; text-align:center; height:35px; background:#00a0e9; border:1px solid #00a0e9; color:#fff; cursor:pointer; }
-#dialog-raising #raising-submit.disabled { background:#ddd; border-color:#ddd; color:inherit; }
-
-/* #raising-fill-wrapper { display:none; } */
-#dialog-raising #raising-result-wrapper { display:none; }
-#dialog-raising #raising-result-wrapper { margin-top:100px; height:auto; text-align:center; }
-#dialog-raising #raising-result-wrapper .inner-wrapper > div { display:none; }
-#dialog-raising #raising-result-wrapper.success .success,
-#dialog-raising #raising-result-wrapper.failure .failure { display:block; }
-#dialog-raising #raising-result-wrapper img { width:120px; }
-#dialog-raising #raising-result-wrapper h3 { margin:20px 0; font-size:26px; }
-#dialog-raising #raising-result-wrapper p  { font-size:18px; text-align:center; }
-#dialog-raising #raising-result-wrapper input { margin:40px 0 0 0; width:200px; height:35px;  border-radius:4px; cursor:pointer; }
-#dialog-raising #raising-result-wrapper .success input { background-color:#67c23a; color:#fff; }
-#dialog-raising #raising-result-wrapper .failure input { background-color:#f35610; color:#fff; }
-
-.mobile #dialog-raising .outer-wrapper { width:calc(100vw - 50px); }
-.mobile #dialog-raising .input-text-wrapper { width:100%; }
-.mobile #dialog-raising .amount input { width:100%!important; }
-.mobile #dialog-raising .amount .unit { left:auto; right:10px; }
-.mobile #dialog-raising .amount .explain { display:block; position:relative; left:0; top:10px; }
-.mobile #dialog-raising .amount .warning { bottom:-24px; }
-.mobile #dialog-raising .input-checkbox-wrapper .warning { bottom:-27px; }
-
-
-/* #dialog-msg { position:fixed; top:0; left:0; z-index:10000; width:100%; height:100%; pointer-events:none;  opacity:1; transition-duration:300ms; }
-#dialog-msg.fadeOut { opacity:0; }
-#dialog-msg.fadeIn { opacity:1; }
-#dialog-msg .outer-wrapper { position:absolute; top:30%; left:0;  width:100%; pointer-events:none; text-align:center; }
-#dialog-msg .inner-wrapper { display:inline-block; padding:15px 25px; font-size:16px; background:rgba(0,0,0,.7); border-radius:7px; color:#fff; } */
-
-/* 表格 end */
-
 
 .mobile.en h2 { font-size:24px; }
 .mobile.en #white-paper #white-paper-download { font-size:28px; }
@@ -326,9 +252,9 @@ input:not([type="checkbox"]), textarea{-webkit-appearance: none;}
 #page-news { padding-top:80px; }
 #page-news #topbar { background:#0f1421; }
 #page-news #crumbs { padding:15px 10px 10px 10px; line-height:40px; border-bottom:1px solid #ddd; }  
-#page-news #article { padding-bottom:60px; min-height:calc(100vh - 414px - 80px); }
+#page-news #article { margin:0 auto; width:800px; padding-bottom:60px; min-height:calc(100vh - 414px - 80px); }
 #page-news #article h1 { padding:28px 0; font-weight:bold; font-size:32px; line-height:40px; text-align:center; color:#333; }
-#page-news #article p { font-size:16px; line-height:40px; text-indent:2em; text-align:justify; }
+#page-news #article p { font-size:16px; line-height:40px; text-indent:2em; text-align:left; }
 #page-news #article a { text-decoration:underline; color:#00a0e9; }
 #page-news #article img { display:block; margin:35px auto; max-width:100%; }
 #page-news #backToTop { 
