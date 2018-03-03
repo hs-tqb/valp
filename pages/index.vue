@@ -70,12 +70,18 @@
         a.qq:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/qq.png?imageslim); }
         a.em:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/em.png?imageslim); }
         a.sn:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/sn.png?imageslim); }
+        a.tg:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/tg.png?imageslim); }
         a.fb:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/fb.png?imageslim); }
+        a.tt:before { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/tt.png?imageslim); }
+
         a.wc:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-focus.png?imageslim); }
         a.qq:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/qq-focus.png?imageslim); }
         a.em:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/em-focus.png?imageslim); }
         a.sn:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/sn-focus.png?imageslim); }
+        a.tg:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/tg-focus.png?imageslim); }
         a.fb:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/fb-focus.png?imageslim); }
+        a.tt:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/tt-focus.png?imageslim); }
+
         a.wc i { 
           position:absolute; left:-80px; bottom:90px; padding:25px; width:250px; height:250px; 
           background:#eaeaea;
@@ -325,7 +331,9 @@
           <div class="social">
             <h3>{{contact.social.title}}</h3>
             <div>
-              <a href="https://t.me/ValPromise" target="_blank" class="icon fb"></a>
+              <a href="https://www.facebook.com/hiValPromise/" target="_blank" class="icon fb"></a>
+              <a href="https://twitter.com/ValPromise" target="_blank" class="icon tt"></a>
+              <a href="https://t.me/ValPromise" target="_blank" class="icon tg"></a>
               <a href="javascript:void(0)" class="icon wc"><i><img src="http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim?imageslim" alt=""></i></a>
               <a href="mailto:hi@valp.io" class="icon em"></a>
             </div>

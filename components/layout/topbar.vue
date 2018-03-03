@@ -9,7 +9,7 @@
     &.dark { background:rgba(0,0,0,0.7) }
 
     .menuSwitch { display:none;  }
-    #logo { width:215px; height:100%; background:url(~assets/img/logo/logo-h-b.png) no-repeat 20px center/152.6px auto; }
+    #logo { width:215px; height:100%; background:url(http://otydyl8j5.bkt.clouddn.com/valp/logo/logo-h-b.png?imageslim) no-repeat 20px center/152.6px auto; }
     #nav { height:100%; font-size:15px; }
     #nav li a { display:block; padding:0 24px; transition:300ms; }
     #nav li a:hover,
