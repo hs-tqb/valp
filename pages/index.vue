@@ -83,7 +83,7 @@
         a.tt:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/tt-focus.png?imageslim); }
 
         a.wc i { 
-          position:absolute; left:-80px; bottom:90px; padding:25px; width:250px; height:250px; 
+          position:absolute; left:-130px; bottom:90px; padding:25px; width:250px; height:250px; 
           background:#eaeaea;
           /* background:#eaeaea url(http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim) no-repeat center /200px auto;  */
           border:1px solid #ccc; border-radius:10px;
