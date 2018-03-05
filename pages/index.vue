@@ -238,7 +238,7 @@
       </div>
     </div>
     <!-- 天气产品 -->
-    <div id="production" class="anchor">
+    <div id="production">
       <div class="panel">
         <h2>{{production.title}}</h2>
         <p style="margin:-20px 0 40px 0; font-size:20px;">
@@ -300,14 +300,14 @@
       </div>
     </div>
     <!-- 投资机构 -->
-    <div id="investor-agency" class="anchor addition">
+    <div id="investor-agency" class="addition">
       <div class="panel">
         <h2>{{investors.agency.title}}</h2>
         <img :src="investors.agency.institutions" alt="">
       </div>
     </div>
     <!-- 合作伙伴 -->
-    <div id="partners" class="anchor">
+    <div id="partners">
       <div class="panel">
         <h2>{{partners.title}}</h2>
         <h3>{{partners.institutions.title}}</h3>
@@ -317,14 +317,14 @@
       </div>
     </div>
     <!-- 路线图 -->
-    <div id="roadmap" class="anchor">
+    <div id="roadmap">
       <div class="panel">
         <h2>{{roadmap.title}}</h2>
         <img :class="roadmap.img[platform].clsn" :src="roadmap.img[platform].src" alt="">
       </div>
     </div>
     <!-- 联系我们/注册 -->
-    <div id="contact">
+    <div id="contact" class="anchor">
       <div class="panel flex-dir-row">
         <div class="left flex-3">
           <div class="join">
@@ -361,104 +361,6 @@
     </div>
     <!-- 页脚 -->
     <footer1 />
-    <!-- 弹窗 -->
-    <!-- <div id="dialog-raising">
-      <div id="raising-fill-wrapper" class="outer-wrapper">
-        <i class="btn-close"></i>
-        <div class="inner-wrapper">
-          <h2>{{presale.title}}</h2>
-          <h4>{{presale.desc}}</h4>
-          <form class="form">
-            <div class="item-wrapper row">
-              <div class="input-text-wrapper">
-                <input type="text" name="userName" :placeholder="presale.name.placeholder" required/>
-                <b>*</b>
-                <b class="warning">{{presale.name.warning}}</b>
-              </div>
-              <div class="input-text-wrapper">
-                <input type="text" name="nation" :placeholder="presale.nation.placeholder" required/>
-                <b>*</b>
-                <b class="warning">{{presale.nation.warning}}</b>
-              </div>
-              <div class="input-text-wrapper">
-                <input type="text" name="email"  :placeholder="presale.email.placeholder" required/>
-                <b>*</b>
-                <b class="warning">{{presale.email.warning}}</b>
-              </div>
-              <div class="input-text-wrapper">
-                <input type="tel" name="mobile" :placeholder="presale.phone.placeholder" required autocomplete="off"/>
-                <b>*</b>
-                <b class="warning">{{presale.phone.warning}}</b>
-              </div>
-              <div class="input-text-wrapper">
-                <input type="text" name="telegramId" :placeholder="presale.telegram.placeholder" />
-              </div>
-              <div class="input-text-wrapper">
-                <input type="text" name="wechat" :placeholder="presale.wechat.placeholder" />
-              </div>
-            </div>
-            <div class="item-wrapper textarea-wrapper">
-              <h4>{{presale.projects.title}} <b>*</b></h4>
-              <textarea cols="30" rows="10" name="investProjects" required></textarea>
-              <b class="warning">{{presale.projects.warning}}</b>
-            </div>
-            <div class="item-wrapper textarea-wrapper">
-              <h4>{{presale.institution.title}} </h4>
-              <textarea cols="30" rows="10" name="institutionName"></textarea>
-            </div>
-            <div class="item-wrapper file-outer-wrapper" style="display:none;">
-              <div class="file-inner-wrapper" id="file-wrappr-1">
-                <h4>{{presale.file.passport.title}} <b>*</b></h4>
-                <p>{{presale.file.passport.desc}}</p>
-                <div id="pickfiles1"></div>
-                <input type="text" name="passportImgUrl" value="null" />
-              </div>
-              <div class="file-inner-wrapper" id="file-wrappr-2">
-                <h4>{{presale.file.institution.title}} <b>*</b></h4>
-                <p>{{presale.file.institution.desc}}</p>
-                <div id="pickfiles2"></div>
-                <input type="text" name="institutionImgUrl" value="null" />
-              </div>
-            </div>
-            <div class="item-wrapper input-text-wrapper">
-              <h4>{{presale.wallet.title}} <b>*</b></h4>
-              <input type="text" name="walletAccount" :placeholder="presale.wallet.placeholder" required />
-              <b class="warning">{{presale.wallet.warning}}</b>
-            </div>
-            <div class="item-wrapper input-text-wrapper amount">
-              <h4>{{presale.amount.title}} <b>*</b></h4>
-              <input type="number" name="investmentAmounts" min="1" max="5000" placeholder="1~5000" required />
-              <span class="unit">{{presale.amount.unit}}</span>
-              <p class="explain">{{presale.amount.desc}}</p>
-              <b class="warning">{{presale.amount.warning}}</b>
-            </div>
-            <div class="item-wrapper input-checkbox-wrapper">
-              <input type="checkbox" id="raising-promise" required />
-              <label for="raising-promise">{{presale.promise.title}} <b>*</b></label>
-              <b class="warning">{{presale.promise.warning}}</b>
-            </div>
-          </form>
-          <input type="button" id="raising-submit" class="disabled" value="Submit" />
-        </div>
-      </div>
-      <div id="raising-result-wrapper" class="outer-wrapper failure">
-        <i class="btn-close"></i>
-        <div class="inner-wrapper success">
-          <div class="success">
-            <img src="http://otydyl8j5.bkt.clouddn.com/valp/icons/success.png?imageslim" >
-            <h3>{{presale.result.success.title}}</h3>
-            <p>{{presale.result.success.desc}}</p>
-            <input class="raising-done btn-close" type="button" value="OK" />
-          </div>
-          <div class="failure">
-            <img src="http://otydyl8j5.bkt.clouddn.com/valp/icons/failure.png?imageslim" >
-            <h3>{{presale.result.failure.title}}</h3>
-            <p>{{presale.result.failure.desc}}</p>
-            <input class="raising-done btn-close" type="button" value="Close" />
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 
