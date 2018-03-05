@@ -40,7 +40,6 @@ export default function($) {
     var stopFocusNav = false;
     var isCollapsed = true;
     topbar.on('click', 'a', function(e) {
-      if ( !isHomepage ) return;
       var a = $(this);
       if ( a.hasClass('menuSwitch') ) {
         if ( topbar.hasClass('collapsed') ) {
@@ -53,6 +52,7 @@ export default function($) {
         topbar.toggleClass('collapsed');
         return;
       }
+      if ( !isHomepage ) return;
       
       if ( a.data('anchor') ) {
         var t = $('#'+a.data('anchor')).position().top - topbarHeight;
