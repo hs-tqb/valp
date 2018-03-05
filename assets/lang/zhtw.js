@@ -8,7 +8,7 @@ export default {
     {name:'預售登記', external:true, link:"http://valpromise.mikecrm.com/MeBeFVu"},
     {anchor:'highlights', name:'產品', inFooter:true}, 
     {anchor:'team', name:'團隊', inFooter:true}, 
-    {anchor:'advisor', name:'顧問', inFooter:true}, 
+    {anchor:'investor', name:'顧問', inFooter:true}, 
     {anchor:'contact', name:'聯繫我們', inFooter:true}, 
   ],
   slogan:'分布式價值承諾協議',

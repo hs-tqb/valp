@@ -10,7 +10,7 @@ export default {
     // {anchor:'production', name:'Weather Insurance', inFooter:true }, 
     {anchor:'highlights', name:'Production', inFooter:true }, 
     {anchor:'team', name:'Team', inFooter:true }, 
-    {anchor:'advisor', name:'Investors',inFooter:true }, 
+    {anchor:'investor', name:'Investors',inFooter:true }, 
     {anchor:'contact', name:'Contact',inFooter:true }, 
   ],
   slogan:'Distributed Value Promise Protocol',
