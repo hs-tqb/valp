@@ -20,9 +20,66 @@ export default {
     btn:'加入电报群'
   },
   news: [
-    { link:'/news/n2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-cn.png?imageslim' },
-    { link:'/news/n1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-cn.png?imageslim' },
-    { link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/3/0-cn.png?imageslim', external:true }
+    {
+      link:'/news/3', 
+      img:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/0-cn.png?imageslim',
+      article: {
+        title:'ValPromise 受邀参加深圳区块链沙龙路演',
+        paras:[
+          { type:'p', content:'3月1日，在深圳举办的“区块链行业沙龙”吸引了百余位区块链的从业者和爱好者前来分享，交流最新的区块链行业信息。' },
+          { type:'p', content:'各方参与人员思维的碰撞使得活动现场气氛十分活跃，从区块链入门到掌握技巧，从区块链应用到投资，从行业趋势到项目分析，从技术解读到风险规避，到场的听众都收获颇丰。ValPromise作为行业特邀项目方，在沙龙上为来自各行业的区块链爱好者进行了项目的路演，引发了现场听众极大的热情和强烈的关注，ValPromise狗年首次路演，可谓火爆上线~' },
+          { type:'p', content:'作为主要嘉宾的ValPromise也在1个小时的分享中， 为在场的听众普及了ValPromise-价值承诺协议的工作机制、技术路线、经济模型、明星产品——天气宝等。获得了在场投资者极大的兴趣，与一众区块链爱好者及对ValPromise感兴趣的听众进行了深入的交流。' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/1.png?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/2.png?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/3.png?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/4.png?imageslim' },
+          { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
+        ]
+      }
+    },
+    { 
+      link:'/news/2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-cn.png?imageslim',
+      article:{
+        title:'向涛在香港区块链峰会上发表演讲',
+        paras:[
+          { type:'p', content:'2月8日，ValPromise的创始人向涛在“数字货币世界-香港站”峰会上发表了他对于区块链和数字货币看法的公开演讲。'},
+          { type:'p', content:'因他独到而深刻的观点，被与会者称为“Smart Boy”。向涛介绍了风险管理领域的巨大市场和此行业所面临的困难。同时，他阐述了利用区块链技术解决存在问题的优越性和前瞻性。简言之，ValPromise，作为分布式交易合约发布和交易系统，能解决全世界的跨区域和跨区域风险管理（保险、期货、期权合同问题和交易、预测服务等）问题。' },
+          { type:'p', content:'这是ValPromise面向海外市场的首秀，同时也是ValPromise开启面向海外运营的开始。很多国外投资者对ValPromise产生了浓厚的兴趣。在Q&A环节，他们提出了许多好问题，向涛一一作了解答。' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/08.jpg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/01.jpg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/02.jpg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/03.jpg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/04.jpg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/05.jpg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/06.jpg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/07.jpg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/09.jpg?imageslim' },
+          { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
+        ]
+      }
+    },
+    { 
+      link:'/news/1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-cn.png?imageslim',
+      article: {
+        title:'ValPromise 受邀参加深圳区块链应用峰会',
+        paras:[
+          { type:'p', content:'2月5日在深圳南山区科技寺创业孵化器举办的“看区块链应用的未来”的应用峰会上，ValPromise作为被邀嘉宾为深圳的区块链爱好者和项目粉丝们，介绍了项目和最新进展。' },
+          { type:'p', content:'会上，ValPromise 创始人向涛详细阐述了这一革命性项目的愿景，并通过邀请台下观众游戏的方式生动的展示了ValPromise的业务原理，富有感染力的演讲和扎实的业务进展，收获了台下观众的掌声。' },
+          { type:'p', content:'会后向涛和感兴趣的投资者，进行了更为深入的讨论。其中不乏在实体行业中颇有实力的经济大佬，他们希望ValPromise开足马力，快速上线，一起开创区块链的未来。' },
+          { type:'p', content:'我们一定不辱使命，快马加鞭，让大家更早地享受到区块链的红利。' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/01.jpeg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/02.jpeg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/03.jpeg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/04.jpeg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/05.jpeg?imageslim' },
+          { type:'p', content:'更多项目信息，请大家关注我们的微信公众号：' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
+        ]
+      }
+    },
+    { link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }
   ],
   about: {
     title:'ValPromise',
@@ -149,7 +206,7 @@ export default {
       institutions:'http://otydyl8j5.bkt.clouddn.com/valp/team/background.png?imageslim'
     }
   },
-  advisor: {
+  investors: {
     title:'投資 & 顧問',
     items:[
       {
@@ -183,10 +240,10 @@ export default {
         desc:'顧問 / TenX 早期投資者，曾供職于高盛'
       },
     ],
-  },
-  investors: {
-    title:'投資機構',
-    institutions:'http://otydyl8j5.bkt.clouddn.com/valp/investors/institutions.png?imageslim'
+    agency: {
+      title:'投資機構',
+      institutions:'http://otydyl8j5.bkt.clouddn.com/valp/investors/institutions.png?imageslim'
+    },
   },
   partners: {
     title:'合作夥伴',
@@ -216,89 +273,4 @@ export default {
       title:'聯系我們'
     }
   },
-  presale: {
-    title:'ValPromise Fund-Raising KYC',
-    desc :'Please fill in the form below honestly. if you passed our review, we will contact you by mail telegram.',
-    name    :{ placeholder:'Name', warning:'Please input your name' },
-    nation  :{ placeholder:'Nation', warning:'Please input your nation' },
-    email   :{ placeholder:'Email', warning:'Please input your email' },
-    phone   :{ placeholder:'Phone', warning:'Please input the correct phone number' },
-    telegram:{ placeholder:'Telegram', warning:'' },
-    wechat  :{ placeholder:'Wechat', warning:'' },
-    projects: {
-      title:'State one or two blockchain projects that you have invested: ',
-      warning:'Please state the projects that you have invested'
-    },
-    institution: {
-      title:'Name/Institution Name:',
-    },
-    file: {
-      passport: {
-        title:'Photocopy of passport: ',
-        desc :'Please fill in this question if you are individual investors or the representative of the institution investor （< 100 MB)',
-      },
-      institution: {
-        title:'Photocopy of passport: ',
-        desc:'Please fill in this question if you are individual investors or the representative of the institution investor （< 100 MB)',
-      }
-    },
-    wallet: {
-      title:'Wallet Account: ',
-      placeholder:'For receiving our VPP',
-      warning:'Please input your wallet account',
-    },
-    amount: {
-      title:'Amount that you plan to contribute: ',
-      desc:'For individual investors, you need to contribute over 1ETH. For institution investors, you need to contribute over 500ETH',
-      unit:'ETH',
-      placeholder:'1~5000',
-      warning:'Please input your plan',
-    },
-    promise: {
-      title:'Herein I promise that all above information is true, and I will undertake all results therefrom. ',
-      warning:'Please state the turth of the above infomation you filled.'
-    },
-    result: {
-      success:{ title:'Successful!', desc:'Thank you for thinking of us, and if anything comes up in the future, <br>we will be getting in touch with you.' },
-      failure:{ title:'Failed!', desc:'Sorry. Something went wrong.' }
-    }
-  },
-  // 新闻
-  article: {
-    a1: {
-      title:'ValPromise 受邀参加深圳区块链应用峰会',
-      paras:[
-        { type:'p', content:'2月5日在深圳南山区科技寺创业孵化器举办的“看区块链应用的未来”的应用峰会上，ValPromise作为被邀嘉宾为深圳的区块链爱好者和项目粉丝们，介绍了项目和最新进展。' },
-        { type:'p', content:'会上，ValPromise 创始人向涛详细阐述了这一革命性项目的愿景，并通过邀请台下观众游戏的方式生动的展示了ValPromise的业务原理，富有感染力的演讲和扎实的业务进展，收获了台下观众的掌声。' },
-        { type:'p', content:'会后向涛和感兴趣的投资者，进行了更为深入的讨论。其中不乏在实体行业中颇有实力的经济大佬，他们希望ValPromise开足马力，快速上线，一起开创区块链的未来。' },
-        { type:'p', content:'我们一定不辱使命，快马加鞭，让大家更早地享受到区块链的红利。' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/01.jpeg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/02.jpeg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/03.jpeg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/04.jpeg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/05.jpeg?imageslim' },
-        { type:'p', content:'更多项目信息，请大家关注我们的微信公众号：' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
-      ]
-    },
-    a2: {
-      title:'向涛在香港区块链峰会上发表演讲',
-      paras:[
-        { type:'p', content:'2月8日，ValPromise的创始人向涛在“数字货币世界-香港站”峰会上发表了他对于区块链和数字货币看法的公开演讲。'},
-        { type:'p', content:'因他独到而深刻的观点，被与会者称为“Smart Boy”。向涛介绍了风险管理领域的巨大市场和此行业所面临的困难。同时，他阐述了利用区块链技术解决存在问题的优越性和前瞻性。简言之，ValPromise，作为分布式交易合约发布和交易系统，能解决全世界的跨区域和跨区域风险管理（保险、期货、期权合同问题和交易、预测服务等）问题。' },
-        { type:'p', content:'这是ValPromise面向海外市场的首秀，同时也是ValPromise开启面向海外运营的开始。很多国外投资者对ValPromise产生了浓厚的兴趣。在Q&A环节，他们提出了许多好问题，向涛一一作了解答。' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/08.jpg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/01.jpg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/02.jpg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/03.jpg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/04.jpg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/05.jpg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/06.jpg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/07.jpg?imageslim' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/09.jpg?imageslim' },
-        { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
-        { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
-      ]
-    }
-  }
 }

@@ -4,6 +4,7 @@
   color:#fff;
   h2 { color:@color-primary; }
   .card {  
+    display:block;
     width:320px;
     img.avatar { display:block; margin:0 auto; }
     h3 { margin:21px 0; text-align:center; }
@@ -12,7 +13,8 @@
   .addition img { display:block; margin:0 auto; }
   
   #news  {
-    .card { height:auto; }
+    li { flex:1; }
+    .card { padding:0 15px; width:100%; height:auto; }
   }
   #about {
     p { margin:20px auto; width:900px; text-align:center; }
@@ -26,10 +28,16 @@
       .avatar { margin:0 auto; width:160px; height:160px; border-radius:90px; background:no-repeat center/cover; }
     }
   }
-  #advisor {
+  #investor {
     .card { padding:18px 0; }
   }
   #partners { 
+    position:relative;
+    &:after { 
+      position:absolute; left:0; top:0; z-index:1; width:100%; height:100%; background:rgba(0,0,0,0.3); 
+      content:'\200B';
+    }
+    .panel { z-index:10; }
     height:670px; background:url(http://otydyl8j5.bkt.clouddn.com/valp/partners/bg.jpg?imageslim) no-repeat center/cover;
     h3 { margin:40px 0; }
     img+h3 { margin-top:60px; }
@@ -277,12 +285,12 @@
         <img :src="team.background.institutions" alt="">
       </div>
     </div>
-    <!-- 顾问 -->
-    <div id="advisor" class="anchor">
+    <!-- 投资者 & 顾问 -->
+    <div id="investor" class="anchor">
       <div class="panel">
-        <h2>{{advisor.title}}</h2>
+        <h2>{{investors.title}}</h2>
         <div class="flex-dir-row justify-space-around">
-          <div class="card" v-for="(a,i) in advisor.items" :key="`adv${i}`">
+          <div class="card" v-for="(a,i) in investors.items" :key="`adv${i}`">
             <div class="avatar" :style="`background-image:url(${a.avatar});`"></div>
             <img class="avatar" :src="a.avatar" alt="">
             <h3>{{a.name}}</h3>
@@ -291,11 +299,11 @@
         </div>
       </div>
     </div>
-    <!-- 投资人 -->
-    <div id="investor" class="anchor addition">
+    <!-- 投资机构 -->
+    <div id="investor-agency" class="anchor addition">
       <div class="panel">
-        <h2>{{investors.title}}</h2>
-        <img :src="investors.institutions" alt="">
+        <h2>{{investors.agency.title}}</h2>
+        <img :src="investors.agency.institutions" alt="">
       </div>
     </div>
     <!-- 合作伙伴 -->
@@ -498,7 +506,6 @@ export default {
       production:state=>state.lang.production,
       roadmap   :state=>state.lang.roadmap,
       team      :state=>state.lang.team,
-      advisor   :state=>state.lang.advisor,
       investors :state=>state.lang.investors,
       partners  :state=>state.lang.partners,
       contact   :state=>state.lang.contact,

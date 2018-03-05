@@ -21,7 +21,7 @@
 
 <template>
   <div id="topbar" class="collapsed" style="">
-    <a class="fl" href="javascript:void(0)" data-anchor="banner" id="logo"></a>
+    <a class="fl" href="javascript:void(0)" data-anchor="banner" id="logo" @click="jumpToAnchor('/')"></a>
     <ul id="nav" class="fr flex-dir-row">
       <!-- 
       <li><a href="javascript:void(0)" data-anchor="technical">Highligts</a></li>
@@ -65,6 +65,7 @@ export default {
     },
     jumpToAnchor(n) {
       if ( this.$route.path==='/' ) return;
+      if ( n === '/' ) return location.href = '/?lang='+this.lang.lang;
       if ( !n.anchor ) return;
       // this.$router.push('/?lang='+this.lang.lang+'#'+n.name)
       location.href = '/?lang='+this.lang.lang+'#'+n.anchor;
