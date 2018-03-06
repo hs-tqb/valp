@@ -196,11 +196,9 @@ export default function($) {
     }
   
     if ( isHomepage ) {
-      console.log('初始化')
       toggleTopbarMask();
       dynamicAnchorMap();
     } else {
-      console.log('初始化222222222222');
     }
   });
   
@@ -406,7 +404,7 @@ export default function($) {
         alertify.message(
           '<p id="alertify-fixed-para" >Make new friends! </p>'
           +'<a id="alertify-fixed-btn" href="https://t.me/ValPromise" target="_blank">'
-            + window._community.btn
+            + window._community.button
           + '</a>'
         , 0)
       }

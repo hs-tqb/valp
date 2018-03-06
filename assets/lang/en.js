@@ -6,8 +6,6 @@ export default {
   ],
   navs:[
     {name:'Presale', external:true, link:"http://valpromise.mikecrm.com/bkceWWX"},
-    // {anchor:'highlights', name:'Highlights', inFooter:true }, 
-    // {anchor:'production', name:'Weather Insurance', inFooter:true }, 
     {anchor:'highlights', name:'Production', inFooter:true }, 
     {anchor:'team', name:'Team', inFooter:true }, 
     {anchor:'investor', name:'Investors',inFooter:true }, 
@@ -16,10 +14,10 @@ export default {
   slogan:'Distributed Value Promise Protocol',
   whitePaper:{
     link:'http://otydyl8j5.bkt.clouddn.com/valp/pdf/ValPromise_WhitePaper_en_v1.3.7.3.pdf',
-    btn:'White Paper'
+    button:'White Paper'
   },
   community: {
-    btn:'Join our community'
+    button:'Join our community'
   },
   news: [
     {
@@ -258,21 +256,18 @@ export default {
       trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/enterprise.png?imageslim'
     }
   },
-  contact: {
-    // title:'Contact Us',
-    join:{
-      title:'Join us in building the future of value promise',
-      desc :'Sign up for our mailing list and be first to learn of any  ValPromise news!',
-      placeholder:'Enter email',
-      btn:'Join',
-      note: {
-        invalid:'Invalid Email',
-        failed:'Error',
-        successful:'Register Successfully'
-      }
-    },
-    social: {
-      title:'Contact Us'
+  join:{
+    title:'Join us in building the future of value promise',
+    desc :'Sign up for our mailing list and be first to learn of any  ValPromise news!',
+    placeholder:'Enter email',
+    btn:'Join',
+    note: {
+      invalid:'Invalid Email',
+      failed:'Error',
+      successful:'Register Successfully'
     }
+  },
+  contact: {
+    title:'Contact Us'
   },
 }

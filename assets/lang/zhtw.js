@@ -14,10 +14,10 @@ export default {
   slogan:'分布式價值承諾協議',
   whitePaper:{
     link:'http://otydyl8j5.bkt.clouddn.com/valp/pdf/ValPromise_WhitePaper_cn_v1.3.7.4.pdf',
-    btn:'白皮書'
+    button:'白皮書'
   },
   community: {
-    btn:'加入电报群'
+    button:'加入电报群'
   },
   news: [
     {
@@ -232,7 +232,7 @@ export default {
       {
         name:'勞維信',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a5.png?imageslim',
-        desc:'顧問 / 前海國際區塊鏈生態聯盟主席'
+        desc:'點亮資本合夥人、香港中文大學訊息工程系兼任教授，過去12年教授碩士及商學院 EMBA課程，北京大學產業技術研究院訪問教授、前海國際區塊鏈生態圈聯盟主席。曾投資亞洲信息、 布比區塊鏈、 CryptoBLK'
       },
       {
         name:'Melody He',
@@ -256,21 +256,18 @@ export default {
       trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/enterprise.png?imageslim'
     }
   },
-  contact: {
-    // title:'聯系我們',
-    join:{
-      title:'和我們一起創建價值承諾體系的未來',
-      desc :'註冊成為我們郵件組成員，第一時間獲得最新項目資訊',
-      placeholder:'輸入郵箱',
-      btn:'加入我們',
-      note:{
-        invalid:'無效的郵箱',
-        failed:'註冊失敗',
-        successful:'註冊成功'
-      }
-    },
-    social: {
-      title:'聯系我們'
+  join:{
+    title:'和我們一起創建價值承諾體系的未來',
+    desc :'註冊成為我們郵件組成員，第一時間獲得最新項目資訊',
+    placeholder:'輸入郵箱',
+    btn:'加入我們',
+    note:{
+      invalid:'無效的郵箱',
+      failed:'註冊失敗',
+      successful:'註冊成功'
     }
+  },
+  contact: {
+    title:'聯系我們'
   },
 }

@@ -177,11 +177,11 @@
         <img src="http://otydyl8j5.bkt.clouddn.com/valp/logo/logo-v-w.png?imageslim" />
         <h1>{{slogan}}</h1>
         <div class="btn-group">
-          <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.btn}}</a>
+          <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
           <a :class="navs[0].clsn" :href="navs[0].link" target="_blank">{{navs[0].name}}</a>
         </div>
         <p>
-          <a id="join-btn" href="https://t.me/ValPromise" target="_blank">{{community.btn}}</a>
+          <a id="join-btn" href="https://t.me/ValPromise" target="_blank">{{community.button}}</a>
         </p>
       </div>
     </div>
@@ -328,16 +328,16 @@
       <div class="panel flex-dir-row">
         <div class="left flex-3">
           <div class="join">
-            <h3>{{contact.join.title}}</h3>
-            <p>{{contact.join.desc}}</p>
+            <h3>{{join.title}}</h3>
+            <p>{{join.desc}}</p>
             <div>
-              <input type="email" :placeholder="contact.join.placeholder" v-model.trim="email.value" @input="emailInput"/>
-              <input type="button" :value="contact.join.btn" @click="register"/>
-              <span :class="email.note">{{contact.join.note[email.note]}}</span>
+              <input type="email" :placeholder="join.placeholder" v-model.trim="email.value" @input="emailInput"/>
+              <input type="button" :value="join.btn" @click="register"/>
+              <span :class="email.note">{{join.note[email.note]}}</span>
             </div>
           </div>
           <div class="social">
-            <h3>{{contact.social.title}}</h3>
+            <h3>{{contact.title}}</h3>
             <div>
               <a href="https://www.facebook.com/hiValPromise/" target="_blank" class="icon fb"></a>
               <a href="https://twitter.com/ValPromise" target="_blank" class="icon tt"></a>
@@ -410,6 +410,7 @@ export default {
       team      :state=>state.lang.team,
       investors :state=>state.lang.investors,
       partners  :state=>state.lang.partners,
+      join  :state=>state.lang.join,
       contact   :state=>state.lang.contact,
       presale   :state=>state.lang.presale,
     })
@@ -433,7 +434,7 @@ export default {
         success:(resp)=> {
           if ( resp.state === 1 ) {
             this.email.note = 'successful';
-            alertify.message('<span style="color:#67c23a">'+this.contact.join.note.successful+'</span>');
+            alertify.message('<span style="color:#67c23a">'+this.join.note.successful+'</span>');
           } else {
             this.email.note = 'failed';
           }
