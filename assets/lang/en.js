@@ -15,7 +15,7 @@ export default {
   ],
   slogan:'Distributed Value Promise Protocol',
   whitePaper:{
-    link:'/whitepaper/ValPromise_WhitePaper_en.pdf',
+    link:'http://otydyl8j5.bkt.clouddn.com/valp/pdf/ValPromise_WhitePaper_en_v1.3.7.3.pdf',
     btn:'White Paper'
   },
   community: {
