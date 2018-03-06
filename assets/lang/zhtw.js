@@ -249,7 +249,7 @@ export default {
     title:'合作夥伴',
     institutions: {
       title :'戰略合作夥伴',
-      trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/institutions.png?imageslim'
+      trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/institutions-t.png?imageslim'
     },
     enterprise: {
       title :'合作夥伴',

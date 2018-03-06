@@ -251,7 +251,7 @@ export default {
     title:'Strategic Partners',
     institutions: {
       title :'Blockchain Partners',
-      trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/institutions.png?imageslim'
+      trademark:'http://otydyl8j5.bkt.clouddn.com/valp/partners/institutions-t.png?imageslim'
     },
     enterprise: {
       title :'Partners',
