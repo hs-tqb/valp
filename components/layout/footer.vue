@@ -39,7 +39,7 @@
 export default {
   computed: {
     navs() {
-      return this.$store.state.lang.navs.filter(n=>n.inFooter);
+      return this.$store.state.lang.navs.items.filter(n=>n.inFooter);
     },
     leftNavs() {
       return this.navs.slice(0,Math.floor(this.navs.length/2));

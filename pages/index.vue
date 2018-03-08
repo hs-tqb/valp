@@ -178,7 +178,7 @@
         <h1>{{slogan}}</h1>
         <div class="btn-group">
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
-          <a :class="navs[0].clsn" :href="navs[0].link" target="_blank">{{navs[0].name}}</a>
+          <a :class="navs.items[0].clsn" :href="navs.items[0].link" target="_blank">{{navs.items[0].name}}</a>
         </div>
         <p>
           <a id="join-btn" href="https://t.me/ValPromise" target="_blank">{{community.button}}</a>
@@ -189,17 +189,20 @@
     <div id="news" class="gray">
       <div class="panel">
         <ul class="flex-dir-row">
-          <li v-for="(n,i) in news" :key="`news${i}`">
-            <a v-if="n.external"
-              :href="n.link"
+          <li v-for="(n,i) in newsItems" :key="`news${i}`">
+            <a
+              :href="n.link+(lang?'?lang='+lang:'')"
               class="card"
               target="_blank"
             ><img :src="n.img" ></a>
-            <nuxt-link v-else
+            <!-- <nuxt-link v-else
               :to="`${n.link}?lang=${lang}`"
               class="card"
               target="_blank"
-            ><img :src="n.img" ></nuxt-link>
+            ><img :src="n.img" ></nuxt-link> -->
+          </li>
+          <li>
+            <a class="card" :href="news.fixedItem.link"><img :src="news.fixedItem.img" alt=""></a>
           </li>
         </ul>
       </div>
@@ -294,7 +297,7 @@
             <div class="avatar" :style="`background-image:url(${a.avatar});`"></div>
             <img class="avatar" :src="a.avatar" alt="">
             <h3>{{a.name}}</h3>
-            <p style="text-align:center;">{{a.desc}}</p>
+            <p>{{a.desc}}</p>
           </div>
         </div>
       </div>
@@ -327,13 +330,14 @@
     <div id="contact" class="anchor">
       <div class="panel flex-dir-row">
         <div class="left flex-3">
-          <div class="join">
+          <!-- {{join}} -->
+          <div class="join" v-if="true">
             <h3>{{join.title}}</h3>
             <p>{{join.desc}}</p>
             <div>
               <input type="email" :placeholder="join.placeholder" v-model.trim="email.value" @input="emailInput"/>
-              <input type="button" :value="join.btn" @click="register"/>
-              <span :class="email.note">{{join.note[email.note]}}</span>
+              <input type="button" :value="join.button" @click="register"/>
+              <span :class="email.note">{{join.prompt[email.note]}}</span>
             </div>
           </div>
           <div class="social">
@@ -380,7 +384,8 @@ export default {
         // invalid:'无效邮箱',
         // failed:'发送失败',
         // successful:'注册成功',
-      }
+      },
+      hasReverse:false,
     } 
   },
   computed: {
@@ -413,7 +418,10 @@ export default {
       join  :state=>state.lang.join,
       contact   :state=>state.lang.contact,
       presale   :state=>state.lang.presale,
-    })
+    }),
+    newsItems() {
+      return ([].concat(this.news.items)).reverse();
+    }
   },
   methods: {
     emailInput() {

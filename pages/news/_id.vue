@@ -8,6 +8,7 @@
 
 <template>
   <div id="page-news">
+      {{ article?'true':'false' }}
     <div id="article" v-if="!!article" :data-ren="lang">
       <h1>{{article.title}}</h1>
       <template v-for="(e,i) in article.paras">
@@ -31,12 +32,12 @@ export default {
     let path = route.path;
     return {
       path,
-      article: store.state.lang.news.filter(n=>n.link===path)[0].article
+      article: store.state.lang.news.items.filter(n=>n.link===path)[0]
     }
   },
   computed: {
     lang() {
-      this.article = this.$store.state.lang.news.filter(n=>n.link===this.path)[0].article;
+      this.article = this.$store.state.lang.news.items.filter(n=>n.link===this.path)[0];
       return this.$store.state.lang.lang;
     }
   },

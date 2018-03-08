@@ -4,13 +4,15 @@ export default {
   langs: [
     { name:'English', type:'en' }
   ],
-  navs:[
-    {name:'預售登記', external:true, link:"http://valpromise.mikecrm.com/MeBeFVu"},
-    {anchor:'highlights', name:'產品', inFooter:true}, 
-    {anchor:'team', name:'團隊', inFooter:true}, 
-    {anchor:'investor', name:'顧問', inFooter:true}, 
-    {anchor:'contact', name:'聯繫我們', inFooter:true}, 
-  ],
+  navs: {
+    items: [
+      {name:'預售登記', external:true, link:"http://valpromise.mikecrm.com/MeBeFVu"},
+      {anchor:'highlights', name:'產品', inFooter:true}, 
+      {anchor:'team', name:'團隊', inFooter:true}, 
+      {anchor:'investor', name:'顧問', inFooter:true}, 
+      {anchor:'contact', name:'聯繫我們', inFooter:true}, 
+    ]
+  },
   slogan:'分布式價值承諾協議',
   whitePaper:{
     link:'http://otydyl8j5.bkt.clouddn.com/valp/pdf/ValPromise_WhitePaper_cn_v1.3.7.4.pdf',
@@ -19,28 +21,27 @@ export default {
   community: {
     button:'加入电报群'
   },
-  news: [
-    {
-      link:'/news/3', 
-      img:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/0-cn.png?imageslim',
-      article: {
-        title:'ValPromise 受邀参加深圳区块链沙龙路演',
+  news: {
+    items: [
+      { 
+        link:'/news/1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-cn.png?imageslim',
+        title:'ValPromise 受邀参加深圳区块链应用峰会',
         paras:[
-          { type:'p', content:'3月1日，在深圳举办的“区块链行业沙龙”吸引了百余位区块链的从业者和爱好者前来分享，交流最新的区块链行业信息。' },
-          { type:'p', content:'各方参与人员思维的碰撞使得活动现场气氛十分活跃，从区块链入门到掌握技巧，从区块链应用到投资，从行业趋势到项目分析，从技术解读到风险规避，到场的听众都收获颇丰。ValPromise作为行业特邀项目方，在沙龙上为来自各行业的区块链爱好者进行了项目的路演，引发了现场听众极大的热情和强烈的关注，ValPromise狗年首次路演，可谓火爆上线~' },
-          { type:'p', content:'作为主要嘉宾的ValPromise也在1个小时的分享中， 为在场的听众普及了ValPromise-价值承诺协议的工作机制、技术路线、经济模型、明星产品——天气宝等。获得了在场投资者极大的兴趣，与一众区块链爱好者及对ValPromise感兴趣的听众进行了深入的交流。' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/1.png?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/2.png?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/3.png?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/4.png?imageslim' },
-          { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
+          { type:'p', content:'2月5日在深圳南山区科技寺创业孵化器举办的“看区块链应用的未来”的应用峰会上，ValPromise作为被邀嘉宾为深圳的区块链爱好者和项目粉丝们，介绍了项目和最新进展。' },
+          { type:'p', content:'会上，ValPromise 创始人向涛详细阐述了这一革命性项目的愿景，并通过邀请台下观众游戏的方式生动的展示了ValPromise的业务原理，富有感染力的演讲和扎实的业务进展，收获了台下观众的掌声。' },
+          { type:'p', content:'会后向涛和感兴趣的投资者，进行了更为深入的讨论。其中不乏在实体行业中颇有实力的经济大佬，他们希望ValPromise开足马力，快速上线，一起开创区块链的未来。' },
+          { type:'p', content:'我们一定不辱使命，快马加鞭，让大家更早地享受到区块链的红利。' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/01.jpeg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/02.jpeg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/03.jpeg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/04.jpeg?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/05.jpeg?imageslim' },
+          { type:'p', content:'更多项目信息，请大家关注我们的微信公众号：' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
         ]
-      }
-    },
-    { 
-      link:'/news/2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-cn.png?imageslim',
-      article:{
+      },
+      { 
+        link:'/news/2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-cn.png?imageslim',
         title:'向涛在香港区块链峰会上发表演讲',
         paras:[
           { type:'p', content:'2月8日，ValPromise的创始人向涛在“数字货币世界-香港站”峰会上发表了他对于区块链和数字货币看法的公开演讲。'},
@@ -58,29 +59,26 @@ export default {
           { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
         ]
-      }
-    },
-    { 
-      link:'/news/1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-cn.png?imageslim',
-      article: {
-        title:'ValPromise 受邀参加深圳区块链应用峰会',
+      },
+      {
+        link:'/news/3', 
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/0-cn.png?imageslim',
+        title:'ValPromise 受邀参加深圳区块链沙龙路演',
         paras:[
-          { type:'p', content:'2月5日在深圳南山区科技寺创业孵化器举办的“看区块链应用的未来”的应用峰会上，ValPromise作为被邀嘉宾为深圳的区块链爱好者和项目粉丝们，介绍了项目和最新进展。' },
-          { type:'p', content:'会上，ValPromise 创始人向涛详细阐述了这一革命性项目的愿景，并通过邀请台下观众游戏的方式生动的展示了ValPromise的业务原理，富有感染力的演讲和扎实的业务进展，收获了台下观众的掌声。' },
-          { type:'p', content:'会后向涛和感兴趣的投资者，进行了更为深入的讨论。其中不乏在实体行业中颇有实力的经济大佬，他们希望ValPromise开足马力，快速上线，一起开创区块链的未来。' },
-          { type:'p', content:'我们一定不辱使命，快马加鞭，让大家更早地享受到区块链的红利。' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/01.jpeg?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/02.jpeg?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/03.jpeg?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/04.jpeg?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/05.jpeg?imageslim' },
-          { type:'p', content:'更多项目信息，请大家关注我们的微信公众号：' },
+          { type:'p', content:'3月1日，在深圳举办的“区块链行业沙龙”吸引了百余位区块链的从业者和爱好者前来分享，交流最新的区块链行业信息。' },
+          { type:'p', content:'各方参与人员思维的碰撞使得活动现场气氛十分活跃，从区块链入门到掌握技巧，从区块链应用到投资，从行业趋势到项目分析，从技术解读到风险规避，到场的听众都收获颇丰。ValPromise作为行业特邀项目方，在沙龙上为来自各行业的区块链爱好者进行了项目的路演，引发了现场听众极大的热情和强烈的关注，ValPromise狗年首次路演，可谓火爆上线~' },
+          { type:'p', content:'作为主要嘉宾的ValPromise也在1个小时的分享中， 为在场的听众普及了ValPromise-价值承诺协议的工作机制、技术路线、经济模型、明星产品——天气宝等。获得了在场投资者极大的兴趣，与一众区块链爱好者及对ValPromise感兴趣的听众进行了深入的交流。' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/1.png?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/2.png?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/3.png?imageslim' },
+          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/4.png?imageslim' },
+          { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
         ]
-      }
-    },
-    { link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }
-  ],
+      },
+    ],
+    fixedItem:{ link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }
+  },
   about: {
     title:'ValPromise',
     desc :'ValPromise價值承諾協議，是一個基於區塊鏈的分布式承諾合約發布和交易平臺，旨在解決全球範圍跨品種跨地區的風險管理問題，能廣泛應用在保險、 金融衍生品、預測等市場。'
@@ -212,32 +210,32 @@ export default {
       {
         name:'王剛',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a1.png?imageslim',
-        desc:'著名天使投資人、滴滴投資人'
+        desc:'滴滴出行最早投資人，曾主管阿裏巴巴B2B北京大區、支付寶商戶事業部和集團的組織發展。滴滴是他在2012年離開阿裏巴巴後孵化投資的第壹個項目，此項目也讓他獲得了數千倍收益。除了滴滴，王剛還孵化、投資了四十多家中國創業公司和十多家美國創業公司，以獨特的眼光和深刻的商業邏輯協助創業者，成功孵化多個估值過億美金的創業項目。'
       },
       {
         name:'吳宵光',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a2.png?imageslim',
-        desc:'騰訊聯合創始人'
+        desc:'騰訊聯合創始人之壹，前騰訊高級執行副總裁和騰訊電商控股公司CEO，微光創投創始人。主要從事A-B輪的早中期投資，投資領域集中在產業互聯網、企業服務、金融、消費升級、電商等領域。曾帶領著騰訊核心產品QQ的研發和產品規劃，並先後擔任QQ研發團隊項目經理、即時通信產品部總經理，互聯網事業部總經理。'
       },
       {
         name:'王利傑',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a3.png?imageslim',
-        desc:'著名區塊鏈投資人'
+        desc:'PreAngel Fund 創始合夥人，中國青年天使會常務理事，海天會執行委員/常務理事，同時也是著名區塊鏈項目投資人。至今管理超過6支基金，超過3億人民幣，投資了近300個科技初創企業，重點關註新IT、金融科技和醫療創新等領域的A輪前項目。 2017年開始All in全球區塊鏈方向的股權和初期投資，還參與了投行高鏈資本和數字貨幣挖礦管理公司等。'
       },
       {
         name:'楊鐳',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a4.png?imageslim',
-        desc:'顧問 / PruSmartHR 保險咨詢服務公司CEO'
+        desc:'PruSmartHR 保險咨詢服務公司CEO，曾任North American Search Group獵頭公司亞太區負責人。具有超過10年服務保險行業的經驗和人脈，在保險產品開發領域，其團隊和超過六萬名精算從業人員保持常規的聯系。其高管聘用案例包括Pacific Life Re 大中華區CEO，美國再保險現臺灣及其東南亞地區CEO，普華永道中國非壽險精算顧問負責人，中宏人壽CFO等。'
       },
       {
         name:'勞維信',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a5.png?imageslim',
-        desc:'點亮資本合夥人、香港中文大學訊息工程系兼任教授，過去12年教授碩士及商學院 EMBA課程，北京大學產業技術研究院訪問教授、前海國際區塊鏈生態圈聯盟主席。曾投資亞洲信息、 布比區塊鏈、 CryptoBLK'
+        desc:'點亮資本合夥人、香港中文大學訊息工程系兼任教授，過去12年教授碩士及商學院 EMBA課程，北京大學產業技術研究院訪問教授、前海國際區塊鏈生態圈聯盟主席、香港產學研合作促進會理事、國際技術轉移協作網絡ITTN委員、具有25年中港美地區高科技行業及風險投資之工作經驗。香港中文大學物理學士，哲學碩士及美國布朗大學(Brown University) 物理博士'
       },
       {
         name:'Melody He',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a6.png?imageslim',
-        desc:'顧問 / TenX 早期投資者，曾供職于高盛'
+        desc:'Melody是區塊鏈咨詢和投資基金Spartan Group的創始人。她是TenX的早期投資者，也是Gifto和Appcoins的戰略顧問。曾供職於高盛。'
       },
     ],
     agency: {
@@ -260,8 +258,8 @@ export default {
     title:'和我們一起創建價值承諾體系的未來',
     desc :'註冊成為我們郵件組成員，第一時間獲得最新項目資訊',
     placeholder:'輸入郵箱',
-    btn:'加入我們',
-    note:{
+    button:'加入我們',
+    prompt:{
       invalid:'無效的郵箱',
       failed:'註冊失敗',
       successful:'註冊成功'

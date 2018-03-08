@@ -30,7 +30,7 @@
       <li><a href="javascript:void(0)" data-anchor="team">Team</a></li>
       <li><a id="showRaising" href="javascript:void(0)">KYC</a></li>
        -->
-       <li v-for="(n,i) in lang.navs" :key="`nav${i}`">
+       <li v-for="(n,i) in lang.navs.items" :key="`nav${i}`">
           <a 
             :href="n.link||'javascript:void(0)'" 
             :target="n.external?'_blank':''"
