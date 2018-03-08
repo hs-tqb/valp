@@ -208,6 +208,11 @@ export default {
     title:'投資 & 顧問',
     items:[
       {
+        name:'王利傑',
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a3.png?imageslim',
+        desc:'PreAngel Fund 創始合夥人，中國青年天使會常務理事，海天會執行委員/常務理事，同時也是著名區塊鏈項目投資人。至今管理超過6支基金，超過3億人民幣，投資了近300個科技初創企業，重點關註新IT、金融科技和醫療創新等領域的A輪前項目。 2017年開始All in全球區塊鏈方向的股權和初期投資，還參與了投行高鏈資本和數字貨幣挖礦管理公司等。'
+      },
+      {
         name:'王剛',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a1.png?imageslim',
         desc:'滴滴出行最早投資人，曾主管阿裏巴巴B2B北京大區、支付寶商戶事業部和集團的組織發展。滴滴是他在2012年離開阿裏巴巴後孵化投資的第壹個項目，此項目也讓他獲得了數千倍收益。除了滴滴，王剛還孵化、投資了四十多家中國創業公司和十多家美國創業公司，以獨特的眼光和深刻的商業邏輯協助創業者，成功孵化多個估值過億美金的創業項目。'
@@ -218,19 +223,14 @@ export default {
         desc:'騰訊聯合創始人之壹，前騰訊高級執行副總裁和騰訊電商控股公司CEO，微光創投創始人。主要從事A-B輪的早中期投資，投資領域集中在產業互聯網、企業服務、金融、消費升級、電商等領域。曾帶領著騰訊核心產品QQ的研發和產品規劃，並先後擔任QQ研發團隊項目經理、即時通信產品部總經理，互聯網事業部總經理。'
       },
       {
-        name:'王利傑',
-        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a3.png?imageslim',
-        desc:'PreAngel Fund 創始合夥人，中國青年天使會常務理事，海天會執行委員/常務理事，同時也是著名區塊鏈項目投資人。至今管理超過6支基金，超過3億人民幣，投資了近300個科技初創企業，重點關註新IT、金融科技和醫療創新等領域的A輪前項目。 2017年開始All in全球區塊鏈方向的股權和初期投資，還參與了投行高鏈資本和數字貨幣挖礦管理公司等。'
+        name:'勞維信',
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a5.png?imageslim',
+        desc:'點亮資本合夥人、香港中文大學訊息工程系兼任教授，過去12年教授碩士及商學院 EMBA課程，北京大學產業技術研究院訪問教授、前海國際區塊鏈生態圈聯盟主席、香港產學研合作促進會理事、國際技術轉移協作網絡ITTN委員、具有25年中港美地區高科技行業及風險投資之工作經驗。香港中文大學物理學士，哲學碩士及美國布朗大學(Brown University) 物理博士'
       },
       {
         name:'楊鐳',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a4.png?imageslim',
         desc:'PruSmartHR 保險咨詢服務公司CEO，曾任North American Search Group獵頭公司亞太區負責人。具有超過10年服務保險行業的經驗和人脈，在保險產品開發領域，其團隊和超過六萬名精算從業人員保持常規的聯系。其高管聘用案例包括Pacific Life Re 大中華區CEO，美國再保險現臺灣及其東南亞地區CEO，普華永道中國非壽險精算顧問負責人，中宏人壽CFO等。'
-      },
-      {
-        name:'勞維信',
-        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a5.png?imageslim',
-        desc:'點亮資本合夥人、香港中文大學訊息工程系兼任教授，過去12年教授碩士及商學院 EMBA課程，北京大學產業技術研究院訪問教授、前海國際區塊鏈生態圈聯盟主席、香港產學研合作促進會理事、國際技術轉移協作網絡ITTN委員、具有25年中港美地區高科技行業及風險投資之工作經驗。香港中文大學物理學士，哲學碩士及美國布朗大學(Brown University) 物理博士'
       },
       {
         name:'Melody He',

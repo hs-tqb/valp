@@ -210,6 +210,11 @@ export default {
     title:'Investors & Advisors',
     items:[
       {
+        name:'Wang Lijie',
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a3.png?imageslim',
+        desc:'Wang Lijie is the founding partner of PreAngel Fund, executive director of China Youth Angel Association, executive committee / executive director of Haitian Association and a well-known blockchain project investor. So far, Wang has managed more than six funds valued over 300 million yuan and has invested nearly 300 technology start-ups. He usually focuses on Round A projects in areas such as new IT, financial technology and medical innovation. In 2017, he began to invest in the equity and initial investment in the global blockchain. He participated in investment bank high-chain capital and digital currency mining management companies.'
+      },
+      {
         name:'Wang Gang',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a1.png?imageslim',
         desc:'Wang Gang, one of the earliest investors of Didi Chuxing Technology Co, used to in charge of the development and organization of Alibaba B2B Beijing area and Alipay Merchant Division. After leaving Alibaba in 2012, he chose Didi Chuxing Technology Co as his first investment which made him make thousands of returns. Wang Gang also invested more than 40 Chinese and a dozen American entrepreneurial firms. By using his unique vision and profound business logic to assist entrepreneurs, Wang Gang has successfully invested in several venture capital projects which worth billions of dollars.'
@@ -220,19 +225,14 @@ export default {
         desc:'Wu xiaoguang, co-founder of Tencent, was the former Senior Executive Vice President of Tencent, CEO of Tencent e-commerce holding company and founder of Weiguang Venture and Investment. He mainly engages in the early-mid-term investment of A-B rounds. The investment areas he focuses on are the Internet industry, business services, finance, consumption upgrades and e-commerce. He also led the development and product planning of QQ, the core product of Tencent, and served as the project manager of QQ R&D team, general manager of Instant Communication Products Department and general manager of Internet Business Division.'
       },
       {
-        name:'Wang Lijie',
-        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a3.png?imageslim',
-        desc:'Wang Lijie is the founding partner of PreAngel Fund, executive director of China Youth Angel Association, executive committee / executive director of Haitian Association and a well-known blockchain project investor. So far, Wang has managed more than six funds valued over 300 million yuan and has invested nearly 300 technology start-ups. He usually focuses on Round A projects in areas such as new IT, financial technology and medical innovation. In 2017, he began to invest in the equity and initial investment in the global blockchain. He participated in investment bank high-chain capital and digital currency mining management companies.'
+        name:'Lao WeiXin',
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a5.png?imageslim',
+        desc:'Lao Weixin, partners of DL CAPITALS, professor of Department of Information Engineering in The Chinese University of Hong Kong, has a Bachelor of Physics, a Master of Philosophy from The Chinese University of Hong Kong and Ph.D. from Brown University. Over the past 12 years, he has taught master\'s and EMBA programs. He also served as a visiting professor at Peking University Institute of Industrial Technology, chairman of Qianhai International Union of Blockchain Ecosystem, director of the Hong Kong Association for Cooperative and ITTN member of the International Technology Transfer Collaboration Network. He has 25-year experience in high-tech industries and venture capital in China and the United States.'
       },
       {
         name:'Raymond Yang',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a4.png?imageslim',
         desc:'Raymond Yang, CEO of PruSmartHR consulting services company, used to be the head of Asia Pacific region of North American Search Group headhunter. He has more than 10 years’ experience and rich social network in the service insurance industry. In insurance product development, his team maintains regular contact with more than 60,000 actuarial practitioners. His executive hiring cases include Pacific Life Re CEO in Greater China, CEO of U.S. Reinsurance in Taiwan and Southeast Asia, PricewaterhouseCoopers China non-life actuarial consultant and CFO of ZhongHong Insurance etc.'
-      },
-      {
-        name:'Lao WeiXin',
-        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a5.png?imageslim',
-        desc:'Lao Weixin, partners of DL CAPITALS, professor of Department of Information Engineering in The Chinese University of Hong Kong, has a Bachelor of Physics, a Master of Philosophy from The Chinese University of Hong Kong and Ph.D. from Brown University. Over the past 12 years, he has taught master\'s and EMBA programs. He also served as a visiting professor at Peking University Institute of Industrial Technology, chairman of Qianhai International Union of Blockchain Ecosystem, director of the Hong Kong Association for Cooperative and ITTN member of the International Technology Transfer Collaboration Network. He has 25-year experience in high-tech industries and venture capital in China and the United States.'
       },
       {
         name:'Melody He',
