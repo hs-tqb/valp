@@ -23,7 +23,7 @@ export default function($) {
         scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
         // scrollTop = getScrollTop();
         // topbar.css('background', 'rgba(15,20,33,'+(scrollTop/scrollHei*2)+')')
-        topbar.css('background', 'rgba(15,20,33,'+(scrollTop/vh)+')')
+        topbar.css('background-color', 'rgba(15,20,33,'+(scrollTop/vh)+')')
       }
     }
   
@@ -43,7 +43,7 @@ export default function($) {
       var a = $(this);
       if ( a.hasClass('menuSwitch') ) {
         if ( topbar.hasClass('collapsed') ) {
-          topbar.attr('style', 'background:#0f1421');
+          topbar.attr('style', 'background-color:#0f1421');
           isCollapsed = false;
         } else {
           isCollapsed = true;

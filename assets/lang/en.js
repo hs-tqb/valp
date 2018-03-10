@@ -2,7 +2,9 @@
 export default {
   lang:'en',
   langs: [
-    { name:'中文', type:'zh-tw' }
+    {name:'English', type:'en'},
+    {name:'中文-繁體', type:"zh-tw"},
+    {name:'Türkçe', type:'tr'},
   ],
   navs:{
     items: [

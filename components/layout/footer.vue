@@ -3,7 +3,7 @@
     position: relative;
     z-index:100;
     .panel > div {
-      background:url(~/assets/img/icons/logo-gray.png) no-repeat center; 
+      background:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/logo-gray.png) no-repeat center; 
     }
     ul {
       // &:nth-child(1) {float:left}
