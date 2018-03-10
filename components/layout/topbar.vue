@@ -62,9 +62,14 @@
       position:absolute; top:0; z-index:10;
       width:@hei; height:@hei;
     }
-    #nav .switch {
-      display:block; 
-      background:url(http://otydyl8j5.bkt.clouddn.com/valp/switch.png?imageslim) no-repeat center/30px;
+    #nav {
+      ul {
+        justify-content:flex-start;
+      }
+      .switch {
+        display:block; 
+        background:url(http://otydyl8j5.bkt.clouddn.com/valp/switch.png?imageslim) no-repeat center/30px;
+      }
     }
     #lang .switch {
       right:0;
@@ -81,7 +86,7 @@
         background:@bg;
         //  url(http://otydyl8j5.bkt.clouddn.com/valp/icons/logo-gray.png) no-repeat center ((@hei - 16px) / 2) /auto 16px;
         position:absolute; top:0; left:0;
-        padding-top:@hei; width:100vw; height:100vh!important;
+        padding-top:@hei; width:100vw; height:100vh;
         // height:calc(~'100vh' - @hei); 
         text-align:center; 
         opacity:1;
