@@ -163,6 +163,9 @@
     // padding: 0.5rem 2.9rem;
     border-radius:30px;
   }
+  .tr#page-root {
+    #investor .card p { text-align:center; }
+  }
 </style>
 
 <template>
