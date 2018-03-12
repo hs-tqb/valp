@@ -9,15 +9,18 @@
 <template>
   <div id="page-news">
       {{ article?'true':'false' }}
-    <div id="article" v-if="!!article" :data-ren="lang">
+    <div id="article" v-if="!!article">
       <h1>{{article.title}}</h1>
-      <template v-for="(e,i) in article.paras">
+      <!-- <template v-for="(e,i) in article.paras">
         <template v-if="e.type==='p'">
           <p :key="`e${i}`" v-if="e.renderAsHTML" v-html="e.content"></p>
           <p :key="`e${i}`" v-else>{{e.content}}</p>
         </template>
         <img v-else-if="e.type==='img'" :src="e.src" :key="`e${i}`">
-      </template>
+      </template> -->
+      <p v-for="(t,i) in texts" :key="`p${i}`" v-html="t.content"></p>
+      <p v-if="osma" v-html="osma"></p>
+      <img v-for="(img,i) in imgs" :key="`i${i}`" :src="img.src">
     </div>
     <a href="javascript:$('html, body').animate({'scrollTop':0})" id="backToTop"></a>
     <footer1 />
@@ -32,13 +35,23 @@ export default {
     let path = route.path;
     return {
       path,
-      article: store.state.lang.news.items.filter(n=>n.link===path)[0]
     }
   },
   computed: {
     lang() {
-      this.article = this.$store.state.lang.news.items.filter(n=>n.link===this.path)[0];
       return this.$store.state.lang.lang;
+    },
+    osma() {
+      return this.$store.state.lang.news.osma;
+    },
+    article(ps,idx) {
+      return this.$store.state.lang.news.items.filter(n=>n.link===this.path)[0];
+    },
+    texts(ps) {
+      return this.article.paras.filter(p=>p.type==='p');
+    },
+    imgs(ps) {
+      return this.article.paras.filter(p=>p.type==='img');
     }
   },
   components: {

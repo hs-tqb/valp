@@ -31,7 +31,6 @@ export default {
         title:'ValPromise attended Blockchain Sharing Session in Shenzhen, 5th, Feb',
         paras:[
           {type:'p', content:'ValPromise was honored to be invited for the blockchain application summit held in Shenzhen on February 5. "Looking to the future of blockchain applications" was the theme of the event. Entrepreneurship teams from top domestic and overseas blockchain sectors have shared at the conference. ValPromise, as an invited guest, brought the latest progress of the project to Shenzhen audience and involved in a part of the lovers to participate in the further development of the project.'},
-          { type:'p', renderAsHTML:true, content:'For more information，please visit on <a href="https://www.facebook.com/hiValPromise/" target="_blank">https://www.facebook.com/hiValPromise/</a> and our telegram group is <a href="https://t.me/ValPromise" target="_blank">https://t.me/ValPromise</a>' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/01.jpeg?imageslim' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/02.jpeg?imageslim' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/03.jpeg?imageslim' },
@@ -48,11 +47,6 @@ export default {
           {type:'p', content:'Xiang Tao presented his project for the first time in the oversea market. At the sharing meeting, Xiang Tao introduced the huge market in the field of risk management and the current pain points in the industry. Meanwhile, he showed the superiority of using blockchain technology to solve the existing problems. All in all, ValPromise - a trading contract is a blockchain-based, distributed promissory contract publishing-trading system that addresses cross-regional and cross-region risk management worldwide (insurance, futures, options contracts issues and trades, prediction service) problem.'},
           {type:'p', content:'The sharing session successfully attracted a group of professional investors, blockchain peers, and blockchain technical experts to discuss investment and cooperation issues. <br>Happy ending for the first show for foreign investors.', 
           renderAsHTML:true},
-          {
-            type:'p', 
-            content:'For more information，please visit on <a href="https://www.facebook.com/hiValPromise/" target="_blank">https://www.facebook.com/hiValPromise/</a><br>Our telegram group is <a href="https://t.me/ValPromise" target="_blank">https://t.me/ValPromise</a>', 
-            renderAsHTML:true
-          },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/08.jpg?imageslim' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/01.jpg?imageslim' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/02.jpg?imageslim' },
@@ -71,10 +65,6 @@ export default {
         paras:[
           { type:'p', content:'On 1st March, a blockchain salon in Shenzhen attractted over 100 blockchain practitioners and enthusiasts from all walks of life to share the latest news about blockchain.' },
           { type:'p', content:'As a special guest, ValPromise conducted a roadshow, which aroused great enthusiasm and strong concern from the audience in the salon. During the 1 hour sharing , ValPromise introduced what Value-Promise is, the working mechanism, technical routes, economic models and star product--Tianqibao and so on. Additionally, after the roadshow, many audience had a profound and active discussion with ValPromise’s co-founder. The share also gained great interest from present investors, which can be seen as a successful start from the Chinese new year.' },
-          { type:'p', 
-            content:'For more information，please visit on <a href="https://www.facebook.com/hiValPromise/" target="_blank">https://www.facebook.com/hiValPromise/</a><br>Our telegram group is <a href="https://t.me/ValPromise" target="_blank">https://t.me/ValPromise</a>', 
-            renderAsHTML:true
-          },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/1.png?imageslim' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/2.png?imageslim' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/3.png?imageslim' },
@@ -82,6 +72,7 @@ export default {
         ]
       },
     ],
+    osma:'For more information，please visit on <a href="https://www.facebook.com/hiValPromise/" target="_blank">https://www.facebook.com/hiValPromise/</a><br>Our telegram group is <a href="https://t.me/ValPromise" target="_blank">https://t.me/ValPromise</a>', 
     fixedItem: { link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-en.png?imageslim', external:true }
   },
   about: {
