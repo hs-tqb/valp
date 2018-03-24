@@ -5,7 +5,6 @@ export default {
     {name:'English', type:'en'},
     {name:'中文-繁體', type:"zh-tw"},
     {name:'Türkçe', type:'tr'},
-    {name:'日本語', type:'jp'},
   ],
   navs: {
     items: [
@@ -76,46 +75,6 @@ export default {
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/3.png?imageslim' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/4.png?imageslim' },
           { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
-        ]
-      },
-      {
-        link:'/news/4', 
-        img:'http://otydyl8j5.bkt.clouddn.com/valp/news/4/0-cn.png?imageslim',
-        title:'火星峰会2.0圆满结束，ValPromise领跑区块链+金融',
-        paras:[
-          { type:'p', content:'3月17日，在深圳举办的火星峰会沙龙：区块链打造无门槛金融吸引了许多区块链、金融业的从业者和爱好者前来交流。ValPromsie创始人向涛作为主讲嘉宾，为在场听众以及观看直播的用户们带来了妙趣横生的分享。' },
-          { type:'p', content:'活动上，向涛表示ValPromise团队希望通过区块链技术，构建出一个去中介化的金融产品发行体系，直接打通金融产品的设计者和使用者，降低因为大量中介存在而产生的成本。' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/4/1.jpg?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/4/2.jpg?imageslim' },
-          { type:'p', content:'谈到本次峰会的主题之一——区块链时，他认为区块链是一种由多方共同维护，以块链结构存储数据，使用密码学保证传输和访问安全，能够实现数据一致存储，无法篡改，无法抵赖的技术体系，这种技术为世界各地人们带来了无限的遐想空间。<br>向涛干货满满的演讲不仅获得了观众的肯定，也激起了全场对区块链+金融的热烈讨论。' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/4/3.jpg?imageslim' },
-          { type:'p', content:'为了感谢今天所有到场的区块链与金融业的从业者们，向涛也为他们每人赠送了小礼物——<b>50VPP</b>，可谓诚意满满。' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/4/4.jpg?imageslim' },
-          { type:'p', content:'期待下一次ValPromise的精彩之旅！更多项目信息，请大家关注我们的微信公众号：' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
-        ]
-      },
-      {
-        link:'/news/5', 
-        img:'http://otydyl8j5.bkt.clouddn.com/valp/news/5/0-cn.png?imageslim',
-        title:'ValPromise粤港澳大湾区区块链技术峰会路演圆满结束',
-        paras:[
-          { type:'p', content:'3月20日，ValPromise参加了在深圳举办的第二届粤港澳大湾区区块链技术峰会。此次峰会的主题为“区块链未来技术引领产业创新”' },
-          { type:'p', content:'ValPromise基于区块链的价值承诺交易移动平台在此次峰会上也获得了许多关注。峰会中，ValPromise的宣传台前人声鼎沸，他们对ValPromise即将构建的一个去中介化的金融产品发行体系和引入“天气宝”的天气保障合约这一强创新性的举措表示了出浓厚的兴趣。' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/5/1.jpg?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/5/2.jpg?imageslim' },
-          { type:'p', content:'在晚宴过后，ValPromise的创始人向涛作为峰会嘉宾进行了演讲，为在场的投资人、企业家以及区块链爱好者们更加详细具体地介绍了ValPromise的应用场景、创新点等等。' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/5/3.jpg?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/5/4.jpg?imageslim' },
-          { type:'p', content:'向涛谈到，VPP是以天气保险为切入点，最终演化成<b>全球金融衍生品合约</b>（挂钩客观指标）发行-交易体系。' },
-          { type:'p', content:'VPP项目能完美应用在以下几个领域：<b>指数类保险</b>，如天气保险；<b>场外商品&贵金属期货、期权；场外外汇期货期权；各类场外挂钩股票、期货、外汇指数</b>的期权；对客观且公开指标的<b>预测合约</b>等等。' },
-          { type:'p', content:'同时，VPP项目将会更高效满足现实<b>世界风险对冲服务需求</b>，并大幅降低参与者门槛。体系初始业务天气保险已落地，并已广泛服务数十万实体经济用户。项目团队背景一流且充分磨合，累计获得<b>两轮中国知名投资人法币投资</b>。目前代币发布已获量子链基金、王利杰等认购。' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/5/5.jpg?imageslim' },
-          { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/news/5/6.jpg?imageslim' },
-          { type:'p', content:'为了感谢峰会上区块链各界投资人、爱好者、从业者们对ValPromise的支持，向涛也在分享结束后，为在座每一位听众都赠送了<b>30VPP</b>。' },
-          { type:'p', content:'本周末，ValPromise将会在日本东京召开的<b>2018亚太区块链峰会</b>中带来更为精彩的路演，敬请期待。' },
-          { type:'p', content:'更多项目信息，请大家关注我们的微信公众号：' },
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
         ]
       },

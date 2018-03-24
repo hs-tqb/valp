@@ -192,7 +192,7 @@
     <div id="news" class="gray">
       <div class="panel">
         <ul class="flex-dir-row">
-          <li v-for="(n,i) in newsItems" :key="`news${i}`">
+          <li v-for="(n,i) in newsItems" :key="`news${i}`" v-if="n.paras.every(n=>!!n)">
             <a
               :href="n.link+(lang?'?lang='+lang:'')"
               class="card"
