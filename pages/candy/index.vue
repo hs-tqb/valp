@@ -42,7 +42,10 @@
         background:#fff; 
         .radius(10px); 
         img { .block; margin:0 auto; }
-        h2 { margin:12px 0; font-size:16px; text-align:center; color:@color-primary; }
+        h2 { 
+          margin:12px 0; line-height:1; font-size:16px; text-align:center; color:@color-primary; 
+          &::after { display:none; content:''; }
+        }
         p { line-height:1.4; font-size:12px; }
         p + a { .block; margin:25px 0; }
         .placeholder { .flex(1); }
@@ -121,8 +124,8 @@
 import ax from 'axios'
 import qs from 'qs';
 const axios = ax.create({
-  // baseURL: process.env.NODE_ENV==='production'? '//bot.valp.io': '//119.28.60.230:8280',
-  baseURL: '//192.168.1.159:8008',
+  baseURL: process.env.NODE_ENV==='production'? '//bot.valp.io': '//119.28.60.230:8280',
+  // baseURL: '//192.168.1.159:8008',
   transformRequest: [
     data=>qs.stringify(data)
   ]
