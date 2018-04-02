@@ -267,6 +267,9 @@ export default {
         });
       }
 
+      this.input.vfCode.addition.disabled = true;
+      
+
       axios.post('/candy/getCode', {mobile:mobile.value} )
       // axios.get(host+'/candy/getCode', {params:{mobile:mobile.value}} )
         .then(resp=>{ 
@@ -277,7 +280,7 @@ export default {
           let secs = 60;
           let timer = -1;
           
-          this.input.vfCode.addition.disabled = true;
+          // this.input.vfCode.addition.disabled = true;
           btn.bakText  = btn.text;
           btn.text = btn.countDownText.replace('#placeholder#', secs);
           
@@ -294,6 +297,7 @@ export default {
         })
         .catch(err=>{
           this.$store.commit('showMessageDialog', {type:'failure', text:err.toString()});
+          this.input.vfCode.addition.disabled = false;
         });
     },
     showWalletExplain() {
