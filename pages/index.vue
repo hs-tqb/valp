@@ -113,6 +113,7 @@
     }
   }
 }
+// 移动端
 .mobile #page-home {
   h3 { padding:0 18px; }
   .card  { width:100%; padding:18px 10px; }
@@ -147,25 +148,26 @@
   #footer { display:none; }
 
 }
-  .alertify-notifier.ajs-bottom ajs-right,
-  .ajs-message.ajs-visible { box-sizing:content-box; color:#212529; font-family:TitilliumWeb; }
-  #alertify-fixed-para {
-    font:inherit;
-    text-align:inherit;
-    color:inherit;
-  }
-  #alertify-fixed-btn { 
-    display:block;
-    margin:15px 10px 0 10px;
-    line-height:48px;
-    text-align:center; color:@color-primary; border:1px solid @color-primary; 
-    font-size: 1.125rem;
-    // padding: 0.5rem 2.9rem;
-    border-radius:30px;
-  }
-  .tr#page-root {
-    #investor .card p { text-align:center; }
-  }
+// 弹窗组件
+.alertify-notifier.ajs-bottom ajs-right,
+.ajs-message.ajs-visible { box-sizing:content-box; color:#212529; font-family:TitilliumWeb; }
+#alertify-fixed-para {
+  font:inherit;
+  text-align:inherit;
+  color:inherit;
+}
+#alertify-fixed-btn { 
+  display:block;
+  margin:15px 10px 0 10px;
+  line-height:48px;
+  text-align:center; color:@color-primary; border:1px solid @color-primary; 
+  font-size: 1.125rem;
+  // padding: 0.5rem 2.9rem;
+  border-radius:30px;
+}
+.tr#page-root {
+  #investor .card p { text-align:center; }
+}
 </style>
 
 <template>
@@ -177,11 +179,12 @@
       <div id="banner" class="anchor">
       </div>
       <div id="white-paper">
-        <img src="http://otydyl8j5.bkt.clouddn.com/valp/logo/logo-v-w.png?imageslim" />
+        <a id="logo" href="javascript:void(0);"></a>
         <h1>{{slogan}}</h1>
         <div class="btn-group">
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
           <a :class="navs.items[0].clsn" :href="navs.items[0].link" target="_blank">{{navs.items[0].name}}</a>
+          <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link>
         </div>
         <p>
           <a id="join-btn" href="https://t.me/ValPromise" target="_blank">{{community.button}}</a>
@@ -403,6 +406,7 @@ export default {
       navs      :state=>state.lang.navs,
       slogan    :state=>state.lang.slogan,
       whitePaper:state=>state.lang.whitePaper,
+      candyHandingOut:state=>state.lang.candyHandingOut,
       community :state=>{
         if (typeof window === 'object') {
           window._community = state.lang.community;

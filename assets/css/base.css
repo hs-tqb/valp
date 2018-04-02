@@ -70,7 +70,10 @@ background:url(http://otydyl8j5.bkt.clouddn.com/valp/banner.jpg?imageslim) no-re
 }
 #white-paper { position: relative; z-index:10; width:100%;  text-align:center; color:#fff; }
 #white-paper h1 { font-size:36px; }
-#white-paper img { margin-bottom:10px; width:240px; }
+#white-paper #logo { 
+  display:block; margin:0 auto 30px auto; width:240px; height:150px; 
+  background:url(http://otydyl8j5.bkt.clouddn.com/valp/logo/logo-v-w.png?imageslim) no-repeat center/100% auto;
+}
 #white-paper p { margin-top:24px; font-size:20px; text-align:inherit; opacity:1; }
 #white-paper a { font-size:inherit; color:inherit; }
 .en #white-paper a { font-size:20px; }

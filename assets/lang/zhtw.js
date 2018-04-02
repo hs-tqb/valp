@@ -21,6 +21,10 @@ export default {
     link:'http://otydyl8j5.bkt.clouddn.com/valp/pdf/ValPromise_WhitePaper_cn_v1.3.7.4.pdf',
     button:'白皮書'
   },
+  candyHandingOut: {
+    link:'/candy',
+    text:'领取糖果'
+  },
   community: {
     button:'加入电报群'
   },
