@@ -121,7 +121,8 @@
 import ax from 'axios'
 import qs from 'qs';
 const axios = ax.create({
-  baseURL: process.env.NODE_ENV==='production'? '//bot.valp.io': '//119.28.60.230:8280',
+  // baseURL: process.env.NODE_ENV==='production'? '//bot.valp.io': '//119.28.60.230:8280',
+  baseURL: '//192.168.1.159:8008',
   transformRequest: [
     data=>qs.stringify(data)
   ]
@@ -331,7 +332,7 @@ export default {
       }
 
 
-      axios.post('/candy/getCandy', {
+      axios.post('/candy/getNewCandy', {
       // axios.get(host+'/candy/getCandy', {params:{
           mobile:input.mobile.value,
           email:input.email.value,
