@@ -152,7 +152,6 @@ export default {
     }
   },
   mounted() {
-    return;
     if ( !localStorage.getItem('token') ) {
       setTimeout(()=>{
         this.$router.replace('/funds/login');
