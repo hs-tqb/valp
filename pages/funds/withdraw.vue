@@ -61,6 +61,7 @@ export default {
           label:'短信验证码',
           value:'',
           required:true,
+          type:'number',
           warning:'请填写验证码',
           addition: {
             text:'短信验证码',

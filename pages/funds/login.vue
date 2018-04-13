@@ -62,6 +62,7 @@ export default {
           // regexp:/^\+?[\d- ]+\d+$/,
           regexp:/^1[3-9]\d{9}$/,
           value:'',
+          type:'number',
           required:true,
           label:'手机号',
           warning:'无效的手机号'
@@ -69,6 +70,7 @@ export default {
         verifyCode: {
           label:'短信验证码',
           value:'',
+          type:'number',
           required:true,
           warning:'请填写验证码',
           addition: {
