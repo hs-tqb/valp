@@ -134,13 +134,13 @@ export default {
           text:'提现成功'
         });
       })
-      .catch(err)=>{
+      .catch(err=>{
         this.$store.commit('showMessageDialog', {
           type:'failure', 
           text:err.toString()
         });
         blockRequest = true;
-      }
+      })
     },
     call(name, props) {
       this[name](props);
