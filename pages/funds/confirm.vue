@@ -4,21 +4,21 @@
     height:100%; display:flex; flex-direction:column;
     background-color:#ddd;
     #wallet { 
-      background-color:#fff; text-align:center; 
-      h1 { margin:10px 0 20px 0; }
+      padding:20px 0; background-color:#fff; text-align:center; 
+      h1 { margin-bottom:10px; font-size:18px; }
       input[type=button] { height:auto; }
       #vpp-wallet {
         display:flex;
-        margin:20px;
+        margin:10px 20px;
         input[type=text] { 
-          flex:1; padding:0 15px; line-height:35px; text-align:left; 
+          flex:1; padding-right:15px; line-height:35px; text-align:left; 
           overflow: hidden;
           text-overflow: ellipsis;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
         }
       }
-      .btn.primary { margin-bottom:20px; width:120px; .radius(4px); }
+      .btn.primary { margin-top:10px; width:120px; .radius(4px); }
     }
     #tips { 
       padding:25px;
@@ -63,7 +63,7 @@
   <div id="page-confirm">
     <div id="wallet" class="panel2">
       <h1>充值地址</h1>
-      <img :src="qrcode" width="100" height="100" />
+      <img :src="qrcode" width="120" height="120" />
       <div id="vpp-wallet">
         <!-- <p ref="vpp-wallet-address">sdksdjhskskdjflskdjflsdksdjhskskdjflskdjflsdksdjhskskdjflskdjflsdksdjhskskdjflskdjfl.sl</p> -->
         <input readonly id="vpp-wallet-address" type="text" :value="wallet">
