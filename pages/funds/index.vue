@@ -40,7 +40,7 @@
 
 <template>
   <div id="page-home">
-    <input id="login" type="button" class="btn text primary" value="已有帐号" @click="$router.push('/login')"/>
+    <input id="login" type="button" class="btn text primary" value="已有帐号" @click="$router.push('/funds/login')"/>
     <a id="logo" href="http://valp.io" target="_blank"></a>
     <h1 class="text-center" v-html="lang.title"></h1>
     <div class="panel2">
