@@ -2,7 +2,6 @@
   @import url('~assets/css/variable.less');
   #page-confirm { 
     height:100%; display:flex; flex-direction:column;
-    background-color:#ddd;
     .bold { font-weight:600; color:@color-primary; }
     #wallet { 
       padding:20px 0; background-color:#fff; text-align:center; 
@@ -23,6 +22,7 @@
     }
     #tips { 
       padding:25px;
+      background-color:#ddd;
       p { margin-bottom:10px; line-height:1.6; }
     }
 
@@ -152,6 +152,7 @@ export default {
     }
   },
   mounted() {
+    return;
     if ( !localStorage.getItem('token') ) {
       setTimeout(()=>{
         this.$router.replace('/funds/login');

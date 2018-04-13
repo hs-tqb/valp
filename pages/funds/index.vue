@@ -9,7 +9,8 @@
     font-size:12px;
     h1 { 
       font-size:18px; font-weight:500; color:@color-text-primary; 
-      span { font-size:12px; color:@color-info; vertical-align:top; }
+      sup { font-size:12px; color:@color-info; vertical-align:top; }
+      span { font-weight:600; font-size:14px; }
     }
     .panel2 { 
       .bgc(transparent) !important;
@@ -64,10 +65,6 @@
         </li>
       </ul>
       <input type="button" id="confirm" class="btn primary block" :value="lang.confirm" @click="confirm">
-      <h3 class="website">
-        <a :href="website.official" class="text-left">{{lang.website.official}} http://valp.io</a>
-        <a :href="website.telegram" class="text-right">{{lang.website.telegram}} {{website.telegram}}</a>
-      </h3>
     </div>
 
 
@@ -99,7 +96,7 @@ export default {
   data () {
     return {
       cn  :{
-        title:'ValP 余额宝 <span>Beta</span>',
+        title:'ValP 余额宝 <sup>Beta</sup><br><span>（T+0，年化5%）</span>',
         input: {
           name: {
             label:'姓名',
