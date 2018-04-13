@@ -2,6 +2,7 @@
   @import url('~assets/css/variable.less');
   #page-confirm { 
     height:100%; display:flex; flex-direction:column;
+    background-color:#ddd;
     .bold { font-weight:600; color:@color-primary; }
     #wallet { 
       padding:20px 0; background-color:#fff; text-align:center; 
