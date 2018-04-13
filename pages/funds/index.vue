@@ -133,7 +133,7 @@ export default {
           },
           key:{
             label:'邀请人手机号',
-            warning:'无效的手机号'
+            warning:'无效的邀请人手机号'
           },
           wechat: {
             label:'微信',
