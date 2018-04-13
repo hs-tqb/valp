@@ -185,6 +185,7 @@
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
           <a :class="navs.items[0].clsn" :href="navs.items[0].link" target="_blank">{{navs.items[0].name}}</a>
           <!-- <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link> -->
+          <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>
         </div>
         <p>
           <a id="join-btn" href="https://t.me/ValPromise" target="_blank">{{community.button}}</a>

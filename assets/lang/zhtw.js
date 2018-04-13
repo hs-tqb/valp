@@ -22,7 +22,7 @@ export default {
     button:'白皮書'
   },
   candyHandingOut: {
-    link:'/candy',
+    link:'/funds',
     text:'领取糖果'
   },
   community: {

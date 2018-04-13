@@ -8,7 +8,7 @@
   font:inherit; color:inherit; 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-body { min-height:100vh; font:normal 14px/1 sans-serif; color:@color-text-regular; }
+body { font:normal 14px/1 sans-serif; color:@color-text-regular; }
 
 
 
@@ -23,7 +23,7 @@ a, input {
   -ms-tap-highlight-color:rgba(0, 0, 0, 0);  
   -o-tap-highlight-color:rgba(0, 0, 0, 0);  
 }
-input[type=text], input[type=button], input[type=submit], button { 
+input[type=text], input[type=button], input[type=submit], input[type=number], button { 
   border:0 none; 
   outline:0 none;
   border-radius:0;
@@ -42,7 +42,7 @@ input[type=text], input[type=button], input[type=submit], button {
 
 
 // 布局
-.page-container { position:relative; z-index:10; min-height:100vh; }
+.page-container { position:relative; z-index:10; }
 .flex { display:flex; flex-direction:column; }
 .flex-1 { flex:1; }
 .flex-2 { flex:2; }
@@ -69,3 +69,14 @@ input[type=text], input[type=button], input[type=submit], button {
 .text-success { color:@color-success; }
 .text-failure,
 .text-danger  { color:@color-danger; }
+
+
+
+.website { 
+  font-size:inherit;
+  .flow(row,wrap); justify-content:space-around; color:@color-text-primary;
+  a { padding:15px 0; white-space:nowrap; text-align:center; }
+}
+
+
+#logo { .block; margin:30px auto 0 auto; width:40vw; height:30vw; background:url(~assets/img/funds/logo.png) no-repeat center; background-size:100% auto; }
