@@ -3,13 +3,13 @@ const env = {
     baseURL: 'localhost:5555'
   },
   test: {
-    baseURL: 'http://112.74.26.159:8231/'
+    baseURL: 'http://112.74.26.159:8231'
   },
   joint: {
     baseURL: '//192.168.1.115:8008'
   },
   production: {
-    baseURL: '//bot.valp.io'
+    baseURL: 'http://119.28.19.195:8380'
   }
 }
 
