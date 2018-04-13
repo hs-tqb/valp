@@ -3,6 +3,7 @@
   #page-confirm { 
     height:100%; display:flex; flex-direction:column;
     background-color:#ddd;
+    .bold { font-weight:600; color:@color-primary; }
     #wallet { 
       padding:20px 0; background-color:#fff; text-align:center; 
       h1 { margin-bottom:10px; font-size:18px; }
@@ -72,11 +73,11 @@
       <input type="button" class="btn primary" value="我已转账" @click="confirm" />
     </div>
     <div id="tips" class="panel2">
-      <p>1.  充值提现过程中一切转账手续费由平台承担，平台七日年化收益率为5%。</p>
-      <p>2. 请勿向该地址充值除ETH之外的资产，任何充入ETH地址的非ETH资产将不可找回。</p>
-      <p>3. ETH充值需要网络确认才能到账。具体到账时间将以网络繁忙度而定，一般在30min以内。</p>
-      <p>4. 最小充值金额为0.1 ETH</p>
-      <p>5. 利息自充值后第二个自然日开始计算。提交提现申请后可于当天完成提现操作。</p>
+      <p class="bold">1.  充值提现过程中一切转账手续费由平台承担，平台七日年化收益率为5%。</p>
+      <p class="bold">2. 利息自充值后第二个自然日开始计算。提交提现申请后可于当天完成提现操作。</p>
+      <p>3. 请勿向该地址充值除ETH之外的资产，任何充入ETH地址的非ETH资产将不可找回。</p>
+      <p>4. ETH充值需要网络确认才能到账。具体到账时间将以网络繁忙度而定，一般在30min以内。</p>
+      <p>5. 最小充值金额为0.1 ETH</p>
     </div>
 
     <!-- 弹窗 -->
