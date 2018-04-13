@@ -58,13 +58,13 @@ export default {
     return {
       input: {
         verifyCode: {
-          label:'短信验证码',
+          label:'发送验证码',
           value:'',
           required:true,
           type:'number',
           warning:'请填写验证码',
           addition: {
-            text:'短信验证码',
+            text:'发送验证码',
             countDownText:'#placeholder#s 后重新获取',
             event:'sendSMSCode',
             timer:-1,

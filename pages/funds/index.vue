@@ -209,6 +209,7 @@ export default {
         key:{
           id:'sdkvfjfssl',
           value:'',
+          type:'number',
           regexp:/^1[3-9]\d{9}$/,
         }
         // wechat: {
