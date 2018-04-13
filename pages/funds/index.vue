@@ -41,7 +41,7 @@
 <template>
   <div id="page-home">
     <input id="login" type="button" class="btn text primary" value="已有帐号" @click="$router.push('/funds/login')"/>
-    <a id="logo" href="http://valp.io" target="_blank"></a>
+    <a id="logo" href="http://valp.io?lang=zh-tw" target="_blank"></a>
     <h1 class="text-center" v-html="lang.title"></h1>
     <div class="panel2">
       <ul class="inp-list">
@@ -79,12 +79,12 @@
           <img src="~/assets/img/funds/icons/failure.png" width="60" height="60" v-else>
           <h2>{{lang.dialogResult[dialogResult.state].title}}</h2>
           <p>{{lang.dialogResult[dialogResult.state].text}}</p>
-          <a href="http://valp.io">
+          <a href="http://valp.io?lang=zh-tw">
             <img src="~/assets/img/funds/activity.png">
           </a>
           <div class="placeholder"></div>
           <h3 class="website">
-            <a :href="website.official">{{lang.website.official}} {{website.official}}</a>
+            <a :href="website.official">{{lang.website.official}} http://valp.io</a>
             <a :href="website.telegram">{{lang.website.telegram}} {{website.telegram}}</a>
           </h3>
         </div>
@@ -215,7 +215,7 @@ export default {
         // }
       },
       website: {
-        official: 'http://valp.io',
+        official: 'http://valp.io?lang=zh-tw',
         telegram: 'https://t.me/ValPromise'
       },
       dialogResult: {

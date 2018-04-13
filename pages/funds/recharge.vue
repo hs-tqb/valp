@@ -23,7 +23,7 @@
 
 <template>
   <div id="page-recharge">
-    <a id="logo" href="http://valp.io" target="_blank"></a>
+    <a id="logo" href="http://valp.io?lang=zh-tw" target="_blank"></a>
     <div class="input-group">
       <ul class="inp-list">
         <li v-for="(item,key) in input" :key="`input-${key}`">

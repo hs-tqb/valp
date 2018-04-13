@@ -88,7 +88,7 @@
           <img src="~/assets/img/funds/icons/failure.png" width="60" height="60" v-else>
           <h2>{{dialogResult[dialogResult.state].title}}</h2>
           <!-- <p>{{dialogResult[dialogResult.state].text}}</p> -->
-          <!-- <a href="http://valp.io">
+          <!-- <a href="http://valp.io?lang=zh-tw">
             <img src="~/assets/img/funds/activity.png">
           </a> -->
           <a href="javascript:void(0)" class="btn primary" @click="$router.push('/funds/account')">进入账户</a>
