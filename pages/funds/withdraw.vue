@@ -109,6 +109,7 @@ export default {
             (temp.value && temp.verify && !temp.verify())
           )
         ) {
+          this.blockRequest = false;
           return this.$store.commit('showMessageDialog', {
             type:'failure', 
             text:this.input[p].warning
