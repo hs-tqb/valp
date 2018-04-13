@@ -99,7 +99,7 @@ export default {
   data () {
     return {
       cn  :{
-        title:'Valp 余额宝 <span>Beta</span>',
+        title:'ValP 余额宝 <span>Beta</span>',
         input: {
           name: {
             label:'姓名',
