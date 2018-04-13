@@ -77,14 +77,17 @@ export default {
           explain:'(至少0.1个)',
           warning: 'ETH 数量不正确',
           verify() {
-            return !isNaN( +this.value.trim() );
+            return !isNaN(+this.value.trim()) && +this.value.trim()>=0.1;
           }
         }
-      }
+      },
+      blockRequest:false,
     }
   },
   methods: {
     confirm() {
+      if ( blockRequest ) return;
+      blockRequest = true;
       let input     = this.input;
       let temp      = null;
       for ( let p in input ) {
@@ -119,6 +122,9 @@ export default {
         amount:this.input.amount.value
       })
       .then(resp=>{
+        resp=resp.data;
+        blockRequest = false;
+        
         if ( resp.state !== 1 ) return this.$store.commit('showMessageDialog', {
           type:'failure', 
           text:resp.message
@@ -128,6 +134,13 @@ export default {
           text:'提现成功'
         });
       })
+      .catch(err)=>{
+        this.$store.commit('showMessageDialog', {
+          type:'failure', 
+          text:err.toString()
+        });
+        blockRequest = true;
+      }
     },
     call(name, props) {
       this[name](props);
