@@ -46,7 +46,7 @@
       </ul>
     </div>
     <div class="btn-wrapper text-center">
-      <input type="button" class="btn primary" value="提现" @click="confirm">
+      <input type="button" class="btn primary" value="申请提现" @click="confirm">
     </div>
   </div>
 </template>
@@ -129,6 +129,7 @@ export default {
           type:'failure', 
           text:resp.message
         });
+        history.back();
         this.$store.commit('showMessageDialog', {
           type:'success', 
           html:'提现申请提交成功！<br>平台将于1个工作日内完成审核。'
