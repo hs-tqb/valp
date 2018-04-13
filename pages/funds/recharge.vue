@@ -129,24 +129,32 @@ export default {
       //   });
       // }
 
+      if ( this.blockRequest ) return;
+      this.blockRequest = true;
 
       let mobile = '';
       await this.$http.post('/customer/getMobile', {token:localStorage.getItem('token')})
         .then(resp=>{
+          this.blockRequest = false;
           resp = resp.data;
           if ( resp.state !== 1 ) return this.$store.commit('showMessageDialog', {
             type:'failure', 
             text:resp.message
           });
           mobile = resp.data.mobile;
+        })
+        .catch(err=>{
+          this.$store.commit('showMessageDialog', {type:'failure', text:err.toString()});
+          this.blockRequest = false;
         });
 
 
 
       if ( !mobile ) return;
-
+      this.blockRequest = true;
       this.$http.post('/customer/getMobileCode', {mobile} )
         .then(resp=>{ 
+          this.blockRequest = false;
           resp = resp.data;
           if ( resp.state !== 1 ) throw resp.message;
           // 倒计时逻辑
@@ -170,6 +178,7 @@ export default {
 
         })
         .catch(err=>{
+          this.blockRequest = false;
           this.$store.commit('showMessageDialog', {type:'failure', text:err.toString()});
         });
     }

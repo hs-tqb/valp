@@ -94,6 +94,8 @@ export default {
   },
   methods: {
     confirm() {
+      if ( this.blockRequest ) return;
+      this.blockRequest = true;
       let input     = this.input;
       let temp      = null;
       for ( let p in input ) {
@@ -116,6 +118,7 @@ export default {
             (temp.value && temp.verify && !temp.verify())
           )
         ) {
+          this.blockRequest = false;
           return this.$store.commit('showMessageDialog', {
             type:'failure', 
             text:this.input[p].warning
@@ -128,6 +131,7 @@ export default {
         mobileCode:this.input.verifyCode.value
       })
       .then(resp=>{
+        this.blockRequest = false;
         resp = resp.data;
         if ( resp.state !== 1 ) return this.$store.commit('showMessageDialog', {
             type:'failure', 
@@ -136,14 +140,20 @@ export default {
         localStorage.setItem('token', resp.data.token);
         this.$router.push('/funds/account');
       })
+      .catch(err=>{
+        this.blockRequest = false;
+      })
     },
     call(name, props) {
       this[name](props);
     },
     sendSMSCode({key}) {
+      if ( this.blockRequest ) return;
+      this.blockRequest = true;
       // 如果手机号非法，则中断操作
       let mobile = this.input.mobile;
       if ( !mobile.regexp.test(mobile.value) ) {
+        this.blockRequest = false;
         return this.$store.commit('showMessageDialog', {
           type:'failure',
           text:this.input.mobile.warning
@@ -153,6 +163,7 @@ export default {
       this.$http.post('/customer/getMobileCode', {mobile:mobile.value} )
       // axios.get('/customer/getMobileCode', {params:{mobile:mobile.value}} )
         .then(resp=>{ 
+          this.blockRequest = false;
           resp = resp.data;
           if ( resp.state !== 1 ) throw resp.message;
           // 倒计时逻辑
@@ -176,6 +187,7 @@ export default {
 
         })
         .catch(err=>{
+          this.blockRequest = false;
           this.$store.commit('showMessageDialog', {type:'failure', text:err.toString()});
         });
     }

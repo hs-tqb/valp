@@ -234,9 +234,13 @@ export default {
       this[name](value);
     },
     sendSMSCode({key}) {
+      if ( this.blockRequest ) return;
+      this.blockRequest = true;
+      
       // 如果手机号非法，则中断操作
       let mobile = this.input.mobile;
       if ( !mobile.regexp.test(mobile.value) ) {
+        this.blockRequest = false;
         return this.$store.commit('showMessageDialog', {
           type:'failure',
           text:this.lang.input.mobile.warning
@@ -245,6 +249,7 @@ export default {
 
       this.$http.post('/customer/getMobileCode', {mobile:mobile.value} )
         .then(resp=>{ 
+          this.blockRequest = false;
           resp = resp.data;
           if ( resp.state !== 1 ) throw resp.message;
           // 倒计时逻辑
@@ -268,6 +273,7 @@ export default {
 
         })
         .catch(err=>{
+          this.blockRequest = false;
           this.$store.commit('showMessageDialog', {type:'failure', text:err.toString()});
         });
     },
@@ -275,6 +281,8 @@ export default {
       this.input.wallet.help.show = true;
     },
     confirm() {
+      if ( this.blockRequest ) return;
+      this.blockRequest = true;
       let input     = this.input;
       let temp      = null;
       for ( let p in input ) {
@@ -287,6 +295,7 @@ export default {
             (temp.value && temp.verify && !temp.verify())
           )
         ) {
+          this.blockRequest = false;
           return this.$store.commit('showMessageDialog', {
             type:'failure', 
             text:this.lang.input[p].warning
@@ -302,6 +311,7 @@ export default {
         invite:input.key.value
       })
       .then(resp=>{
+        this.blockRequest = false;
         resp = resp.data;
         if ( resp.state !== 1 ) return this.$store.commit('showMessageDialog', {
             type:'failure', 
@@ -309,6 +319,10 @@ export default {
           });
         localStorage.setItem('token', resp.data.token);
         this.$router.push('/funds/confirm');
+      })
+      .catch(err=>{
+        this.blockRequest = false;
+        this.$store.commit('showMessageDialog', {type:'failure', text:err.toString()});
       })
     }
   }

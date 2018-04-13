@@ -81,13 +81,12 @@ export default {
           }
         }
       },
-      blockRequest:false,
     }
   },
   methods: {
     confirm() {
       if ( blockRequest ) return;
-      blockRequest = true;
+      this.blockRequest = true;
       let input     = this.input;
       let temp      = null;
       for ( let p in input ) {
@@ -123,7 +122,7 @@ export default {
       })
       .then(resp=>{
         resp=resp.data;
-        blockRequest = false;
+        this.blockRequest = false;
         
         if ( resp.state !== 1 ) return this.$store.commit('showMessageDialog', {
           type:'failure', 
@@ -139,13 +138,15 @@ export default {
           type:'failure', 
           text:err.toString()
         });
-        blockRequest = false;
+        this.blockRequest = false;
       })
     },
     call(name, props) {
       this[name](props);
     },
     async sendSMSCode({key}) {
+      if ( blockRequest ) return;
+      this.blockRequest = true;
       // 如果手机号非法，则中断操作
       let mobile = '';
       await this.$http.post('/customer/getMobile', {token:localStorage.getItem('token')})
@@ -163,6 +164,7 @@ export default {
       // axios.get('/customer/getMobileCode', {params:{mobile:mobile.value}} )
         .then(resp=>{ 
           resp = resp.data;
+          this.blockRequest = false;
           if ( resp.state !== 1 ) throw resp.message;
           // 倒计时逻辑
           let btn = this.input.verifyCode.addition;
@@ -186,6 +188,7 @@ export default {
         })
         .catch(err=>{
           this.$store.commit('showMessageDialog', {type:'failure', text:err.toString()});
+          this.blockRequest = false;
         });
     }
   },

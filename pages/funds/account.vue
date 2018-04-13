@@ -79,8 +79,11 @@ export default {
   },
   methods: {
     logout() {
+      if ( this.blockRequest ) return;
+      this.blockRequest = true;
       this.$http.post('/customer/loginOut', {token:localStorage.getItem('token')})
       .then(resp=>{
+        this.blockRequest = false;
         resp=resp.data;
         if ( resp.state !== 1 ) return this.$store.commit('showMessageDialog', {
           type:'failure', text:'注销失败'}
@@ -90,6 +93,9 @@ export default {
         setTimeout(()=>{
           this.$router.push('/funds');
         }, 1000);
+      })
+      .catch(err=>{
+        this.blockRequest = false;
       })
     }
   },
