@@ -44,7 +44,7 @@
       </div>
       <div id="account-info">
         <h2>我的钱包余额 : <span>{{balance}} ETH ( ≈ {{cny}}￥ )</span></h2>
-        <h2>邀请获30VPP : <span>{{mobile}}</span></h2>
+        <h2>邀请各获30VPP : <span>{{mobile}}</span></h2>
       </div>
     </div>
 

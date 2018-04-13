@@ -130,6 +130,7 @@ export default {
           },
           key:{
             label:'邀请人手机号',
+            explain:'(填写手机号双方各得30VPP)',
             warning:'无效的邀请人手机号'
           },
           wechat: {
@@ -206,6 +207,7 @@ export default {
         key:{
           id:'sdkvfjfssl',
           value:'',
+          explain:true,
           type:'number',
           regexp:/^1[3-9]\d{9}$/,
         }
