@@ -131,7 +131,7 @@ export default {
         });
         this.$store.commit('showMessageDialog', {
           type:'success', 
-          text:'提现成功'
+          html:'提现申请提交成功！<br>平台将于1个工作日内完成审核。'
         });
       })
       .catch(err=>{
