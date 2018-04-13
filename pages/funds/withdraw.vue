@@ -46,7 +46,7 @@
       </ul>
     </div>
     <div class="btn-wrapper text-center">
-      <input type="button" class="btn primary" value="提现">
+      <input type="button" class="btn primary" value="提现" @click="confirm">
     </div>
   </div>
 </template>

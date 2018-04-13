@@ -99,7 +99,7 @@ export default {
   data () {
     return {
       cn  :{
-        title:'区块链银行 <span>Beta</span>',
+        title:'Valp 余额宝 <span>Beta</span>',
         input: {
           name: {
             label:'姓名',
