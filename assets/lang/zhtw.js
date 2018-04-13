@@ -23,7 +23,7 @@ export default {
   },
   candyHandingOut: {
     link:'/funds',
-    text:'幣生幣'
+    text:'币生币'
   },
   community: {
     button:'加入电报群'
