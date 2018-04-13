@@ -72,7 +72,7 @@
       <input type="button" class="btn primary" value="我已转账" @click="confirm" />
     </div>
     <div id="tips" class="panel2">
-      <p>1.  充值提现过程中一切转账手续费由平台承担</p>
+      <p>1.  充值提现过程中一切转账手续费由平台承担，平台七日年化收益率为5%。</p>
       <p>2. 请勿向该地址充值除ETH之外的资产，任何充入ETH地址的非ETH资产将不可找回。</p>
       <p>3. ETH充值需要网络确认才能到账。具体到账时间将以网络繁忙度而定，一般在30min以内。</p>
       <p>4. 最小充值金额为0.1 ETH</p>
@@ -151,13 +151,34 @@ export default {
     }
   },
   mounted() {
+    if ( !localStorage.getItem('token') ) {
+      setTimeout(()=>{
+        this.$router.replace('/funds/login');
+      }, 1000);
+
+      return this.$store.commit('showMessageDialog', {
+        type:'failure', 
+        html:"无效token<br>即将跳转至登录页面"
+      });
+    }
+    // console.log( console.log( localStorage.getItem('token') ) )
+    
     this.$http.post('/customer/getDepositAccount', { token:localStorage.getItem('token') })
     .then(resp=>{
       resp = resp.data;
-      if ( resp.state !== 1 ) return this.$store.commit('showMessageDialog', {
-            type:'failure', 
-            text:resp.message
-          });
+      if ( resp.state !== 1 ) {
+        let text = resp.message;
+        if ( resp.errorCode==='1001' ) {
+          text += '<br>即将跳转至登录页面';
+          setTimeout(()=>{
+            this.$router.replace('/funds/login');
+          }, 1000);
+        }
+        return this.$store.commit('showMessageDialog', {
+          type:'failure', 
+          html:text
+        });
+      }
       this.qrcode = resp.data.depositAccountCode;
       this.wallet = resp.data.depositAccount;
     });

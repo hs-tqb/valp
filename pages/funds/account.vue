@@ -40,7 +40,7 @@
       <div id="user-info">
         <!-- <p>{{id}}</p> -->
         {{name}}
-        <input type="button" class="btn text primary" value="注销" @click="logout">
+        <input type="button" class="btn text primary" value="退出登录" @click="logout">
       </div>
       <div id="account-info">
         <h2>我的钱包余额 : <span>{{balance}} ETH ( ≈ {{cny}}￥ )</span></h2>
@@ -86,9 +86,9 @@ export default {
         this.blockRequest = false;
         resp=resp.data;
         if ( resp.state !== 1 ) return this.$store.commit('showMessageDialog', {
-          type:'failure', text:'注销失败'}
+          type:'failure', text:'退出登录失败'}
         );
-        this.$store.commit('showMessageDialog', {type:'failure', text:'注销成功, 即将跳转'});
+        this.$store.commit('showMessageDialog', {type:'failure', text:'退出登录成功, 即将跳转'});
         localStorage.setItem('token', '');
         setTimeout(()=>{
           this.$router.push('/funds');
