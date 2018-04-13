@@ -139,7 +139,7 @@ export default {
           type:'failure', 
           text:err.toString()
         });
-        blockRequest = true;
+        blockRequest = false;
       })
     },
     call(name, props) {
