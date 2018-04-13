@@ -74,7 +74,7 @@ export default {
           value:'',
           type:'number',
           required:true,
-          explain:'(不得少于0.1个)',
+          explain:'(至少0.1个)',
           warning: 'ETH 数量不正确',
           verify() {
             return !isNaN( +this.value.trim() );
