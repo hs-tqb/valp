@@ -65,7 +65,7 @@
       </ul>
       <input type="button" id="confirm" class="btn primary block" :value="lang.confirm" @click="confirm">
       <h3 class="website">
-        <a :href="website.official" class="text-left">{{lang.website.official}} {{website.official}}</a>
+        <a :href="website.official" class="text-left">{{lang.website.official}} 官网 http://valp.io</a>
         <a :href="website.telegram" class="text-right">{{lang.website.telegram}} {{website.telegram}}</a>
       </h3>
     </div>
