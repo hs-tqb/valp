@@ -85,7 +85,7 @@ export default {
   },
   methods: {
     confirm() {
-      if ( blockRequest ) return;
+      if ( this.blockRequest ) return;
       this.blockRequest = true;
       let input     = this.input;
       let temp      = null;
@@ -145,7 +145,7 @@ export default {
       this[name](props);
     },
     async sendSMSCode({key}) {
-      if ( blockRequest ) return;
+      if ( this.blockRequest ) return;
       this.blockRequest = true;
       // 如果手机号非法，则中断操作
       let mobile = '';
