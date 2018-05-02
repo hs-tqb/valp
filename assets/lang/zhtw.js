@@ -123,6 +123,17 @@ export default {
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
         ]
       },
+      {
+        link:'/news/6',
+        img: require('~/assets/img/news/6/0.png'),
+        title:'imToken钱包现可添加VPP币种',
+        paras:[
+          { type:'img', src:require('~/assets/img/news/6/1.jpg') },
+          { type:'img', src:require('~/assets/img/news/6/2.jpg') },
+          { type:'img', src:require('~/assets/img/news/6/3.jpg') },
+          { type:'img', src:require('~/assets/img/news/6/4.jpg') },
+        ]
+      }
     ],
     fixedItem:{ link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }
   },
