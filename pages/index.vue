@@ -183,7 +183,7 @@
         <h1>{{slogan}}</h1>
         <div class="btn-group">
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
-          <a :class="navs.items[0].clsn" :href="navs.items[0].link" target="_blank">{{navs.items[0].name}}</a>
+          <a :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">{{presaleItem.name}}</a>
           <!-- <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link> -->
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>
         </div>
@@ -429,6 +429,11 @@ export default {
     }),
     newsItems() {
       return ([].concat(this.news.items)).reverse();
+    },
+    presaleItem() {
+      return this.navs? (this.navs.items.filter(t=>{
+        return t.name==='Presale'||t.sign==='presale'
+      })[0]||{}):{}
     }
   },
   methods: {

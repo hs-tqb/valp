@@ -9,7 +9,8 @@ export default {
   ],
   navs: {
     items: [
-      {name:'預售登記', external:true, link:"http://valpromise.mikecrm.com/MeBeFVu"},
+      {name:'兌換VPP', link:'/transfer?lang=zh-tw'},
+      {sign:'presale',name:'預售登記', external:true, link:"http://valpromise.mikecrm.com/MeBeFVu"},
       {anchor:'highlights', name:'產品', inFooter:true}, 
       {anchor:'team', name:'團隊', inFooter:true}, 
       {anchor:'investor', name:'顧問', inFooter:true}, 
