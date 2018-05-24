@@ -28,7 +28,7 @@
     <h1>兑换 VPP</h1>
     <div class="center">
       <img src="~/assets/img/transfer/qrcode.png" alt="">
-      <p>用以太坊钱包扫码转账或将ETH转向地址：<a class="address" href="https://etherscan.io/address/0x63ffad099717cc3fc0d83d001fb94740ae47ee46">0x63ffad099717cc3fc0d83d001fb94740ae47ee46</a>，智能合约将自动按1:50000兑换率将VPP转到您钱包，请稍后登录钱包查看VPP余额。如对交易有疑问请联系: <a href="tel:0755-33530815">0755-33530815</a></p>
+      <p>用以太坊钱包扫码转账或将ETH转向地址：<a class="address" target="_blank" href="https://etherscan.io/address/0x63ffad099717cc3fc0d83d001fb94740ae47ee46">0x63ffad099717cc3fc0d83d001fb94740ae47ee46</a>，智能合约将自动按1:50000兑换率将VPP转到您钱包，请稍后登录钱包查看VPP余额。如对交易有疑问请联系: <a href="tel:0755-33530815">0755-33530815</a></p>
     </div>
   </div>
 </template>
