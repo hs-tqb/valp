@@ -23,7 +23,7 @@ export default {
     button:'白皮書'
   },
   candyHandingOut: {
-    link:'/download',
+    link:'/download?lang=zh-tw',
     text:'APP 下载'
   },
   community: {
