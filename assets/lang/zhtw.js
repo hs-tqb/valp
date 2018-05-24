@@ -23,8 +23,8 @@ export default {
     button:'白皮書'
   },
   candyHandingOut: {
-    link:'/funds',
-    text:'币生币'
+    link:'/download',
+    text:'APP 下载'
   },
   community: {
     button:'加入电报群'
