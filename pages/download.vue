@@ -28,8 +28,8 @@
     <div class="center">
       <p>ValPromise (价值承诺协议）是人人都可创建和发行自己金融合约（衍生品）的平台。</p>
       <p>安卓版APP:</p>
-      <img src="http://od3p9hvyr.bkt.clouddn.com/valpromise_app_v1.1.jpeg" alt="">
-      <a href="http://download.valp.io/VarPromise_V1.1.0.apk" target="_blank">扫码或点此下载</a>
+      <img src="~/assets/img/download/qrcode.png" alt="">
+      <a href="http://download.valp.io/ValPromise_V1.1.0.apk" target="_blank">扫码或点此下载</a>
     </div>
   </div>
 </template>
