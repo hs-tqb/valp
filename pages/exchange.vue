@@ -1,7 +1,7 @@
 <style lang="less">
 
   #__nuxt, #__layout, #page-root { min-width:auto;  height:100%; }
-  #page-transfer {
+  #page-exchange {
     background:url(~/assets/img/banner.jpg) no-repeat center / cover;
     height:100%;
     overflow:auto;
@@ -21,10 +21,11 @@
       img { display:block; margin:0 auto; }
       p { margin-top:20px; font-size:1em; line-height:1.3; }
       a { word-break:break-all; word-wrap:wrap; transition-duration:200ms; }
+      a:last-child { margin-left:10px; color:#1ba5fd; }
       .address { color:#1ba5fd; }
     }
   }
-  .mobile #page-transfer {
+  .mobile #page-exchange {
     padding:60px 0;
     h1 {  margin:-2em 0 1.5em 0; }
     .center {
@@ -36,25 +37,32 @@
 
 
 <template>
-  <div id="page-transfer">
+  <div id="page-exchange">
     <div class="d1">
-      <h1>兑换 VPP</h1>
+      <h1>{{exchange.title}}</h1>
       <div class="center">
-        <img src="~/assets/img/transfer/qrcode.png" alt="">
-        <p>用以太坊钱包扫码转账或将ETH转向地址：<a class="address" target="_blank" href="https://etherscan.io/address/0x6f89544bc460f15315086f411b9c1fe5c8cfb1f1">0x6f89544bc460f15315086f411b9c1fe5c8cfb1f1</a>，智能合约将自动按1:52000兑换率将VPP转到您钱包，请稍后登录钱包查看VPP余额。转账前务必看下图中的说明，否则交易可能失败。如对交易有疑问请联系: <a href="tel:0755-33530815">0755-33530815</a></p>
+        <img :src="exchange.img" alt="">
+        <p v-html="exchange.desc"></p>
       </div>
     </div>
     <div class="d2">
-      <img src="~/assets/img/transfer/e1.jpg" alt="">
-      <img src="~/assets/img/transfer/e2.jpg" alt="">
+      <img :src="exchange.guide[0]" alt="">
+      <img :src="exchange.guide[1]" alt="">
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import path from 'path'
 export default {
   data() {
     return {}
-  }
+  },
+  computed: {
+    ...mapState({
+      exchange  :state=>state.lang.exchange
+    }),
+  },
 }
 </script>

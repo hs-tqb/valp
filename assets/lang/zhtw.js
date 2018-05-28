@@ -9,8 +9,8 @@ export default {
   ],
   navs: {
     items: [
-      {name:'兌換VPP', link:'/transfer?lang=zh-tw'},
-      {sign:'presale',name:'預售登記', external:true, link:"http://valpromise.mikecrm.com/MeBeFVu"},
+      // {name:'兌換VPP', link:'/transfer?lang=zh-tw'},
+      {sign:'presale',name:'預售登記', external:true, link:"http://valpromise.mikecrm.com/korDtHX"},
       {anchor:'highlights', name:'產品', inFooter:true}, 
       {anchor:'team', name:'團隊', inFooter:true}, 
       {anchor:'investor', name:'顧問', inFooter:true}, 
@@ -28,6 +28,22 @@ export default {
   },
   community: {
     button:'加入电报群'
+  },
+  download: {
+    title:'ValPromise应用下载',
+    desc:'ValPromise (价值承诺协议）是人人都可创建和发行自己金融合约（衍生品）的平台。',
+    platform:'安卓版APP:',
+    img:require('~/assets/img/download/qrcode.png'),
+    link:{url:'http://download.valp.io/ValPromise_V1.1.0.apk', 'text':'扫码或点击下载'}
+  },
+  exchange: {
+    title:'兑换 VPP',
+    desc:'用以太坊钱包扫码转账或将ETH转向地址：<a target="_blank" href="https://etherscan.io/address/0x6f89544bc460f15315086f411b9c1fe5c8cfb1f1" class="address">0x6f89544bc460f15315086f411b9c1fe5c8cfb1f1</a>，智能合约将自动按1:52000兑换率将VPP转到您钱包，请稍后登录钱包查看VPP余额。转账前务必看下图中的说明，否则交易可能失败。如对交易有疑问请联系: <a href="tel:0755-33530815">0755-33530815</a>',
+    img: require('~/assets/img/exchange/qrcode.png'),
+    guide:[
+      require('~/assets/img/exchange/e1_zh.jpg'),
+      require('~/assets/img/exchange/e2_zh.jpg'),
+    ]
   },
   news: {
     items: [
