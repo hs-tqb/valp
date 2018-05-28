@@ -15,7 +15,7 @@
       padding:10px 0;
       img { display:block; margin:10px auto; }
     }
-    h1 { margin:-2em 0 2em 0; font-size:30px; color:#fff; }
+    h1 { margin:1.5em 0; font-size:30px; color:#fff; }
     .center { 
       width:36em; color:#fff; 
       img { display:block; margin:0 auto; }
@@ -27,7 +27,7 @@
   }
   .mobile #page-exchange {
     padding:60px 0;
-    h1 {  margin:-2em 0 1.5em 0; }
+    h1 {  margin:0 0 1.5em 0; }
     .center {
       width:70%;
     }
