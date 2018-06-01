@@ -14,7 +14,8 @@
   
   #news  {
     li { flex:1; }
-    .card { padding:0 15px; width:100%; height:auto; }
+    .panel { width:100%; padding-left:10px; padding-right:10px; }
+    .card { padding:0 6px; width:100%; height:auto; }
   }
   #about {
     p { margin:20px auto; width:900px; text-align:center; }

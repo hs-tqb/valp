@@ -3,7 +3,7 @@ export default {
   lang:'zh-tw',
   langs: [
     {name:'English', type:'en'},
-    {name:'中文-繁體', type:"zh-tw"},
+    {name:'中文', type:"zh-tw"},
     {name:'Türkçe', type:'tr'},
     {name:'日本語', type:'jp'},
   ],
@@ -149,6 +149,21 @@ export default {
           { type:'img', src:require('~/assets/img/news/6/2.jpg') },
           { type:'img', src:require('~/assets/img/news/6/3.jpg') },
           { type:'img', src:require('~/assets/img/news/6/4.jpg') },
+        ]
+      },
+      {
+        link:'/news/7',
+        img: require('~/assets/img/news/7/0.png'),
+        title:'ValPromise 喜获分布式资本沈波认购',
+        paras:[
+          { type:"p", content:'【 ValPromise 价值承诺协议（VPP），金融资产上链类项目获得分布式资本沈波认购】VPP，是国内金融类最早一批落地应用的区块链项目，由分布式资本沈波、PreangelFund王利杰、首联资本、MDT基金会等资本和项目方参与认购，是一个旨在构建可自由发行金融资产合约的通用协议，其首个链上产品-天气期权合约安卓版已上线三个月（ValP.io），持币人数已近万。' },
+          { type:'img', src:require('~/assets/img/news/7/1.jpg') },
+          { type:'img', src:require('~/assets/img/news/7/2.jpg') },
+          { type:'img', src:require('~/assets/img/news/7/3.jpg') },
+          { type:'img', src:require('~/assets/img/news/7/4.jpg') },
+          { type:'img', src:require('~/assets/img/news/7/5.png') },
+          { type:'img', src:require('~/assets/img/news/7/6.jpg') },
+          { type:'img', src:require('~/assets/img/news/7/7.jpg') },
         ]
       }
     ],
