@@ -13,9 +13,32 @@
   .addition img { display:block; margin:0 auto; }
   
   #news  {
-    li { flex:1; }
-    .panel { width:100%; padding-left:10px; padding-right:10px; }
-    .card { padding:0 6px; width:100%; height:auto; }
+    // .panel { width:100%; padding-left:10px; padding-right:10px; }
+
+    // position:relative;
+    // .panel { overflow:hidden; }
+    overflow:hidden;
+    .sliderWrapper { overflow:hidden; }
+    .icon { 
+      position:absolute; top:0; width:40px; height:100%; display:none;
+      background:no-repeat center; cursor:pointer; opacity:0.7; transition-duration:400ms;
+      &:hover { opacity:1; }
+      &.prev { left:-70px; background-image:url(~/assets/img/icons/prev.png) }
+      &.next { right:-70px; background-image:url(~/assets/img/icons/next.png) }
+      &[disabled] { opacity:0.3!important; cursor:not-allowed; }
+    }
+    ul { 
+      transition-duration:300ms;
+      li { flex:1; }
+    }
+
+    .panel[data-slide-enable] {
+      ul { flex-wrap:nowrap; }
+      .icon { display:block; }
+      .card { width:200px; }
+    }
+
+    .card { margin:0; padding:0 5px; width:100%; height:auto; }
   }
   #about {
     p { margin:20px auto; width:900px; text-align:center; }
@@ -195,24 +218,28 @@
     </div>
     <!-- 新闻 -->
     <div id="news" class="gray">
-      <div class="panel">
-        <ul class="flex-dir-row">
-          <li v-for="(n,i) in newsItems" :key="`news${i}`" v-if="n.paras.every(n=>!!n)">
-            <a
-              :href="n.link+(lang?'?lang='+lang:'')"
-              class="card"
-              target="_blank"
-            ><img :src="n.img" ></a>
-            <!-- <nuxt-link v-else
-              :to="`${n.link}?lang=${lang}`"
-              class="card"
-              target="_blank"
-            ><img :src="n.img" ></nuxt-link> -->
-          </li>
-          <li>
-            <a class="card" :href="news.fixedItem.link"><img :src="news.fixedItem.img" alt=""></a>
-          </li>
-        </ul>
+      <div class="panel" :data-slide-enable="newsItems.length>6">
+        <span class="icon prev" @click="newsSlide(newsSlider.page===0?'':'prev')" :disabled="newsSlider.page===0"></span>
+        <span class="icon next" @click="newsSlide(newsItems.length<(6*(newsSlider.page+1))?'':'next')" :disabled="newsItems.length<(6*(newsSlider.page+1))"></span>
+        <div class="sliderWrapper">
+          <ul class="flex-dir-row" ref="slideElem">
+            <li v-for="(n,i) in newsItems" :key="`news${i}`" v-if="n.paras.every(n=>!!n)">
+              <a
+                :href="n.link+(lang?'?lang='+lang:'')"
+                class="card"
+                target="_blank"
+              ><img :src="n.img" ></a>
+              <!-- <nuxt-link v-else
+                :to="`${n.link}?lang=${lang}`"
+                class="card"
+                target="_blank"
+              ><img :src="n.img" ></nuxt-link> -->
+            </li>
+            <li>
+              <a class="card" :href="news.fixedItem.link"><img :src="news.fixedItem.img" alt=""></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- 关于 -->
@@ -394,6 +421,12 @@ export default {
         // successful:'注册成功',
       },
       hasReverse:false,
+      newsSlider: {
+        page:0,
+        width:200,
+        limit:6,
+        step:0,
+      }
     } 
   },
   computed: {
@@ -465,6 +498,31 @@ export default {
           this.email.note = 'failed';
         }
       })
+    },
+    newsSlide(direction) {
+      if ( !direction ) return;
+      let s = 0,
+          c = this.$refs['slideElem'];
+      let { width, page, limit } = this.newsSlider;
+      let len  = this.newsItems.length
+      let elem = this.$refs['slideElem']
+      
+
+      let temp = 0
+      if ( direction === 'prev' ) {
+        page = this.newsSlider.page += -1
+      }
+      else if ( direction === 'next' ) {
+        page = this.newsSlider.page += 1
+      }
+      temp = -((len<(page+1)*limit?len:(page+1)*limit)-limit) * width
+
+      console.log( temp )
+
+      elem.style.transform = 
+      elem.style.webkitTransform = 
+      `translate3d(${ temp }px,0,0)`
+
     }
   },
   beforeCreatez() {

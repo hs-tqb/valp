@@ -34,7 +34,7 @@ export default {
     desc:'ValPromise (价值承诺协议）是人人都可创建和发行自己金融合约（衍生品）的平台。',
     platform:'安卓版APP:',
     img:require('~/assets/img/download/qrcode.png'),
-    link:{url:'http://download.valp.io/ValPromise_V1.1.0.apk', 'text':'扫码或点击下载'}
+    link:{url:'http://download.valp.io/ValPromise_v2.0.apk', 'text':'扫码或点击下载'}
   },
   exchange: {
     title:'兑换 VPP',
@@ -164,6 +164,26 @@ export default {
           { type:'img', src:require('~/assets/img/news/7/5.png') },
           { type:'img', src:require('~/assets/img/news/7/6.jpg') },
           { type:'img', src:require('~/assets/img/news/7/7.jpg') },
+        ]
+      },
+      {
+        link:'/news/8',
+        img: require('~/assets/img/news/8/0.png'),
+        title:'【ValPromise】2.0“前奏版”抢先体验',
+        paras:[
+          { type:'p', content:'<br>嗨，V粉们，欢迎来到ValPromise！' },
+          { type:'h3', content:'【ValPromise是什么？】' },
+          { type:'p', content:'这是一个金融资产上链类区块链项目，旨在构建可自由发行金融资产合约的通用协议。<br>这是一个“挂钩客观公开指标的，金融资产发布-交易”体系 ，是一个去中心化金融资产交易所。' },
+          { type:'h3', content:'【你能得到什么？】' },
+          { type:'p', content:'在这里，你有你的金融自由。<br>在这里，人人可以进行商品\外汇期货，期权衍生品、指数化保险等风险管理金融资产的发行与交易。' },
+          { type:'h3', content:'【已有投资方？】' },
+          { type:'p', content:'项目已经获得包括分布式资本沈波、PreAngel Fund王利杰、MDT基金会、首联资本、狗狗币中国协会副会长周朝晖等币圈大佬认购。' },
+          { type:'h3', content:'【已有产品？】' },
+          { type:'p', content:'VPP首个应用是“天气衍生品合约”，该应用项目得到了天使投资人王刚、吴宵光、明势资本、墨迹天气投资。创始团队3年成熟业务积累，已有成熟的第一代产品和不断增长的收入，产品上线近10个月，累计发行20余万份合约，服务超过10万人次，分销渠道包括墨迹天气APP常驻页面，阳光保险等。<br>6月中，我们会开放神秘产品！尽情期待哟！' },
+          { type:'h3', content:'【产品指南？】' },
+          { type:'p', content:'如何交易？<br>第一步：看眼缘<br>选择你需要保障的城市<br>第二步：深入了解<br>根据自己对所需对冲风险的需求，选择合理的气温变化区间<br>第三步：牵手领证<br>确认下单，等待合约判定。' },
+          { type:'h3', content:'【帮助】' },
+          { type:'p', content:'Q:合约保障判定周期是多久？<br>A:T+2 (举个🌰购买6月1日的合约保障，判定时间为6月3日)<br>Q:判定提醒方式是什么？<br>A:购买成功与判定结果都将以短信形式通知。<br>Q:每日合约购买开放时间？<br>A:每日0时-当时24时都可购买第二天合约。<br>Q：还有疑问？<br>A：官方公众号：ValPromise' },
         ]
       }
     ],

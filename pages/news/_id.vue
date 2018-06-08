@@ -5,6 +5,9 @@
   .mobile #footer { display:none; }
   .mobile #page-news { padding:0 24px; }
   #page-news b { font-weight:bold; }
+  /* #page-news #article p { text-indent:0; } */
+  #page-news #article h3 { margin:50px 0 20px 0; font-weight:600; }
+  #page-news #article h3 + p{ text-indent:0; }
 </style>
 
 <template>
@@ -19,6 +22,7 @@
         </template> -->
         <p v-if="e.type==='p'" v-html="e.content"></p>
         <img v-else-if="e.type==='img'" :src="e.src" :key="`e${i}`">
+        <h3 v-else-if="e.type==='h3'" v-html="e.content"></h3>
         <p v-else-if="e.type==='osma'&&osma" v-html="osma"></p>
       </template>
       <!-- <p v-for="(t,i) in texts" :key="`p${i}`" v-html="t.content"></p> -->
