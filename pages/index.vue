@@ -143,7 +143,8 @@
   .card  { width:100%; padding:18px 10px; }
   .panel { width:100%; }
   #news {
-    .card {  padding:0; }
+    // padding:0;
+    .card { margin-top:10px; padding:0; width:100%!important; }
   }
   #white-paper h1 { font-size:30px; }
   #about p { padding:0 15px; width:auto; }
