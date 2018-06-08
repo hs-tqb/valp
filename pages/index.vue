@@ -426,7 +426,6 @@ export default {
         page:0,
         width:200,
         limit:6,
-        step:0,
       }
     } 
   },
@@ -518,7 +517,6 @@ export default {
       }
       temp = -((len<(page+1)*limit?len:(page+1)*limit)-limit) * width
 
-      console.log( temp )
 
       elem.style.transform = 
       elem.style.webkitTransform = 

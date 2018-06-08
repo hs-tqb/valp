@@ -284,18 +284,18 @@ export default {
         title:'焦臻 區塊鏈專家 ', 
         desc:'中國科學院計算機科學博士，主要研究方向為物聯網區塊鏈高效架構，區塊鏈吞吐量優化等底層技術，同時在物聯網及去中心化網絡領域具有多年研發經歷。擔任國家自然科學基金評審專家，主持及參與國家自然科學基金，國家科技重大專項，世界500強企業聯合研發課題等十余項，負責制定物聯網國家標準兩項，在國際頂級刊物及會議發表學術論文二十余篇。'
       },
-      {
-        name:'張毅鵬',
-        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m3.png?imageslim',
-        title:'張毅鵬 中國最早一批移動互聯網海外產品經理 ',
-        desc:'復旦大學電子與通信工程碩士，早年作為中國最早的移動互聯網出海企業—網秦集團（NYSE: NQ）核心產品經理，從諾基亞塞班時代開始就積累了大量的海外產品設計和運營經驗。之後他在奇虎360海外事業部，幫助360海外業務取得了突破性進展。作為中國新銳出海團隊APUS Group創始成員之壹，締造了3個月內新產品海外用戶超過1億的記錄，其產品榮登Google Play 30+國家排行榜第一。加入ValPromise之前，他在中國最大的激勵互聯網廣告公司擔任產品負責人，指導歐美，東南亞和印度地區產品的運營和推廣工作，在國外KOL流量，Apple Store、Google和Facebook生態運營方面經驗豐富。'
-      },
-      {
-        name:'邵俊',
-        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m2.png?imageslim',
-        title:'邵俊 概率學博士(金融極限方向)', 
-        desc:'概率學博士，碩士畢業於歐洲最負盛名的巴黎六大與巴黎綜合理工合辦的金融數學項目，師從當代金融數學之母 Nicole El Karoui 教授。歸國之前供職於AXA 安盛保險巴黎衍生品定價團隊，長期從事期權、期貨、固定收益衍生品等衍生品的量化分析建模、金融工具設計、風險評估等工作，在交易、做市、對沖、風控、高頻以及衍生品等領域積累了豐富的經驗，他還是壹名資深R語言和Python開發者，擁有非常豐富的工程實踐經歷。'
-      },
+      // {
+      //   name:'張毅鵬',
+      //   avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m3.png?imageslim',
+      //   title:'張毅鵬 中國最早一批移動互聯網海外產品經理 ',
+      //   desc:'復旦大學電子與通信工程碩士，早年作為中國最早的移動互聯網出海企業—網秦集團（NYSE: NQ）核心產品經理，從諾基亞塞班時代開始就積累了大量的海外產品設計和運營經驗。之後他在奇虎360海外事業部，幫助360海外業務取得了突破性進展。作為中國新銳出海團隊APUS Group創始成員之壹，締造了3個月內新產品海外用戶超過1億的記錄，其產品榮登Google Play 30+國家排行榜第一。加入ValPromise之前，他在中國最大的激勵互聯網廣告公司擔任產品負責人，指導歐美，東南亞和印度地區產品的運營和推廣工作，在國外KOL流量，Apple Store、Google和Facebook生態運營方面經驗豐富。'
+      // },
+      // {
+      //   name:'邵俊',
+      //   avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m2.png?imageslim',
+      //   title:'邵俊 概率學博士(金融極限方向)', 
+      //   desc:'概率學博士，碩士畢業於歐洲最負盛名的巴黎六大與巴黎綜合理工合辦的金融數學項目，師從當代金融數學之母 Nicole El Karoui 教授。歸國之前供職於AXA 安盛保險巴黎衍生品定價團隊，長期從事期權、期貨、固定收益衍生品等衍生品的量化分析建模、金融工具設計、風險評估等工作，在交易、做市、對沖、風控、高頻以及衍生品等領域積累了豐富的經驗，他還是壹名資深R語言和Python開發者，擁有非常豐富的工程實踐經歷。'
+      // },
       {
         name:'艾迪',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m5.png?imageslim',
@@ -347,6 +347,13 @@ export default {
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a6.png?imageslim',
         desc:'Melody是區塊鏈咨詢和投資基金Spartan Group的創始人。她是TenX的早期投資者，也是Gifto和Appcoins的戰略顧問。曾供職於高盛。'
       },
+      {
+        name:'張毅鵬',
+        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m3.png?imageslim',
+        desc:'復旦大學電子與通信工程碩士，早年作為中國最早的移動互聯網出海企業—網秦集團（NYSE: NQ）核心產品經理，從諾基亞塞班時代開始就積累了大量的海外產品設計和運營經驗。之後他在奇虎360海外事業部，幫助360海外業務取得了突破性進展。作為中國新銳出海團隊APUS Group創始成員之壹，締造了3個月內新產品海外用戶超過1億的記錄，其產品榮登Google Play 30+國家排行榜第一。'
+      },
+      {},
+      {}
     ],
     agency: {
       title:'投資機構',
