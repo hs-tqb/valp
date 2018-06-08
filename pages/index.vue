@@ -25,7 +25,7 @@
       &:hover { opacity:1; }
       &.prev { left:-70px; background-image:url(~/assets/img/icons/prev.png) }
       &.next { right:-70px; background-image:url(~/assets/img/icons/next.png) }
-      &[disabled] { opacity:0.3!important; cursor:not-allowed; }
+      &[disabled] { opacity:0.3!important; }
     }
     ul { 
       transition-duration:300ms;
