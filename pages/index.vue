@@ -237,7 +237,7 @@
               ><img :src="n.img" ></nuxt-link> -->
             </li>
             <li>
-              <a class="card" :href="news.fixedItem.link"><img :src="news.fixedItem.img" alt=""></a>
+              <a class="card" :href="news.fixedItem.link" target="_blank"><img :src="news.fixedItem.img" alt=""></a>
             </li>
           </ul>
         </div>
