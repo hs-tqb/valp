@@ -34,7 +34,7 @@ export default {
     desc:'ValPromise (价值承诺协议）是人人都可创建和发行自己金融合约（衍生品）的平台。',
     platform:'安卓版APP:',
     img:require('~/assets/img/download/qrcode.png'),
-    link:{url:'http://download.valp.io/ValPromise_v2.0.apk', 'text':'扫码或点击下载'}
+    link:{url:'http://download.valp.io', 'text':'扫码或点击下载'}
   },
   exchange: {
     title:'兑换 VPP',

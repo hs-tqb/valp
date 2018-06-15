@@ -1,23 +1,23 @@
 <style lang="less">
   #page-help {
     padding:10px 20px;
-    h1 {
-      display: block;
-      font-size: 2em;
-      -webkit-margin-before: 1em;
-      -webkit-margin-after: 1.25em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
-      font-weight: bold;
-    }
+    // h1 {
+    //   display: block;
+    //   font-size: 2em;
+    //   -webkit-margin-before: 1em;
+    //   -webkit-margin-after: 1.25em;
+    //   -webkit-margin-start: 0px;
+    //   -webkit-margin-end: 0px;
+    //   font-weight: bold;
+    // }
     h3 {
       display: block;
-      font-size: 1.17em;
+      font-size: 14px;
+      font-weight:normal;
       -webkit-margin-before: .7em;
       -webkit-margin-after: .7em;
       -webkit-margin-start: 0px;
       -webkit-margin-end: 0px;
-      font-weight: bold;
       line-height:1;
     }
     p {
@@ -26,17 +26,19 @@
       -webkit-margin-after: .7em;
       -webkit-margin-start: 0px;
       -webkit-margin-end: 0px;
+      font-size:12px;
       line-height:1;
     }
     li {
       margin-top:20px;
     }
-  }  
+    #footbar { position:fixed; left:0; bottom:10px; width:100%; }
+  }
 </style>
 
 <template>
   <div id="page-help">
-    <h1>使用帮助</h1>
+    <!-- <h1>使用帮助</h1> -->
         <ul class="qa">
             <li>
                 <h3>Q:如何充值VPP？</h3>
@@ -55,6 +57,9 @@
                 <p>A:  打开 App——登录——忘记密码，根据提示找回。</p>
             </li>
         </ul>
+        <div id="footbar">
+            <p style="line-height:1.5; text-align:center;">如有任何疑问请联系官方小助理<br>微信号: valpromise-vpp</p>
+        </div>
   </div>
 </template>
 
