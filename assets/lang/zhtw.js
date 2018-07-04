@@ -185,6 +185,12 @@ export default {
           { type:'h3', content:'【帮助】' },
           { type:'p', content:'Q:合约保障判定周期是多久？<br>A:T+2 (举个🌰购买6月1日的合约保障，判定时间为6月3日)<br>Q:判定提醒方式是什么？<br>A:购买成功与判定结果都将以短信形式通知。<br>Q:每日合约购买开放时间？<br>A:每日0时-当时24时都可购买第二天合约。<br>Q：还有疑问？<br>A：官方公众号：ValPromise' },
         ]
+      },
+      {
+        link:'http://valpromise.mikecrm.com/korDtHX',
+        img:require('~/assets/img/news/external/2.jpg'),
+        external:true,
+        paras:[]
       }
     ],
     fixedItem:{ link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }

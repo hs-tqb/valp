@@ -228,7 +228,7 @@
         <span class="icon next" @click="newsSlide(newsItems.length<(6*(newsSlider.page+1))?'':'next')" :disabled="newsItems.length<(6*(newsSlider.page+1))"></span>
         <div class="sliderWrapper">
           <ul class="flex-dir-row" ref="slideElem">
-            <li v-for="(n,i) in newsItems" :key="`news${i}`" v-if="n.paras.every(n=>!!n)">
+            <li v-for="(n,i) in newsItems" :key="`news${i}`" v-if="n.paras&&n.paras.every(n=>!!n)">
               <a
                 :href="n.link+(lang?'?lang='+lang:'')"
                 class="card"
