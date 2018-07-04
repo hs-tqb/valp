@@ -11,15 +11,15 @@ export default {
     items: [
       // {name:'兌換VPP', link:'/transfer?lang=zh-tw'},
       {sign:'presale',name:'預售', external:true, link:"http://valpromise.mikecrm.com/korDtHX"},
-      {anchor:'highlights', name:'產品', inFooter:true}, 
-      {anchor:'team', name:'團隊', inFooter:true}, 
-      {anchor:'investor', name:'顧問', inFooter:true}, 
-      {anchor:'contact', name:'聯繫我們', inFooter:true}, 
+      {anchor:'highlights', name:'產品', inFooter:true},
+      {anchor:'team', name:'團隊', inFooter:true},
+      {anchor:'investor', name:'顧問', inFooter:true},
+      {anchor:'contact', name:'聯繫我們', inFooter:true},
     ]
   },
   slogan:'分布式價值承諾協議',
   whitePaper:{
-    link:'/whitepaper/ValPromise_WhitePaper_cn_v1.3.8.pdf',
+    link:'/whitepaper/ValPromise_WhitePaper_cn_v2.0.0.pdf',
     button:'白皮書'
   },
   candyHandingOut: {
@@ -47,7 +47,7 @@ export default {
   },
   news: {
     items: [
-      { 
+      {
         link:'/news/1', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/1/0-cn.png?imageslim',
         title:'ValPromise 受邀参加深圳区块链应用峰会',
         paras:[
@@ -64,7 +64,7 @@ export default {
           { type:'img', src:'http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim' },
         ]
       },
-      { 
+      {
         link:'/news/2', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/2/0-cn.png?imageslim',
         title:'向涛在香港区块链峰会上发表演讲',
         paras:[
@@ -85,7 +85,7 @@ export default {
         ]
       },
       {
-        link:'/news/3', 
+        link:'/news/3',
         img:'http://otydyl8j5.bkt.clouddn.com/valp/news/3-temp/0-cn.png?imageslim',
         title:'ValPromise 受邀参加深圳区块链沙龙路演',
         paras:[
@@ -101,7 +101,7 @@ export default {
         ]
       },
       {
-        link:'/news/4', 
+        link:'/news/4',
         img:'http://otydyl8j5.bkt.clouddn.com/valp/news/4/0-cn.png?imageslim',
         title:'火星峰会2.0圆满结束，ValPromise领跑区块链+金融',
         paras:[
@@ -118,7 +118,7 @@ export default {
         ]
       },
       {
-        link:'/news/5', 
+        link:'/news/5',
         img:'http://otydyl8j5.bkt.clouddn.com/valp/news/5/0-cn.png?imageslim',
         title:'ValPromise粤港澳大湾区区块链技术峰会路演圆满结束',
         paras:[
@@ -196,35 +196,35 @@ export default {
   highlights: {
     title:'亮點',
     items:[
-      { 
-        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i1.png?imageslim', 
-        title:'分布式智能合約', 
-        desc:'將傳統衍生品市場線下一對一紙質或者傳統中心化電子合約簽署模式升級為鏈上智能合約簽訂模式，利用智能合約可編程性與自動執行等特點，解決交易對手不履約等信用風險問題。' 
+      {
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i1.png?imageslim',
+        title:'分布式智能合約',
+        desc:'將傳統衍生品市場線下一對一紙質或者傳統中心化電子合約簽署模式升級為鏈上智能合約簽訂模式，利用智能合約可編程性與自動執行等特點，解決交易對手不履約等信用風險問題。'
       },
-      { 
-        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i2.png?imageslim', 
-        title:'統一交易媒介', 
-        desc:'VPP 承諾幣是平臺唯一支持的交易媒介，法幣與數字貨幣兌換為 VPP 後參與平臺的承諾對沖交易，由此打破貨幣種類與物理地域的限制，提供強大的全球流動性。' 
+      {
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i2.png?imageslim',
+        title:'統一交易媒介',
+        desc:'VPP 承諾幣是平臺唯一支持的交易媒介，法幣與數字貨幣兌換為 VPP 後參與平臺的承諾對沖交易，由此打破貨幣種類與物理地域的限制，提供強大的全球流動性。'
       },
-      { 
-        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i3.png?imageslim', 
-        title:'去中心化承諾創建機制', 
-        desc:'利用“眾智”，任何人和組織，都可以創建承諾模板，滿足自己和他人的風險對沖需求，從而構建個性化，高效率的承諾生態。' 
+      {
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i3.png?imageslim',
+        title:'去中心化承諾創建機制',
+        desc:'利用“眾智”，任何人和組織，都可以創建承諾模板，滿足自己和他人的風險對沖需求，從而構建個性化，高效率的承諾生態。'
       },
-      { 
-        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i4.png?imageslim', 
-        title:'數據鏈上自證', 
-        desc:'價值承諾合約中錨定的客觀數據指標（例如天氣數據），獲取即寫入區塊中，無法篡改，數據自證清白。' 
+      {
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i4.png?imageslim',
+        title:'數據鏈上自證',
+        desc:'價值承諾合約中錨定的客觀數據指標（例如天氣數據），獲取即寫入區塊中，無法篡改，數據自證清白。'
       },
-      { 
-        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i5.png?imageslim', 
-        title:'分層設計', 
-        desc:'在底層區塊鏈層上，ValPromise通過分層設計，將合約定義，交易功能和不同垂直場景的應用分開，既保證服務質量，也為ValPromise後續擴展留出可能。' 
+      {
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i5.png?imageslim',
+        title:'分層設計',
+        desc:'在底層區塊鏈層上，ValPromise通過分層設計，將合約定義，交易功能和不同垂直場景的應用分開，既保證服務質量，也為ValPromise後續擴展留出可能。'
       },
-      { 
-        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i6.png?imageslim', 
-        title:'移動平臺', 
-        desc:'ValPromise 通過適合 Mobile 和 IOT 的前端應用，降低區塊鏈的應用成本，讓更多力量加入到 ValPromise 區塊鏈中。' 
+      {
+        img:'http://otydyl8j5.bkt.clouddn.com/valp/highlights/i6.png?imageslim',
+        title:'移動平臺',
+        desc:'ValPromise 通過適合 Mobile 和 IOT 的前端應用，降低區塊鏈的應用成本，讓更多力量加入到 ValPromise 區塊鏈中。'
       }
     ]
   },
@@ -275,13 +275,13 @@ export default {
       {
         name  :'向濤',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m1.png?imageslim',
-        title:'向濤 數據科學家 ', 
+        title:'向濤 數據科學家 ',
         desc:'2011年香港中文大學信息工程碩士，先後創辦兩家大數據公司，禾訊科技（全球衛星大數據監測服務）及天氣寶（全自動化天氣風險合約定價&發行服務），帶領團隊在國內率先開拓兩個細分專業數據服務領域（商業遙感的農業應用市場，天氣風險管理市場），他在海量數據的獲取、管理及分析的技術架構設計實施，以及數據商業化領域有著多年的積累，因其業務在幫助中國打破西方戰略數據壟斷，創造經濟增長新動能方面的優秀表現，於2014年先後受到《焦點訪談》、以及《福布斯》專訪。'
       },
       {
         name:'焦臻',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m4.png?imageslim',
-        title:'焦臻 區塊鏈專家 ', 
+        title:'焦臻 區塊鏈專家 ',
         desc:'中國科學院計算機科學博士，主要研究方向為物聯網區塊鏈高效架構，區塊鏈吞吐量優化等底層技術，同時在物聯網及去中心化網絡領域具有多年研發經歷。擔任國家自然科學基金評審專家，主持及參與國家自然科學基金，國家科技重大專項，世界500強企業聯合研發課題等十余項，負責制定物聯網國家標準兩項，在國際頂級刊物及會議發表學術論文二十余篇。'
       },
       // {
@@ -293,7 +293,7 @@ export default {
       // {
       //   name:'邵俊',
       //   avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m2.png?imageslim',
-      //   title:'邵俊 概率學博士(金融極限方向)', 
+      //   title:'邵俊 概率學博士(金融極限方向)',
       //   desc:'概率學博士，碩士畢業於歐洲最負盛名的巴黎六大與巴黎綜合理工合辦的金融數學項目，師從當代金融數學之母 Nicole El Karoui 教授。歸國之前供職於AXA 安盛保險巴黎衍生品定價團隊，長期從事期權、期貨、固定收益衍生品等衍生品的量化分析建模、金融工具設計、風險評估等工作，在交易、做市、對沖、風控、高頻以及衍生品等領域積累了豐富的經驗，他還是壹名資深R語言和Python開發者，擁有非常豐富的工程實踐經歷。'
       // },
       {
@@ -317,6 +317,12 @@ export default {
   investors: {
     title:'投資 & 顧問',
     items:[
+      // {
+      //   name:'焦臻',
+      //   avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m4.png?imageslim',
+      //   title:'焦臻 區塊鏈專家 ',
+      //   desc:'中國科學院計算機科學博士，主要研究方向為物聯網區塊鏈高效架構，區塊鏈吞吐量優化等底層技術，同時在物聯網及去中心化網絡領域具有多年研發經歷。擔任國家自然科學基金評審專家，主持及參與國家自然科學基金，國家科技重大專項，世界500強企業聯合研發課題等十余項，負責制定物聯網國家標準兩項，在國際頂級刊物及會議發表學術論文二十余篇。'
+      // },
       {
         name:'王利傑',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a3.png?imageslim',
