@@ -3,7 +3,7 @@
 #page-home {
   color:#fff;
   h2 { color:@color-primary; }
-  .card {  
+  .card {
     display:block;
     width:320px;
     img.avatar { display:block; margin:0 auto; }
@@ -12,22 +12,6 @@
   .panel { position:relative; margin:0 auto; }
   .addition img { display:block; margin:0 auto; }
 
-  #slideshow {
-    #btn-presale {
-      position:relative; line-height:45px;
-      background: linear-gradient(90deg, #FABD00 0%, #FF7900 100%); 
-      span {
-        position:absolute; left:0; bottom:3px; width:100%; line-height:20px;
-        // background: linear-gradient(90deg, #000 0%, #1ba5fd 100%); 
-        // -webkit-background-clip: text;         /* 规定背景的划分区域 */
-        // -webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
-        font-size:12px; 
-        // color:#000;
-        // color:rgba(0,0,0,0.7);
-      }
-    }
-  }
-  
   #news  {
     // .panel { width:100%; padding-left:10px; padding-right:10px; }
 
@@ -35,7 +19,7 @@
     // .panel { overflow:hidden; }
     overflow:hidden;
     .sliderWrapper { overflow:hidden; }
-    .icon { 
+    .icon {
       position:absolute; top:0; width:40px; height:100%; display:none;
       background:no-repeat center; cursor:pointer; opacity:0.7; transition-duration:400ms;
       &:hover { opacity:1; }
@@ -43,7 +27,7 @@
       &.next { right:-70px; background-image:url(~/assets/img/icons/next.png) }
       &[disabled] { opacity:0.3!important; }
     }
-    ul { 
+    ul {
       transition-duration:300ms;
       li { flex:1; }
     }
@@ -63,18 +47,18 @@
     .card { width:370px; }
   }
   #team {
-    .card { 
-      margin-bottom:30px; width:25%; padding:18px 24px;
+    .card {
+      margin-bottom:30px; width:33.33%; padding:18px 24px;
       .avatar { margin:0 auto; width:160px; height:160px; border-radius:90px; background:no-repeat center/cover; }
     }
   }
   #investor {
     .card { padding:18px 0; }
   }
-  #partners { 
+  #partners {
     position:relative;
-    &:after { 
-      position:absolute; left:0; top:0; z-index:1; width:100%; height:100%; background:rgba(0,0,0,0.3); 
+    &:after {
+      position:absolute; left:0; top:0; z-index:1; width:100%; height:100%; background:rgba(0,0,0,0.3);
       content:'\200B';
     }
     .panel { z-index:10; }
@@ -89,12 +73,12 @@
       // padding:30px 0;
       // float:left;
       h3 { margin-bottom:30px; font-size:30px; color:@color-primary; }
-      .join { 
+      .join {
         h3 + p { margin:33px 0; }
-        div { 
-          position:relative; 
-          span { 
-            position:absolute; top:60px; left:5px; 
+        div {
+          position:relative;
+          span {
+            position:absolute; top:60px; left:5px;
             &.invalid,
             &.failed { color:#f56c6c; }
             &.successful { color:#67c23a; }
@@ -106,7 +90,7 @@
           &[type=button] { padding:0 50px; color:#fff; background:@color-primary; cursor:pointer; }
         }
       }
-      .social { 
+      .social {
         h3 { margin-top:100px; }
         a { position:relative; float:left; width:90px; height:90px; }
         a:before,
@@ -130,20 +114,20 @@
         a.fb:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/fb-focus.png); }
         a.tt:after  { background-image:url(http://otydyl8j5.bkt.clouddn.com/valp/icons/tt-focus.png?imageslim); }
 
-        a.wc i { 
-          position:absolute; left:-130px; bottom:90px; padding:25px; width:250px; height:250px; 
+        a.wc i {
+          position:absolute; left:-130px; bottom:90px; padding:25px; width:250px; height:250px;
           background:#eaeaea;
           /* background:#eaeaea url(http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim) no-repeat center /200px auto;  */
           border:1px solid #ccc; border-radius:10px;
-          // pointer-events:none; 
+          // pointer-events:none;
           visibility:hidden;
           opacity:0; transform:translate3d(0,-10px,0);
           transition-duration:300ms;
         }
         a.wc i img { display:block; width:200px; height:200px; }
         a.wc i:hover,
-        a.wc:hover i { 
-          // pointer-events:all; 
+        a.wc:hover i {
+          // pointer-events:all;
           visibility:visible;
           opacity:1; transform:translate3d(0,0,0) }
       }
@@ -152,6 +136,10 @@
       }
     }
   }
+}
+#page-root.pc.en,
+#page-root.pc.zh-tw {
+  #team .card { width:33.33%; }
 }
 // 移动端
 .mobile #page-home {
@@ -168,8 +156,8 @@
   #partners { height:470px; }
   #contact {
     height:auto;
-    .panel { 
-      text-align:center; 
+    .panel {
+      text-align:center;
       > div {
         h3 { margin-bottom:10px;  padding:0 18px; }
         .join {
@@ -178,7 +166,7 @@
           input[type=button] { margin-top:25px; }
           span { left:6%; top:58px; }
         }
-        .social { 
+        .social {
           h3 {margin-top:40px; }
           div { display:flex; flex-direction:row; justify-content:space-around; }
           a { float:none; }
@@ -197,11 +185,11 @@
   text-align:inherit;
   color:inherit;
 }
-#alertify-fixed-btn { 
+#alertify-fixed-btn {
   display:block;
   margin:15px 10px 0 10px;
   line-height:48px;
-  text-align:center; color:@color-primary; border:1px solid @color-primary; 
+  text-align:center; color:@color-primary; border:1px solid @color-primary;
   font-size: 1.125rem;
   // padding: 0.5rem 2.9rem;
   border-radius:30px;
@@ -224,10 +212,7 @@
         <h1>{{slogan}}</h1>
         <div class="btn-group">
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
-          <a id="btn-presale" :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">
-            {{presaleItem.name}}
-            <span>8pm. On 8th, July</span>
-          </a>
+          <a :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">{{presaleItem.name}}</a>
           <!-- <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link> -->
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>
         </div>
@@ -243,7 +228,7 @@
         <span class="icon next" @click="newsSlide(newsItems.length<(6*(newsSlider.page+1))?'':'next')" :disabled="newsItems.length<(6*(newsSlider.page+1))"></span>
         <div class="sliderWrapper">
           <ul class="flex-dir-row" ref="slideElem">
-            <li v-for="(n,i) in newsItems" :key="`news${i}`" v-if="n.paras.every(n=>!!n)">
+            <li v-for="(n,i) in newsItems" :key="`news${i}`" v-if="n.paras&&n.paras.every(n=>!!n)">
               <a
                 :href="n.link+(lang?'?lang='+lang:'')"
                 class="card"
@@ -408,11 +393,11 @@
         </div>
         <div class="right twitter flex-2">
           <template v-if="docMounted">
-          <a class="twitter-timeline" href="https://twitter.com/Valpromise?ref_src=twsrc%5Etfw" 
-            data-theme="dark" 
+          <a class="twitter-timeline" href="https://twitter.com/Valpromise?ref_src=twsrc%5Etfw"
+            data-theme="dark"
             data-height="440"
             data-chrome="noheader nofooter noborders transparent"
-          >Tweets by Valpromise</a> 
+          >Tweets by Valpromise</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </template>
         </div>
@@ -446,7 +431,7 @@ export default {
         width:200,
         limit:6,
       }
-    } 
+    }
   },
   computed: {
     // ...mapState(['lang'])
@@ -476,7 +461,7 @@ export default {
       team      :state=>state.lang.team,
       investors :state=>state.lang.investors,
       partners  :state=>state.lang.partners,
-      join      :state=>state.lang.join,
+      join  :state=>state.lang.join,
       contact   :state=>state.lang.contact,
       presale   :state=>state.lang.presale,
     }),
@@ -525,7 +510,7 @@ export default {
       let { width, page, limit } = this.newsSlider;
       let len  = this.newsItems.length
       let elem = this.$refs['slideElem']
-      
+
 
       let temp = 0
       if ( direction === 'prev' ) {
@@ -537,8 +522,8 @@ export default {
       temp = -((len<(page+1)*limit?len:(page+1)*limit)-limit) * width
 
 
-      elem.style.transform = 
-      elem.style.webkitTransform = 
+      elem.style.transform =
+      elem.style.webkitTransform =
       `translate3d(${ temp }px,0,0)`
 
     }
@@ -548,8 +533,8 @@ export default {
       this.$store.commit('setLanguage', this.$route.query.lang.trim());
     }
     try {
-      this.$store.commit( 
-        'setPlatform', 
+      this.$store.commit(
+        'setPlatform',
         navigator.userAgent.match(/iPhone|iPad|Android|iPod|iOS/i)?'mobile':'pc'
       );
     } catch(e) {
