@@ -457,7 +457,7 @@ export default {
       team      :state=>state.lang.team,
       investors :state=>state.lang.investors,
       partners  :state=>state.lang.partners,
-      join  :state=>state.lang.join,
+      join      :state=>state.lang.join,
       contact   :state=>state.lang.contact,
       presale   :state=>state.lang.presale,
     }),

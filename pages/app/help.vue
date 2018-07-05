@@ -49,7 +49,7 @@
                 <p>A: 首页——账户——提现，根据指引操作。</p>
             </li>
             <li>
-                <h3>Q: 转出 VPP要多久到账？</h3>
+                <h3>Q: 转出VPP要多久到账？</h3>
                 <p>A: 正常情况下1个工作日到账，最多不超过3个工作日。</p>
             </li>
             <li>
@@ -66,11 +66,34 @@
 <script>
 import { mapState } from 'vuex'
 export default {
+  asyncData({query}) {
+    return { query }
+  },
   layout:'empty',
   data() {
-    return {}
+    return {
+      text:{
+        'en': {
+
+        },
+        'cn': {
+          qa:[
+            { q:'如何充值VPP？', a:'首页——账户——充值，获取钱包地址，再进行转入操作。' },
+            { q:'如何提现VPP？', a:'首页——账户——提现，根据指引操作。' },
+            { q:'转出VPP要多久到账？', a:'正常情况下1个工作日到账，最多不超过3个工作日。' },
+          ],
+          footer: {
+            propmt:'如有任何疑问请联系官方小助理',
+            contact:'微信号: valpromise-vpp'
+          }
+        }
+      }
+    }
   },
   computed: {
+    lang() {
+      return this.text[this.query.lang||'cn']
+    }
   }
 }
 </script>
