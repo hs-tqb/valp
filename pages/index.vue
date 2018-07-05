@@ -234,7 +234,7 @@
           <a id="btn-presale" :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">
             &#8203;
             <span class="title">{{presaleItem.name}}</span>
-            <span class="date">8pm. On 8th, July</span>
+            <span class="date">{{presaleItem.time}}</span>
           </a>
           <!-- <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link> -->
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>

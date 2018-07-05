@@ -10,7 +10,7 @@ export default {
   navs: {
     items: [
       // {name:'兌換VPP', link:'/transfer?lang=zh-tw'},
-      {sign:'presale',name:'預售', external:true, link:"http://valpromise.mikecrm.com/korDtHX"},
+      {sign:'presale',time:'7月8日, 晚8点',name:'預售', external:true, link:"http://valpromise.mikecrm.com/korDtHX"},
       {anchor:'highlights', name:'產品', inFooter:true},
       {anchor:'team', name:'團隊', inFooter:true},
       {anchor:'investor', name:'顧問', inFooter:true},
