@@ -218,7 +218,7 @@ export default {
       },
       website: {
         official: 'http://valp.io?lang=zh-tw',
-        telegram: 'https://t.me/ValPromise'
+        telegram: 'https://t.me/vpp_offical3'
       },
       dialogResult: {
         show:false,

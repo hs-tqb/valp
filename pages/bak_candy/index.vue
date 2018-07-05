@@ -242,8 +242,8 @@ export default {
           text:'http://valp.io',
         },
         telegram: {
-          link:'https://t.me/ValPromise',
-          text:'https://t.me/ValPromise'
+          link:'https://t.me/vpp_offical3',
+          text:'https://t.me/vpp_offical3'
         },
       },
       dialogResult: {

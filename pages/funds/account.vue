@@ -60,7 +60,7 @@
     <div class="placeholder"></div>
     <h3 class="website">
       <a href="http://valp.io?lang=zh-tw" class="text-left">官网 http://valp.io</a>
-      <a href="https://t.me/ValPromise" class="text-right">电报群 https://t.me/ValPromise</a>
+      <a href="https://t.me/vpp_offical3" class="text-right">电报群 https://t.me/vpp_offical3</a>
     </h3>
   </div>
 </template>

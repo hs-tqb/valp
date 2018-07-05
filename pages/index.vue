@@ -14,9 +14,12 @@
 
   #slideshow {
     #btn-presale {
-      position:relative; line-height:45px;
+      position:relative; 
+      .title { 
+        position:absolute; left:0; top:-10px; width:100%;
+      }
       background: linear-gradient(90deg, #FABD00 0%, #FF7900 100%); 
-      span {
+      .date {
         position:absolute; left:0; bottom:3px; width:100%; line-height:20px;
         // background: linear-gradient(90deg, #000 0%, #1ba5fd 100%); 
         // -webkit-background-clip: text;         /* 规定背景的划分区域 */
@@ -229,8 +232,9 @@
         <div class="btn-group">
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
           <a id="btn-presale" :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">
-            {{presaleItem.name}}
-            <span>8pm. On 8th, July</span>
+            &#8203;
+            <span class="title">{{presaleItem.name}}</span>
+            <span class="date">8pm. On 8th, July</span>
           </a>
           <!-- <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link> -->
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>

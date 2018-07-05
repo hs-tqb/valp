@@ -403,7 +403,7 @@ export default function($) {
         hasAlertifyAppeared = true;
         alertify.message(
           '<p id="alertify-fixed-para" >Make new friends! </p>'
-          +'<a id="alertify-fixed-btn" href="https://t.me/ValPromise" target="_blank">'
+          +'<a id="alertify-fixed-btn" href="https://t.me/vpp_offical3" target="_blank">'
             + window._community.button
           + '</a>'
         , 0)
