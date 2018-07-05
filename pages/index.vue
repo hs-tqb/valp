@@ -11,6 +11,22 @@
   }
   .panel { position:relative; margin:0 auto; }
   .addition img { display:block; margin:0 auto; }
+
+  #slideshow {
+    #btn-presale {
+      position:relative; line-height:45px;
+      background: linear-gradient(90deg, #FABD00 0%, #FF7900 100%); 
+      span {
+        position:absolute; left:0; bottom:3px; width:100%; line-height:20px;
+        // background: linear-gradient(90deg, #000 0%, #1ba5fd 100%); 
+        // -webkit-background-clip: text;         /* 规定背景的划分区域 */
+        // -webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+        font-size:12px; 
+        // color:#000;
+        // color:rgba(0,0,0,0.7);
+      }
+    }
+  }
   
   #news  {
     // .panel { width:100%; padding-left:10px; padding-right:10px; }
@@ -208,7 +224,10 @@
         <h1>{{slogan}}</h1>
         <div class="btn-group">
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
-          <a :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">{{presaleItem.name}}</a>
+          <a id="btn-presale" :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">
+            {{presaleItem.name}}
+            <span>8pm. On 8th, July</span>
+          </a>
           <!-- <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link> -->
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>
         </div>
