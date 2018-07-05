@@ -3,7 +3,7 @@ export default {
   lang:'zh-tw',
   langs: [
     {name:'English', type:'en'},
-    // {name:'中文', type:"zh-tw"},
+    {name:'中文', type:"zh-tw"},
     {name:'Türkçe', type:'tr'},
     {name:'日本語', type:'jp'},
   ],

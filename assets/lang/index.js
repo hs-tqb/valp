@@ -5,6 +5,6 @@ import jp from './jp'
 
 export default {
   en, 
-  // zhtw,
+  zhtw,
    tr, jp
 }
