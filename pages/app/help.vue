@@ -32,7 +32,10 @@
     li {
       margin-top:20px;
     }
-    #footbar { position:fixed; left:0; bottom:10px; width:100%; }
+    #footbar { 
+      position:fixed; left:0; bottom:10px; width:100%; 
+      a { color:skyblue; text-decoration:underline; }
+    }
   }
 </style>
 
@@ -40,7 +43,7 @@
   <div id="page-help">
     <!-- <h1>使用帮助</h1> -->
         <ul class="qa">
-            <li>
+            <!-- <li>
                 <h3>Q:如何充值VPP？</h3>
                 <p>A: 首页——账户——充值，获取钱包地址，再进行转入操作。</p>
             </li>
@@ -55,10 +58,17 @@
             <li>
                 <h3>Q: 忘记登录密码，如何找回？</h3>
                 <p>A:  打开 App——登录——忘记密码，根据提示找回。</p>
+            </li> -->
+            <li v-for="(item,i) in lang.qa" :key="`item-${i}`">
+              <h3>Q: {{item.q}}</h3>
+              <p>A: {{item.a}}</p>
             </li>
         </ul>
         <div id="footbar">
-            <p style="line-height:1.5; text-align:center;">如有任何疑问请联系官方小助理<br>微信号: valpromise-vpp</p>
+            <p style="line-height:1.5; text-align:center;">
+              {{lang.footer.propmt}}
+              <br><span v-html="lang.footer.contact"></span>
+              </p>
         </div>
   </div>
 </template>
@@ -74,7 +84,15 @@ export default {
     return {
       text:{
         'en': {
-
+          qa:[
+            { q:'How to recharge VPP?', a:'Home - Account - Recharge, get the wallet address, and then transfer.' },
+            { q:'How to withdraw VPP?', a:'Home - Account - Withdrawal, follow the instructions.' },
+            { q:'How long does it take to transfer VPP?', a:'Under normal circumstances, 1 working day will arrive, up to 3 working days.' },
+          ],
+          footer: {
+            propmt:'If you have any questions, please contact the official assistant.',
+            contact:'telegram: <a target="_blank" href="https://t.me/vpp_offical3">https://t.me/vpp_offical3</a>'
+          }
         },
         'cn': {
           qa:[
