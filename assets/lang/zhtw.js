@@ -27,6 +27,7 @@ export default {
     text:'APP 下载'
   },
   community: {
+    link:"https://t.me/vpp_offical3",
     button:'加入电报群'
   },
   download: {
@@ -193,7 +194,7 @@ export default {
         paras:[]
       }
     ],
-    fixedItem:{ link:'https://t.me/joinchat/II2BTAkqmTQXJ-utl-y5Sg', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }
+    fixedItem:{ link:'https://t.me/joinchat/HeCQEU8KbjE8WRhhWaskUQ', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }
   },
   about: {
     title:'ValPromise',

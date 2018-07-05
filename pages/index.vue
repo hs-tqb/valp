@@ -236,7 +236,7 @@
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>
         </div>
         <p>
-          <a id="join-btn" href="https://t.me/ValPromise" target="_blank">{{community.button}}</a>
+          <a id="join-btn" :href="community.link" target="_blank">{{community.button}}</a>
         </p>
       </div>
     </div>
@@ -404,7 +404,7 @@
             <div>
               <a href="https://www.facebook.com/hiValPromise/" target="_blank" class="icon fb"></a>
               <a href="https://twitter.com/ValPromise" target="_blank" class="icon tt"></a>
-              <a href="https://t.me/ValPromise" target="_blank" class="icon tg"></a>
+              <a :href="community.link" target="_blank" class="icon tg"></a>
               <a href="javascript:void(0)" class="icon wc"><i><img src="http://otydyl8j5.bkt.clouddn.com/valp/icons/wc-qrcode.png?imageslim?imageslim" alt=""></i></a>
               <a href="mailto:hi@valp.io" class="icon em"></a>
             </div>
@@ -566,7 +566,7 @@ export default {
     //   alertify.dismissAll();
     //   alertify.message(
     //     `<p id="alertify-fixed-para" >Make new friends! </p>
-    //     <a id="alertify-fixed-btn" href="https://t.me/ValPromise" target="_blank">${this.joinGroup}</a>`
+    //     <a id="alertify-fixed-btn" href="${this.community.link}" target="_blank">${this.joinGroup}</a>`
     //   , 0)
     // }
 
