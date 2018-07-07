@@ -9,6 +9,7 @@
     img.avatar { display:block; margin:0 auto; }
     h3 { margin:21px 0; text-align:center; }
   }
+
   .panel { position:relative; margin:0 auto; }
   .addition img { display:block; margin:0 auto; }
 
@@ -154,6 +155,11 @@
         .timeline-Widget { background:#000; }
       }
     }
+  }
+
+  #partners-list {
+    li { display:flex; flex-direction:row; }
+    a, img { display:block; }
   }
 }
 #page-root.pc.en,
@@ -390,7 +396,20 @@
           <li style="margin-left:5px;"><img src="~/assets/img/partners/institutions-add2.png" /></li>
         </ul>
         <h3>{{partners.enterprise.title}}</h3>
-        <img :src="partners.enterprise.trademark" alt="">
+        <ul id="partners-list" style="position:relative;">
+          <li v-for="(list,i) in partnersMaps" :key="`plist-${i}`">
+            <a v-for="(item,j) in list" :key="`plist-i-${j}`" :href="item.link" :title="item.title">
+              <img :src="item.img" :alt="item.title">
+            </a>
+          </li>
+          <!-- <img :src="partners.enterprise.trademark" alt="" usemap="skfj123"> -->
+          <!-- <a href="" style="position:absolute; top:0; left:0; background:rgba(200,0,0,0.5); width:187px;height:75px;"></a> -->
+          <!-- <map id="skfj123" name="skfj123">
+            <area v-for="(item,i) in partnersMaps" :key="`map${i}`" shape="rect" 
+            :coords="[(i%6)*185,Math.abs(i/6)*75,185,75].join(',')"
+            :href="item.link" :title="item.title" :alt="item.title">
+          </map> -->
+        </ul>
       </div>
     </div>
     <!-- 路线图 -->
@@ -450,6 +469,32 @@ import footer1 from '~/components/layout/footer'
 export default {
   data() {
     return {
+      partnersMaps:[
+        [
+          { title:'滴滴出行', img:require('~/assets/img/partners/items/p1.png'), link:'https://www.didiglobal.com/' },
+          { title:'去哪儿',   img:require('~/assets/img/partners/items/p2.png'), link:'https://www.qunar.com/' },
+          { title:'小黄车',   img:require('~/assets/img/partners/items/p3.png'), link:'https://www.ofo.com/kr/en' },
+          { title:'中国平安', img:require('~/assets/img/partners/items/p4.png'), link:'http://www.pingan.com/?WT.mc_id=SEM-BDBZ-PC0040&WT.srch=1' },
+          { title:'墨迹天气', img:require('~/assets/img/partners/items/p5.png'), link:'http://www.moji.com/' },
+          { title:'保掌柜',   img:require('~/assets/img/partners/items/p6.png'), link:'http://www.51bzg.com/' },
+        ],
+        [
+          { title:'阳光保险', img:require('~/assets/img/partners/items/p7.png'), link:'http://www.sinosig.com/?WT.mc_id=pz_BD_PP_gw&WT.srch=1' },
+          { title:'易安保险', img:require('~/assets/img/partners/items/p8.png'), link:'https://www.1an.com/mProduct.do/productList.html?drainageFlag=1' },
+          { title:'华安保险', img:require('~/assets/img/partners/items/p9.png'), link:'https://www.sinosafe.com.cn/' },
+          { title:'爱旅行网', img:require('~/assets/img/partners/items/p10.png'), link:'http://www.ailvxing.com/' },
+          { title:'途家网',   img:require('~/assets/img/partners/items/p11.png'), link:'https://www.tujia.com/?utm_source=baidu&utm_medium=cpc&utm_term=bdpztitle' },
+          { title:'趣学车',   img:require('~/assets/img/partners/items/p12.png'), link:'http://www.goxueche.com/' },
+        ], [
+          { title:'聚土网',   img:require('~/assets/img/partners/items/p13.png'), link:'http://www.jutubao.com/' },
+          { title:'地合网',   img:require('~/assets/img/partners/items/p14.png'), link:'http://dihe.cn/' },
+          { title:'土流网',   img:require('~/assets/img/partners/items/p15.png'), link:'https://www.tuliu.com/' },
+          { title:'万德科技', img:require('~/assets/img/partners/items/p16.png'), link:'http://whatech.lovingtrip.com/' },
+          { title:'bluegogo', img:require('~/assets/img/partners/items/p17.png'), link:'https://www.bluegogo.com/' },
+        ]
+        // { title:'Crypto Venture', img:require('~/assets/img/partners/items/p18.png'), link:'https://twitter.com/cryptoventure' },
+        // { title:'币用', img:require('~/assets/img/partners/items/p19.png'), link:'https://www.biyong.sg/index.html' },
+      ],
       docMounted:false,
       email:{
         value:'',
