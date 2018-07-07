@@ -230,6 +230,8 @@
         <a id="logo" href="javascript:void(0);"></a>
         <h1>{{slogan}}</h1>
         <div class="btn-group">
+          <!-- {{legalOpinion}} -->
+          <a id="legal-opinion" :href="legalOpinion.pdf"  target="_blank" v-if="legalOpinion">{{legalOpinion.name}}</a>
           <a id="white-paper-download" :href="whitePaper.link" target="_blank">{{whitePaper.button}}</a>
           <a id="btn-presale" :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">
             &#8203;
@@ -477,6 +479,7 @@ export default {
       navs      :state=>state.lang.navs,
       slogan    :state=>state.lang.slogan,
       whitePaper:state=>state.lang.whitePaper,
+      legalOpinion:state=>state.lang.legalOpinion,
       candyHandingOut:state=>state.lang.candyHandingOut,
       community :state=>{
         if (typeof window === 'object') {
