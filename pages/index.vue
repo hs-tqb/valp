@@ -157,6 +157,7 @@
     }
   }
 
+  #institutions-list,
   #partners-list {
     li { display:flex; flex-direction:row; }
     a, img { display:block; }
@@ -390,13 +391,18 @@
       <div class="panel">
         <h2>{{partners.title}}</h2>
         <h3>{{partners.institutions.title}}</h3>
-        <ul style="display:flex; flex-derection:row;">
-          <li><img :src="partners.institutions.trademark" alt=""></li>
+        <ul id="institutions-list">
+          <!-- <li><img :src="partners.institutions.trademark" alt=""></li>
           <li style="margin-left:5px;"><img src="~/assets/img/partners/institutions-add1.png" /></li>
-          <li style="margin-left:5px;"><img src="~/assets/img/partners/institutions-add2.png" /></li>
+          <li style="margin-left:5px;"><img src="~/assets/img/partners/institutions-add2.png" /></li> -->
+          <li>
+            <a v-for="(item,i) in institutionsMap" :key="`ins-${i}`" :href="item.link" target="_blank" :title="item.title">
+              <img :src="item.img" :alt="item.title">
+            </a>
+          </li>
         </ul>
         <h3>{{partners.enterprise.title}}</h3>
-        <ul id="partners-list" style="position:relative;">
+        <ul id="partners-list">
           <li v-for="(list,i) in partnersMaps" :key="`plist-${i}`">
             <a v-for="(item,j) in list" :key="`plist-i-${j}`" :href="item.link" target="_blank" :title="item.title">
               <img :src="item.img" :alt="item.title">
@@ -469,11 +475,19 @@ import footer1 from '~/components/layout/footer'
 export default {
   data() {
     return {
+      institutionsMap:[
+        {title:'元代码资本', img:require('~/assets/img/partners/institutions/items/i1.png'), link:'javascript:void(0);'},
+        {title:'CRYPTO', img:require('~/assets/img/partners/institutions/items/i2.png'), link:'https://twitter.com/cryptoventure'},
+        {title:'SPARTAN', img:require('~/assets/img/partners/institutions/items/i3.png'), link:'javascript:void(0);'},
+        {title:'币用', img:require('~/assets/img/partners/institutions/items/i4.png'), link:'https://www.biyong.sg/index.html'},
+        {title:'墨迹天气', img:require('~/assets/img/partners/institutions/items/i5.png'), link:'http://www.moji.com/'},
+        {title:'明势资本', img:require('~/assets/img/partners/institutions/items/i6.png'), link:'http://www.future-cap.com/'},
+      ],
       partnersMaps:[
         [
           { title:'滴滴出行', img:require('~/assets/img/partners/items/p1.png'), link:'https://www.didiglobal.com/' },
           { title:'去哪儿',   img:require('~/assets/img/partners/items/p2.png'), link:'https://www.qunar.com/' },
-          { title:'小黄车',   img:require('~/assets/img/partners/items/p3.png'), link:'https://www.ofo.com/kr/en' },
+          { title:'小黄车',   img:require('~/assets/img/partners/items/p3.png'), link:'https://www.ofo.com/' },
           { title:'中国平安', img:require('~/assets/img/partners/items/p4.png'), link:'http://www.pingan.com/?WT.mc_id=SEM-BDBZ-PC0040&WT.srch=1' },
           { title:'墨迹天气', img:require('~/assets/img/partners/items/p5.png'), link:'http://www.moji.com/' },
           { title:'保掌柜',   img:require('~/assets/img/partners/items/p6.png'), link:'http://www.51bzg.com/' },
