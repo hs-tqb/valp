@@ -379,7 +379,17 @@ export default {
     ],
     agency: {
       title:'投資機構',
-      institutions:'http://otydyl8j5.bkt.clouddn.com/valp/investors/institutions.png?imageslim'
+      // institutions:'http://otydyl8j5.bkt.clouddn.com/valp/investors/institutions.png?imageslim'
+      institutions:[
+        require('~/assets/img/investors/i01.png'),
+        require('~/assets/img/investors/i02.png'),
+        require('~/assets/img/investors/i03.png'),
+        require('~/assets/img/investors/i04.png'),
+        require('~/assets/img/investors/i05.png'),
+        require('~/assets/img/investors/i06.png'),
+        require('~/assets/img/investors/i07.png'),
+        require('~/assets/img/investors/i08.png'),
+      ]
     },
   },
   partners: {

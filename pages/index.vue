@@ -369,7 +369,12 @@
     <div id="investor-agency" class="addition">
       <div class="panel">
         <h2>{{investors.agency.title}}</h2>
-        <img :src="investors.agency.institutions" alt="">
+        <!-- <img :src="investors.agency.institutions" alt=""> -->
+        <ul style="display:flex; flex-direction:row; flex-wrap:wrap;">
+          <li style="padding:1%; width:25%;" v-for="(img,i) in investors.agency.institutions" :key="`inv-ag-${i}`">
+            <img :src="img" alt="">
+          </li>
+        </ul>
       </div>
     </div>
     <!-- 合作伙伴 -->
