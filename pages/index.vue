@@ -398,7 +398,7 @@
         <h3>{{partners.enterprise.title}}</h3>
         <ul id="partners-list" style="position:relative;">
           <li v-for="(list,i) in partnersMaps" :key="`plist-${i}`">
-            <a v-for="(item,j) in list" :key="`plist-i-${j}`" :href="item.link" :title="item.title">
+            <a v-for="(item,j) in list" :key="`plist-i-${j}`" :href="item.link" target="_blank" :title="item.title">
               <img :src="item.img" :alt="item.title">
             </a>
           </li>
