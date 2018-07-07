@@ -1,4 +1,4 @@
-module.exports={"lang":"jp","slogan":"分散型プロミスプロトコ","whitePaper":{"button":"ホワイトペーパー","link":"/whitepaper/ValPromise_WhitePaper_en_v2.0.0.pdf"},candyHandingOut:{link:'/download',text:'APP Download'},
+module.exports={"lang":"jp","slogan":"分散型プロミスプロトコ","whitePaper":{"button":"ホワイトペーパー","link":"/whitepaper/ValPromise_WhitePaper_en.pdf"},candyHandingOut:{link:'/download',text:'APP Download'},
 "community":{"title":"Make new friends!","link":"https://t.me/vpp_offical3","button":"コミュニティに参加する"},
 "navs":{"items":[{"name":"発売前予約",time:'8pm. On 8th, July',"sign":"presale","external":true,"link":"https://goo.gl/forms/OqqgStJPC5ZVRqEV2"},{"name":"製品","anchor":"highlights","inFooter":true},{"name":"チーム","anchor":"team","inFooter":true},{"name":"コンサルタント","anchor":"investor","inFooter":true},{"name":"お問い合わせ","anchor":"contact","inFooter":true}]},
 

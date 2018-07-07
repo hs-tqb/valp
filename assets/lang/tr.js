@@ -1,4 +1,4 @@
-module.exports={"lang":"tr","slogan":"Decentralised Value Promise Protokolü","whitePaper":{"button":"White Paper","link":"/whitepaper/ValPromise_WhitePaper_en_v2.0.0.pdf"},candyHandingOut:{link:'/download',text:'APP Download'},
+module.exports={"lang":"tr","slogan":"Decentralised Value Promise Protokolü","whitePaper":{"button":"White Paper","link":"/whitepaper/ValPromise_WhitePaper_en.pdf"},candyHandingOut:{link:'/download',text:'APP Download'},
 "community":{"link":"https://t.me/vpp_offical3","button":"Topluluğumuza Katılın"},
 "navs":{"items":[{"name":"Presale",time:'8pm. On 8th, July',"sign":"presale","external":true,"link":"https://goo.gl/forms/OqqgStJPC5ZVRqEV2"},{"name":"Üretim","anchor":"highlights","inFooter":true},{"name":"Takımı","anchor":"team","inFooter":true},{"name":"Yatırımcılar","anchor":"investor","inFooter":true},{"name":"İletişim","anchor":"contact","inFooter":true}]},
 
