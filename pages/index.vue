@@ -382,7 +382,11 @@
       <div class="panel">
         <h2>{{partners.title}}</h2>
         <h3>{{partners.institutions.title}}</h3>
-        <img :src="partners.institutions.trademark" alt="">
+        <ul style="display:flex; flex-derection:row;">
+          <li><img :src="partners.institutions.trademark" alt=""></li>
+          <li style="margin-left:5px;"><img src="~/assets/img/partners/institutions-add1.png" /></li>
+          <li style="margin-left:5px;"><img src="~/assets/img/partners/institutions-add2.png" /></li>
+        </ul>
         <h3>{{partners.enterprise.title}}</h3>
         <img :src="partners.enterprise.trademark" alt="">
       </div>
