@@ -249,7 +249,12 @@
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>
         </div>
         <p>
-          <a id="join-btn" :href="community.link" target="_blank">{{community.button}}</a>
+          <template v-if="!!fcoin">
+            {{fcoin}}
+          </template>
+          <template v-else>
+            <a id="join-btn" :href="community.link" target="_blank">{{community.button}}</a>
+          </template>
         </p>
       </div>
     </div>
@@ -536,6 +541,7 @@ export default {
       lang      :state=>state.lang.lang,
       langs     :state=>state.lang.langs,
       navs      :state=>state.lang.navs,
+      fcoin     :state=>state.lang.fcoin,
       slogan    :state=>state.lang.slogan,
       whitePaper:state=>state.lang.whitePaper,
       legalOpinion:state=>state.lang.legalOpinion,

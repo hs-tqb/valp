@@ -18,6 +18,7 @@ export default {
     ]
   },
   slogan:'分布式價值承諾協議',
+  fcoin:'即将上线交易所：Fcoin',
   whitePaper:{
     link:'/whitepaper/ValPromise_WhitePaper_cn.pdf',
     button:'白皮書'

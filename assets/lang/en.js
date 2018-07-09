@@ -7,6 +7,7 @@ module.exports={"lang":"en","slogan":"Distributed Value Promise Protocol","white
   {"name":"Investors","anchor":"investor","inFooter":true},
   {"name":"Contact","anchor":"contact","inFooter":true}]
 },
+fcoin:'Coming to Fcoin',
 "legalOpinion":{
   name:'Legal Opinion',
   pdf:'/legal/VPP_Legal_opinion.pdf'
