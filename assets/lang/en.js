@@ -1,7 +1,7 @@
 module.exports={"lang":"en","slogan":"Distributed Value Promise Protocol","whitePaper":{"button":"White Paper","link":"/whitepaper/ValPromise_WhitePaper_en.pdf"},candyHandingOut:{link:'/download',text:'APP Download'},
 "community":{"title":"Make new friends!", "link":"https://t.me/vpp_offical3", "button":"Join Our Community"},
 "navs":{"items":[
-  {"name":"Presale",time:'8pm. On 8th, July',"sign":"presale","external":true,"link":"http://valpromise.mikecrm.com/sCdL4AW"},
+  {"name":"Presale",time:'specific channel',"sign":"presale","external":true,"link":"http://valpromise.mikecrm.com/sCdL4AW"},
   {"name":"Production","anchor":"highlights","inFooter":true},
   {"name":"Team","anchor":"team","inFooter":true},
   {"name":"Investors","anchor":"investor","inFooter":true},
