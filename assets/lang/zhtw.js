@@ -323,7 +323,7 @@ export default {
       },
       {
         name:'刘世明',
-        avatar:'https://goodex-prod-images.oss-cn-hongkong.aliyuncs.com/files/lsm.jpg',
+        avatar:'http://od3p9hvyr.bkt.clouddn.com/lsm.jpg',
         desc:'华南理工大学软件工程硕士，PMP、PMI-ACP项目管理专业人士认证，6年金融产品设计和实施经验，特别是在贷款、票据、支付、担保、供应链金融等领域。先后参与了多家银行（汇丰、广发、中行）的新核心系统设计与开发工作，熟悉金融系统高可靠性、可用性、高性能架构。Quick learner，2013年开始炒币，对区块链有深入理解。IBM Hyperledger Fabric区块链开发者认证已通过，熟练开发以太坊、EOS应用。以太坊社区贡献者，尤其在开发者的IM社区Gitter上活跃。参与翻译《SAFe 4.0参考指南：精益软件与系统工程的规模化敏捷框架》。'
       }
     ],
