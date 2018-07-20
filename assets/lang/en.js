@@ -7,7 +7,7 @@ module.exports={"lang":"en","slogan":"Distributed Value Promise Protocol","white
   {"name":"Investors","anchor":"investor","inFooter":true},
   {"name":"Contact","anchor":"contact","inFooter":true}]
 },
-fcoin:['Vpp debut at FCoin Exchange,on July 20th, 2018'],
+fcoin:['Vpp debut at FCoin Exchange','on July 20th, 2018'],
 "legalOpinion":{
   name:'Legal Opinion',
   pdf:'/legal/VPP_Legal_opinion.pdf'
