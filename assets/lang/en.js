@@ -1,13 +1,13 @@
 module.exports={"lang":"en","slogan":"Distributed Value Promise Protocol","whitePaper":{"button":"White Paper","link":"/whitepaper/ValPromise_WhitePaper_en.pdf"},candyHandingOut:{link:'/download',text:'APP Download'},
 "community":{"title":"Make new friends!", "link":"https://t.me/vpp_offical3", "button":"Join Our Community"},
 "navs":{"items":[
-  {"name":"Presale",time:'specific channel',"sign":"presale","external":true,"link":"http://valpromise.mikecrm.com/sCdL4AW"},
+  {"name":"How to deposit Vpp",time:'specific channel',"sign":"presale","external":true,"link":"https://mp.weixin.qq.com/s/X2JtP1zvrZwzyMhJVFX46w"},
   {"name":"Production","anchor":"highlights","inFooter":true},
   {"name":"Team","anchor":"team","inFooter":true},
   {"name":"Investors","anchor":"investor","inFooter":true},
   {"name":"Contact","anchor":"contact","inFooter":true}]
 },
-fcoin:'Coming to Fcoin',
+fcoin:['Vpp debut at FCoin Exchange,on July 20th, 2018'],
 "legalOpinion":{
   name:'Legal Opinion',
   pdf:'/legal/VPP_Legal_opinion.pdf'

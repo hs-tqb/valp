@@ -17,7 +17,9 @@
     #btn-presale {
       position:relative; 
       .title { 
-        position:absolute; left:0; top:-10px; width:100%;
+        // position:absolute; left:0; top:-10px; width:100%;
+        position:absolute; left:0; top:0; width:100%;
+        font-size: 28px;
       }
       background: linear-gradient(90deg, #FABD00 0%, #FF7900 100%); 
       .date {
@@ -243,14 +245,14 @@
           <a id="btn-presale" :class="presaleItem.clsn" :href="presaleItem.link" target="_blank">
             &#8203;
             <span class="title">{{presaleItem.name}}</span>
-            <span class="date">{{presaleItem.time}}</span>
+            <!-- <span class="date">{{presaleItem.time}}</span> -->
           </a>
           <!-- <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link> -->
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>
         </div>
         <p>
           <template v-if="!!fcoin">
-            {{fcoin}}
+            {{fcoin[0]}}<br />{{fcoin[1]}}
           </template>
           <template v-else>
             <a id="join-btn" :href="community.link" target="_blank">{{community.button}}</a>

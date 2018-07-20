@@ -10,7 +10,7 @@ export default {
   navs: {
     items: [
       // {name:'兌換VPP', link:'/transfer?lang=zh-tw'},
-      {sign:'presale',time:'定向开放',name:'預售', external:true, link:"http://valpromise.mikecrm.com/korDtHX"},
+      {sign:'presale',name:'VPP充值', external:true, link:"https://mp.weixin.qq.com/s/pglON57QqZA1AJ-uqxaUxw"},
       {anchor:'highlights', name:'產品', inFooter:true},
       {anchor:'team', name:'團隊', inFooter:true},
       {anchor:'investor', name:'顧問', inFooter:true},
@@ -18,7 +18,7 @@ export default {
     ]
   },
   slogan:'分布式價值承諾協議',
-  fcoin:'即将上线交易所：Fcoin',
+  fcoin:['ValPromise首发Fcoin! 倒计时1天!','合约交易大赛即将开启!'],
   whitePaper:{
     link:'/whitepaper/ValPromise_WhitePaper_cn.pdf',
     button:'白皮書'
