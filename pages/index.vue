@@ -269,7 +269,7 @@
           <ul class="flex-dir-row" ref="slideElem">
             <li v-for="(n,i) in newsItems" :key="`news${i}`" v-if="n.paras&&n.paras.every(n=>!!n)">
               <a
-                :href="n.link+(lang?'?lang='+lang:'')"
+                :href="!n.isTurn?n.link+(lang?'?lang='+lang:''):'javascript:;'"
                 class="card"
                 target="_blank"
               ><img :src="n.img" ></a>

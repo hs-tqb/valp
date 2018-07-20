@@ -193,6 +193,10 @@ export default {
         img:require('~/assets/img/news/external/2.jpg'),
         external:true,
         paras:[]
+      },{
+        isTurn: true,
+        img: require('~/assets/img/news/9/0.jpg'),
+        paras:[]
       }
     ],
     fixedItem:{ link:'https://t.me/joinchat/HeCQEU8KbjE8WRhhWaskUQ', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }
