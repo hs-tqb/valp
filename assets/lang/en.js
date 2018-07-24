@@ -19,7 +19,12 @@ fcoin:['Vpp debut at FCoin Exchange','on July 20th, 2018'],
   img:require('~/assets/img/news/external/2_en.jpg'),
   external:true,
   paras:[]
-},
+},{
+  isTurn: true,
+  link:'https://mp.weixin.qq.com/s/FfcwhrMCxtu55VOmUmmzlw',
+  img: require('~/assets/img/news/9/0-en.jpg'),
+  paras:[]
+}
 ],"osma":"For more information，please visit on <a href=\"https://www.facebook.com/hiValPromise\" target=\"_blank\">https://www.facebook.com/hiValPromise</a> and our telegram group is <a href=\"https://t.me/vpp_offical3\" target=\"_blank\">https://t.me/vpp_offical3</a>",
 "fixedItem":{"link":"https://t.me/joinchat/HeCQEU8KbjE8WRhhWaskUQ","img":"http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-en.png?imageslim","external":true}},
 

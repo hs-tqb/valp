@@ -18,7 +18,7 @@ export default {
     ]
   },
   slogan:'分布式價值承諾協議',
-  fcoin:['ValPromise首发Fcoin!','合约交易大赛即将开启!'],
+  fcoin:['ValPromise首发Fcoin!','合约交易大赛开启!'],
   whitePaper:{
     link:'/whitepaper/ValPromise_WhitePaper_cn.pdf',
     button:'白皮書'
@@ -194,7 +194,7 @@ export default {
         external:true,
         paras:[]
       },{
-        isTurn: true,
+        link:'https://mp.weixin.qq.com/s/FfcwhrMCxtu55VOmUmmzlw',
         img: require('~/assets/img/news/9/0.jpg'),
         paras:[]
       }
