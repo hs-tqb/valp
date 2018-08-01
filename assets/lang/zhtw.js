@@ -370,17 +370,17 @@ export default {
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a4.png?imageslim',
         desc:'PruSmartHR 保險咨詢服務公司CEO，曾任North American Search Group獵頭公司亞太區負責人。具有超過10年服務保險行業的經驗和人脈，在保險產品開發領域，其團隊和超過六萬名精算從業人員保持常規的聯系。其高管聘用案例包括Pacific Life Re 大中華區CEO，美國再保險現臺灣及其東南亞地區CEO，普華永道中國非壽險精算顧問負責人，中宏人壽CFO等。'
       },
-      {
-        name:'Melody He',
-        avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a6.png?imageslim',
-        desc:'Melody是區塊鏈咨詢和投資基金Spartan Group的創始人。她是TenX的早期投資者，也是Gifto和Appcoins的戰略顧問。曾供職於高盛。'
-      },
+      // {
+      //   name:'Melody He',
+      //   avatar:'http://otydyl8j5.bkt.clouddn.com/valp/advisor/a6.png?imageslim',
+      //   desc:'Melody是區塊鏈咨詢和投資基金Spartan Group的創始人。她是TenX的早期投資者，也是Gifto和Appcoins的戰略顧問。曾供職於高盛。'
+      // },
       {
         name:'張毅鵬',
         avatar:'http://otydyl8j5.bkt.clouddn.com/valp/team/m3.png?imageslim',
         desc:'復旦大學電子與通信工程碩士，早年作為中國最早的移動互聯網出海企業—網秦集團（NYSE: NQ）核心產品經理，從諾基亞塞班時代開始就積累了大量的海外產品設計和運營經驗。之後他在奇虎360海外事業部，幫助360海外業務取得了突破性進展。作為中國新銳出海團隊APUS Group創始成員之壹，締造了3個月內新產品海外用戶超過1億的記錄，其產品榮登Google Play 30+國家排行榜第一。'
       },
-      {},
+      {},{}
     ],
     agency: {
       title:'投資機構',
