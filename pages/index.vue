@@ -250,14 +250,14 @@
           <!-- <nuxt-link :to="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</nuxt-link> -->
           <a :href="candyHandingOut.link" v-if="candyHandingOut">{{candyHandingOut.text}}</a>
         </div>
-        <p>
+        <!-- <p>
           <template v-if="!!fcoin">
             {{fcoin[0]}}<br />{{fcoin[1]}}
           </template>
           <template v-else>
             <a id="join-btn" :href="community.link" target="_blank">{{community.button}}</a>
           </template>
-        </p>
+        </p> -->
       </div>
     </div>
     <!-- 新闻 -->
