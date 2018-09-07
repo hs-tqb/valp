@@ -201,6 +201,10 @@ export default {
         link:'https://mp.weixin.qq.com/s/tdLc6jkBgy6zwJ-r2ocf4Q',
         img: require('~/assets/img/news/10/1.png'),
         paras:[]
+      },{
+        link:'https://mp.weixin.qq.com/s/a8wJvwWUJEFeafLEL4ZLxA',
+        img: require('~/assets/img/news/11/1.jpg'),
+        paras:[]
       }
     ],
     fixedItem:{ link:'https://t.me/joinchat/HeCQEU8KbjE8WRhhWaskUQ', img:'http://otydyl8j5.bkt.clouddn.com/valp/news/0/0-cn.png?imageslim', external:true }
