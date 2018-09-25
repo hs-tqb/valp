@@ -21,11 +21,6 @@ fcoin:['VPP is a public listed token at FCoin',''],
   paras:[]
 },{
   isTurn: true,
-  link:'https://mp.weixin.qq.com/s/FfcwhrMCxtu55VOmUmmzlw',
-  img: require('~/assets/img/news/9/0-en.jpg'),
-  paras:[]
-},{
-  isTurn: true,
   link:'https://mp.weixin.qq.com/s/tdLc6jkBgy6zwJ-r2ocf4Q',
   img: require('~/assets/img/news/10/1-en.jpg'),
   paras:[]
